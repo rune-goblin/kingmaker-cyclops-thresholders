@@ -700,7 +700,7 @@
             "category": null
           },
           "qGoyckkOfVHwARW6": {
-            "damage": "2d6+13",
+            "damage": "2d8+13",
             "damageType": "bludgeoning",
             "category": null
           }
@@ -862,7 +862,7 @@
             "category": null
           },
           "cwJ848uGX1ighBnn": {
-            "damage": "1d4+13",
+            "damage": "1d6+13",
             "damageType": "piercing",
             "category": null
           }
@@ -1495,6 +1495,79 @@
         "default": 0
       },
       "_key": "!actors.items!z1Hk6z6RU4sF9aJU.8Ss1d21OHToUfFNl"
+    },
+    {
+      "_id": "qUaqzRZJuoidz1Hk",
+      "_stats": {},
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Ferocity",
+      "sort": 700000,
+      "system": {
+        "actionType": {
+          "value": "reaction"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "deathNote": true,
+        "description": {
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Ferocity]</p>"
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Monster Core"
+        },
+        "rules": [],
+        "slug": "ferocity",
+        "traits": {
+          "rarity": "common",
+          "value": []
+        }
+      },
+      "type": "action",
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.qUaqzRZJuoidz1Hk"
+    },
+    {
+      "_id": "3uMuKyVKQxpFz1Hk",
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Flash of Brutality",
+      "sort": 800000,
+      "system": {
+        "actionType": {
+          "value": "free"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "description": {
+          "value": "<p><strong>Frequency</strong> once per day, and recharges when the Thresholder Disciple uses Ferocity.</p>\n<p><strong>Trigger</strong> The Thresholder Disciple succeeds at an attack roll.</p>\n<hr />\n<p><strong>Effect</strong> The attack becomes a critical success.</p>"
+        },
+        "frequency": {
+          "max": 1,
+          "per": "day",
+          "value": 1
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Monster Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "rarity": "common",
+          "value": [
+            "fortune",
+            "occult"
+          ]
+        }
+      },
+      "type": "action",
+      "_stats": {},
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.3uMuKyVKQxpFz1Hk"
     }
   ],
   "name": "Thresholder Disciple",

@@ -1140,7 +1140,7 @@
         },
         "damageRolls": {
           "8vi7wR2MFWG7PvNZ": {
-            "damage": "3d4+10",
+            "damage": "3d6+10",
             "damageType": "piercing",
             "category": null
           }
@@ -1776,6 +1776,79 @@
         "default": 0
       },
       "_key": "!actors.items!3kyS4KzEmG8Eyl4N.ypEVZiKiaV4PXVPe"
+    },
+    {
+      "_id": "qUaqzRZJuoid3kyS",
+      "_stats": {},
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Ferocity",
+      "sort": 700000,
+      "system": {
+        "actionType": {
+          "value": "reaction"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "deathNote": true,
+        "description": {
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Ferocity]</p>"
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Monster Core"
+        },
+        "rules": [],
+        "slug": "ferocity",
+        "traits": {
+          "rarity": "common",
+          "value": []
+        }
+      },
+      "type": "action",
+      "_key": "!actors.items!3kyS4KzEmG8Eyl4N.qUaqzRZJuoid3kyS"
+    },
+    {
+      "_id": "DxRFNpdsIZg63kyS",
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Flash of Insight",
+      "sort": 800000,
+      "system": {
+        "actionType": {
+          "value": "free"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "description": {
+          "value": "<p><strong>Frequency</strong> once per day.</p>\n<p><strong>Trigger</strong> The Thresholder Hermeticist is about to roll a d20.</p>\n<hr />\n<p><strong>Effect</strong> The Thresholder Hermeticist peers into an occluded spectrum of possible futures. It gets a success (but not a critical success) on the roll instead of rolling.</p>"
+        },
+        "frequency": {
+          "max": 1,
+          "per": "day",
+          "value": 1
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Monster Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "rarity": "common",
+          "value": [
+            "fortune",
+            "occult"
+          ]
+        }
+      },
+      "type": "action",
+      "_stats": {},
+      "_key": "!actors.items!3kyS4KzEmG8Eyl4N.DxRFNpdsIZg63kyS"
     }
   ],
   "name": "Thresholder Hermeticist",

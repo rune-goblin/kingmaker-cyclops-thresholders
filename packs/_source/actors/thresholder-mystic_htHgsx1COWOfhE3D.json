@@ -4220,7 +4220,7 @@
         },
         "damageRolls": {
           "ywuykEnnWuCWGcpx": {
-            "damage": "3d4+8",
+            "damage": "3d6+8",
             "damageType": "piercing",
             "category": null
           }
@@ -4707,6 +4707,79 @@
         "default": 0
       },
       "_key": "!actors.items!htHgsx1COWOfhE3D.sTjHob8UlAoUPu20"
+    },
+    {
+      "_id": "qUaqzRZJuoidhtHg",
+      "_stats": {},
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Ferocity",
+      "sort": 700000,
+      "system": {
+        "actionType": {
+          "value": "reaction"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "deathNote": true,
+        "description": {
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Ferocity]</p>"
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Monster Core"
+        },
+        "rules": [],
+        "slug": "ferocity",
+        "traits": {
+          "rarity": "common",
+          "value": []
+        }
+      },
+      "type": "action",
+      "_key": "!actors.items!htHgsx1COWOfhE3D.qUaqzRZJuoidhtHg"
+    },
+    {
+      "_id": "DxRFNpdsIZg6htHg",
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Flash of Insight",
+      "sort": 800000,
+      "system": {
+        "actionType": {
+          "value": "free"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "description": {
+          "value": "<p><strong>Frequency</strong> once per day.</p>\n<p><strong>Trigger</strong> The Thresholder Mystic is about to roll a d20.</p>\n<hr />\n<p><strong>Effect</strong> The Thresholder Mystic peers into an occluded spectrum of possible futures. It gets a success (but not a critical success) on the roll instead of rolling.</p>"
+        },
+        "frequency": {
+          "max": 1,
+          "per": "day",
+          "value": 1
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Monster Core"
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "rarity": "common",
+          "value": [
+            "fortune",
+            "occult"
+          ]
+        }
+      },
+      "type": "action",
+      "_stats": {},
+      "_key": "!actors.items!htHgsx1COWOfhE3D.DxRFNpdsIZg6htHg"
     }
   ],
   "name": "Thresholder Mystic",
