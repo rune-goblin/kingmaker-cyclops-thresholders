@@ -1,0 +1,64 @@
+{
+  "id": "kingmaker-cyclops-thresholders",
+  "title": "Kingmaker: Cyclops Thresholders",
+  "description": "Rebuilds Kingmaker chapter 9's Thresholder cultists (Disciple, Hermeticist, Mystic) as Large cyclopes: +2 Strength, +2 physical damage, ~10% more HP, same levels. Run the included macro to swap them into an imported Kingmaker world.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mark Pearce"
+    }
+  ],
+  "esmodules": [
+    "dist/kingmaker-cyclops-thresholders.js"
+  ],
+  "styles": [
+    "dist/kingmaker-cyclops-thresholders.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "actors",
+      "label": "Cyclops Thresholders",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "pf2e"
+    },
+    {
+      "name": "macros",
+      "label": "Cyclops Thresholders Macros",
+      "path": "packs/macros",
+      "type": "Macro"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "8.0.0"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "pf2e-kingmaker",
+        "type": "module"
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "url": "https://github.com/rune-goblin/kingmaker-cyclops-thresholders",
+  "manifest": "https://github.com/rune-goblin/kingmaker-cyclops-thresholders/releases/latest/download/module.json",
+  "download": "https://github.com/rune-goblin/kingmaker-cyclops-thresholders/releases/latest/download/kingmaker-cyclops-thresholders.zip"
+}

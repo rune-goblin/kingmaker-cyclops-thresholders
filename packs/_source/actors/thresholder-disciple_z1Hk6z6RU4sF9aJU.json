@@ -1,0 +1,1667 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "disposition": -1,
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "name": "Thresholder Disciple",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "modules/kingmaker-cyclops-thresholders/assets/tokens/thresholder-disciple-cyclops.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "width": 2,
+    "height": 2,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "detectionModes": {},
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
+  },
+  "_id": "z1Hk6z6RU4sF9aJU",
+  "img": "modules/kingmaker-cyclops-thresholders/assets/portraits/thresholder-disciple-cyclops.webp",
+  "items": [
+    {
+      "_id": "MxGd3lTVgUVyx8lw",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/equipment/hand/gauntlet-simple-leather-brown-gold.webp",
+      "name": "Handwraps of Mighty Blows",
+      "sort": 100000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+        },
+        "rules": [],
+        "slug": "handwraps-of-mighty-blows",
+        "_migration": {
+          "version": 0.955,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse",
+            "invested",
+            "magical",
+            "nonlethal",
+            "unarmed"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 35
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          }
+        },
+        "usage": {
+          "value": "worngloves"
+        },
+        "category": "unarmed",
+        "group": "brawling",
+        "bonus": {
+          "value": 1
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "bludgeoning",
+          "persistent": null
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "expend": null,
+        "ammo": null,
+        "reload": {
+          "value": null
+        },
+        "grade": null,
+        "runes": {
+          "potency": 2,
+          "striking": 1,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        }
+      },
+      "type": "weapon",
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.MxGd3lTVgUVyx8lw"
+    },
+    {
+      "_id": "NCQO0IYYsk23RS87",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fjkwYZ0hRmBztwBG",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "systems/pf2e/icons/equipment/weapons/shuriken.webp",
+      "name": "Shuriken",
+      "sort": 200000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This \"throwing star\" is a small piece of flat metal with sharp edges, designed to be flung with a flick of the wrist.</p>"
+        },
+        "rules": [],
+        "slug": "shuriken",
+        "_migration": {
+          "version": 0.955,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "monk",
+            "thrown"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 10,
+        "baseItem": "shuriken",
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "cp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          }
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "martial",
+        "group": "dart",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null
+        },
+        "splashDamage": {
+          "value": null
+        },
+        "range": 20,
+        "expend": null,
+        "ammo": null,
+        "reload": {
+          "value": "0"
+        },
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        }
+      },
+      "type": "weapon",
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.NCQO0IYYsk23RS87"
+    },
+    {
+      "_id": "gVhcOspe8h7FkmF1",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/equipment/chest/shirt-collared-brown.webp",
+      "name": "Robes",
+      "sort": 300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Ordinary clothing is functional with basic tailoring, such as peasant garb, monk's robes, or work clothes.</p>"
+        },
+        "rules": [],
+        "slug": "clothing-ordinary",
+        "_migration": {
+          "version": 0.955,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          }
+        },
+        "usage": {
+          "value": "worn"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.gVhcOspe8h7FkmF1"
+    },
+    {
+      "_id": "zGifR2PUMCuF3jab",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/commodities/treasure/brooch-jeweled-green.webp",
+      "name": "Religious Symbol of Yog-Sothoth",
+      "sort": 400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+        },
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "has-religious-symbol",
+            "requiresEquipped": false
+          }
+        ],
+        "slug": "religious-symbol-wooden",
+        "_migration": {
+          "version": 0.955,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          }
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.zGifR2PUMCuF3jab"
+    },
+    {
+      "_id": "LykMqGjDR8Qx8xgf",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/elixir-of-life.webp",
+      "name": "Elixir of Life (Major)",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]] Hit Points and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+        },
+        "rules": [],
+        "slug": "elixir-of-life-major",
+        "_migration": {
+          "version": 0.955,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "elixir",
+            "healing"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 15
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1300
+          }
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          }
+        },
+        "category": "elixir",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": {
+          "formula": "8d6+21",
+          "kind": "healing",
+          "type": "untyped"
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "spell": null
+      },
+      "type": "consumable",
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.LykMqGjDR8Qx8xgf"
+    },
+    {
+      "_id": "DUWbE68XkGU2jM9J",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Fist",
+      "sort": 600000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 29
+        },
+        "damageRolls": {
+          "P4gRXsry3FUCFpqs": {
+            "damage": "3d6",
+            "damageType": "mental",
+            "category": null
+          },
+          "qGoyckkOfVHwARW6": {
+            "damage": "2d6+13",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "range": null,
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "magical",
+            "unarmed"
+          ],
+          "otherTags": [],
+          "config": {}
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "action": "strike",
+        "area": null,
+        "subjectToMAP": true
+      },
+      "type": "melee",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.DUWbE68XkGU2jM9J"
+    },
+    {
+      "_id": "QQaSJEmqMeqq6kd9",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Lurker Claw",
+      "sort": 700000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 29
+        },
+        "damageRolls": {
+          "MELa5tM1PAV4EEGY": {
+            "damage": "2d12+13",
+            "damageType": "slashing",
+            "category": null
+          },
+          "y05TmH44K0cOxOJ7": {
+            "damage": "3d6",
+            "damageType": "mental",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "range": null,
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "forceful",
+            "magical",
+            "parry",
+            "unarmed"
+          ],
+          "otherTags": [],
+          "config": {}
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "action": "strike",
+        "area": null,
+        "subjectToMAP": true
+      },
+      "type": "melee",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.QQaSJEmqMeqq6kd9"
+    },
+    {
+      "_id": "mmgcrA8q8AjJiPoF",
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "NCQO0IYYsk23RS87"
+        }
+      },
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Shuriken",
+      "sort": 800000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 28
+        },
+        "damageRolls": {
+          "OhPyYCrrwFhRIVzd": {
+            "damage": "3d6",
+            "damageType": "mental",
+            "category": null
+          },
+          "cwJ848uGX1ighBnn": {
+            "damage": "1d4+13",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "range": null,
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "reload-0",
+            "thrown-20"
+          ],
+          "otherTags": [],
+          "config": {}
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "action": "strike",
+        "area": null,
+        "subjectToMAP": true
+      },
+      "type": "melee",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.mmgcrA8q8AjJiPoF"
+    },
+    {
+      "_id": "9a3n2YfibJlQxctv",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Unseen Sight",
+      "sort": 900000,
+      "system": {
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "interaction",
+        "description": {
+          "value": "<p>The removal of the single great eye symbolized a Thresholder's abandonment of all they had seen before, and with the ritual's completion they gain something greater than mere vision: they gain the Unseen Sight. This is a precise sense that mimics darkvision yet functions even if the empty socket itself is covered. More importantly, the unseen sight allows a Thresholder to see the truth of the world, granting them the ability to see things as they actually are as if they were under the effects of @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}, provided they are located within a region under the influence of Yog- Sothoth.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.9a3n2YfibJlQxctv"
+    },
+    {
+      "_id": "0TyxIsxCmJlWFTk6",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Evasion",
+      "sort": 1000000,
+      "system": {
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "description": {
+          "value": "<p>When the disciple rolls a success on a Reflex save, they get a critical success instead.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "selector": "reflex",
+            "text": "{item|system.description.value}",
+            "title": "{item|name}",
+            "visibility": "owner"
+          },
+          {
+            "adjustment": {
+              "success": "one-degree-better"
+            },
+            "key": "AdjustDegreeOfSuccess",
+            "selector": "reflex"
+          }
+        ],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.0TyxIsxCmJlWFTk6"
+    },
+    {
+      "_id": "vllPNnBmoSwFEtl9",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Guarded Movement",
+      "sort": 1100000,
+      "system": {
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "description": {
+          "value": "<p>The disciple gains a +4 circumstance bonus to AC against reactions triggered by their movement.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "guarded-movement"
+            ],
+            "selector": "ac",
+            "type": "circumstance",
+            "value": 4
+          },
+          {
+            "key": "RollOption",
+            "option": "guarded-movement",
+            "toggleable": true
+          }
+        ],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.vllPNnBmoSwFEtl9"
+    },
+    {
+      "_id": "TxCWNmfsEkdTzNvw",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Outside of Time",
+      "sort": 1200000,
+      "system": {
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "description": {
+          "value": "<p>The Thresholder Disciple exists outside of time; they don't age, don't need food or drink to survive, and can't be @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} unless they choose to be.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.TxCWNmfsEkdTzNvw"
+    },
+    {
+      "_id": "7pIVt1wT5IWY1dOP",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Flurry of Blows",
+      "sort": 1300000,
+      "system": {
+        "actionType": {
+          "value": "action"
+        },
+        "actions": {
+          "value": 1
+        },
+        "category": "offensive",
+        "description": {
+          "value": "<p><strong>Frequency</strong> Once per turn</p>\n<hr>\n<p><strong>Effect</strong> The disciple makes two unarmed Strikes. If both hit the same creature, combine their damages for the purposes of resistances and weaknesses. The disciple's multiple attack penalty applies normally to these Strikes.</p>",
+          "gm": ""
+        },
+        "frequency": {
+          "max": 1,
+          "per": "turn",
+          "value": 1
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "flourish"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.7pIVt1wT5IWY1dOP"
+    },
+    {
+      "_id": "ZR6JE7Gh0fgDobEm",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Lurker Stance",
+      "sort": 1400000,
+      "system": {
+        "actionType": {
+          "value": "action"
+        },
+        "actions": {
+          "value": 1
+        },
+        "category": "offensive",
+        "description": {
+          "value": "<p>The disciple takes the stance of the Lurker at the Threshold, full of menace and danger. The disciple can make lurker claw unarmed attacks. These deal 1d12 slashing damage; are in the brawling group; and have the parry, forceful, and unarmed traits. While in this stance, if the disciple succeeds or critically succeeds at a check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a target, the target must succeed at a @Check[will|dc:34] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure) for 1 minute.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "stance"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.ZR6JE7Gh0fgDobEm"
+    },
+    {
+      "_id": "yI8AXFiHc0FyemjU",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Ominous Mien",
+      "sort": 1500000,
+      "system": {
+        "actionType": {
+          "value": "action"
+        },
+        "actions": {
+          "value": 1
+        },
+        "category": "offensive",
+        "description": {
+          "value": "<p><strong>Requirements</strong> The disciple is in Lurker Stance</p>\n<hr>\n<p><strong>Effect</strong> The disciple gains a +2 circumstance bonus to Intimidation checks and their @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} attempts don't take a penalty for not speaking the target's language and don't cause the target to become temporarily immune. These effects last until the end of the disciple's next turn.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "ominous-mien",
+              "action:demoralize"
+            ],
+            "selector": "intimidation",
+            "type": "circumstance",
+            "value": 2
+          },
+          {
+            "key": "RollOption",
+            "option": "ominous-mien",
+            "toggleable": true
+          }
+        ],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.yI8AXFiHc0FyemjU"
+    },
+    {
+      "_id": "4WbCPkQrjR5xvIUs",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Temporal Strikes",
+      "sort": 1600000,
+      "system": {
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "offensive",
+        "description": {
+          "value": "<p>The disciple's Strikes force the creature hit to endure a deluge of unfamiliar memories from a combination of past lives and parallel existences, causing an additional 3d6 mental damage with a successful hit.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.955,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        }
+      },
+      "type": "action",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.4WbCPkQrjR5xvIUs"
+    },
+    {
+      "_id": "8Ss1d21OHToUfFNl",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "name": "Yog-Sothoth Lore",
+      "sort": 1700000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.955,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.954,
+            "foundry": "14.360",
+            "system": "8.0.3"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 24
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "type": "lore",
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": "pf2e",
+        "systemVersion": "8.0.3",
+        "compendiumSource": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!z1Hk6z6RU4sF9aJU.8Ss1d21OHToUfFNl"
+    }
+  ],
+  "name": "Thresholder Disciple",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 280,
+        "temp": 0,
+        "max": 280,
+        "details": ""
+      },
+      "ac": {
+        "value": 36,
+        "details": ""
+      },
+      "allSaves": {
+        "value": "evasion"
+      },
+      "speed": {
+        "value": 40,
+        "otherSpeeds": [],
+        "details": ""
+      },
+      "resistances": [
+        {
+          "type": "mental",
+          "value": 10
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "aklo",
+          "hallit",
+          "cyclops"
+        ],
+        "details": ""
+      },
+      "level": {
+        "value": 14
+      },
+      "blurb": "Cyclops cultist",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Kingmaker",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      },
+      "creatureType": ""
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.955,
+      "previous": {
+        "schema": 0.954,
+        "foundry": "14.360",
+        "system": "8.0.3"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 7
+      },
+      "dex": {
+        "mod": 5
+      },
+      "con": {
+        "mod": 2
+      },
+      "int": {
+        "mod": 0
+      },
+      "wis": {
+        "mod": 4
+      },
+      "cha": {
+        "mod": 2
+      }
+    },
+    "perception": {
+      "details": "unseen sight",
+      "mod": 26,
+      "senses": [],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 23,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 28,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 25,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "base": 27
+      },
+      "athletics": {
+        "base": 30
+      },
+      "intimidation": {
+        "base": 26,
+        "special": [
+          {
+            "base": 28,
+            "label": "to Demoralize",
+            "predicate": [
+              "action:demoralize"
+            ]
+          }
+        ]
+      },
+      "religion": {
+        "base": 25
+      },
+      "stealth": {
+        "base": 25
+      }
+    },
+    "traits": {
+      "value": [
+        "chaotic",
+        "evil",
+        "giant",
+        "humanoid"
+      ],
+      "rarity": "rare",
+      "size": {
+        "value": "lg"
+      }
+    }
+  },
+  "type": "npc",
+  "flags": {
+    "core": {},
+    "kingmaker-cyclops-thresholders": {
+      "replaces": "Compendium.pf2e.kingmaker-bestiary.Actor.z1Hk6z6RU4sF9aJU"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "14.360",
+    "systemId": "pf2e",
+    "systemVersion": "8.0.3",
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "createdTime": null
+  },
+  "sort": 175000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!z1Hk6z6RU4sF9aJU"
+}

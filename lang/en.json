@@ -1,0 +1,7 @@
+{
+  "kingmaker-cyclops-thresholders": {
+    "gmOnly": "Only the GM can replace the Thresholders.",
+    "replaced": "Replaced {actors} Thresholder actor(s) with cyclops versions and resized {tokens} scene token(s).",
+    "noneFound": "No Kingmaker Thresholder actors found in this world. Import the Kingmaker adventure first."
+  }
+}

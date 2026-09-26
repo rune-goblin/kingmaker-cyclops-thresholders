@@ -1,0 +1,13 @@
+{
+  "_id": "kmcycReplaceThr01",
+  "_key": "!macros!kmcycReplaceThr01",
+  "name": "Kingmaker: Make Thresholders Cyclopes",
+  "type": "script",
+  "img": "icons/svg/eye.svg",
+  "scope": "global",
+  "command": "game.modules.get('kingmaker-cyclops-thresholders')?.api?.replaceThresholders();",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
