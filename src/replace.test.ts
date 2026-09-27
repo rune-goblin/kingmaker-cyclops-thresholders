@@ -4,11 +4,17 @@ import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
 
 const MYSTIC_ID = THRESHOLDER_IDS[2];
 
+const spell = (id: string, remaster: boolean) => ({
+  _id: id,
+  type: 'spell',
+  system: { publication: { remaster } },
+});
+
 function source(id: string) {
   return {
     _id: id,
     img: `portraits/${id}.webp`,
-    items: [{ _id: 'old' }, { _id: 'new' }],
+    items: [{ _id: 'old' }, { _id: 'new' }, spell('legacy', true), spell('edited', true), spell('kept', false)],
     prototypeToken: { width: 2, height: 2, texture: { src: `tokens/${id}.webp` } },
     system: { attributes: { hp: { max: 390, value: 390 } } },
     flags: { [MODULE_ID]: { replaces: `Compendium.pf2e.kingmaker-bestiary.Actor.${id}` } },
@@ -16,9 +22,15 @@ function source(id: string) {
 }
 
 function worldActor(id: string, replaced: boolean) {
+  const items = [
+    { id: 'old' },
+    { id: 'legacy', ...spell('legacy', false) },
+    { id: 'edited', ...spell('edited', true) },
+    { id: 'kept', ...spell('kept', false) },
+  ];
   return {
     id,
-    items: [{ id: 'old' }],
+    items: Object.assign(items, { get: (itemId: string) => items.find((i) => i.id === itemId) }),
     system: { attributes: { hp: { max: replaced ? 390 : 355, value: 100 } } },
     getFlag: () => (replaced ? 'yes' : undefined),
     update: vi.fn(),
@@ -59,21 +71,22 @@ describe('replaceActors', () => {
 
     const result = await replaceActors([FORAS_ID]);
 
-    expect(result).toEqual({ replaced: 1, refreshed: 0, tokens: 0 });
+    expect(result).toEqual({ replaced: 1, refreshed: 0, tokens: 0, spells: 0 });
     expect(foras.update).toHaveBeenCalledWith(
       expect.objectContaining({ system: { attributes: { hp: { max: 390, value: 390 } } } }),
       { allowHPOverage: true },
     );
+    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith('Item', expect.any(Array), { recursive: false });
     expect(foras.createEmbeddedDocuments).toHaveBeenCalledWith('Item', [{ _id: 'new' }], { keepId: true });
   });
 
-  it('only refreshes art, token size, and HP on an actor already replaced', async () => {
+  it('only refreshes art, token size, HP, and legacy spells on an actor already replaced', async () => {
     const foras = worldActor(FORAS_ID, true);
     setup([foras]);
 
     const result = await replaceActors([FORAS_ID]);
 
-    expect(result).toEqual({ replaced: 0, refreshed: 1, tokens: 0 });
+    expect(result).toEqual({ replaced: 0, refreshed: 1, tokens: 0, spells: 1 });
     expect(foras.update).toHaveBeenCalledWith({
       img: `portraits/${FORAS_ID}.webp`,
       'prototypeToken.width': 2,
@@ -81,7 +94,8 @@ describe('replaceActors', () => {
       'prototypeToken.texture.src': `tokens/${FORAS_ID}.webp`,
       'system.attributes.hp.value': 390,
     });
-    expect(foras.updateEmbeddedDocuments).not.toHaveBeenCalled();
+    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledOnce();
+    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith('Item', [spell('legacy', true)], { recursive: false });
     expect(foras.createEmbeddedDocuments).not.toHaveBeenCalled();
   });
 

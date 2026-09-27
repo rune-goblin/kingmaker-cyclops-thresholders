@@ -16,7 +16,7 @@ Traits swap `human` for `giant`, the Disciple's Athletics rises by 2, all four s
 1. Import the Kingmaker adventure into your world and enable this module.
 2. As GM, run the **Kingmaker: Make Cyclopes** macro from the *Cyclops Thresholders Macros* compendium and choose **Thresholders**, **Foras**, or **All four**.
 
-The macro updates the chosen world actors in place (same ids, so journal links hold), resizes their tokens on every scene, and sets current HP to the new maximum. Running it again is safe: actors it already replaced keep your edits and only get fresh art, token size, and full HP. Re-importing the Kingmaker adventure restores the human versions; run the macro again afterwards.
+The macro updates the chosen world actors in place (same ids, so journal links hold), resizes their tokens on every scene, and sets current HP to the new maximum. Running it again is safe: actors it already replaced keep your edits and only get fresh art, token size, full HP, and remastered versions of any spells still on legacy data. Re-importing the Kingmaker adventure restores the human versions; run the macro again afterwards.
 
 Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`.
 

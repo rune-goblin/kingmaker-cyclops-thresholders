@@ -1,11 +1,11 @@
 {
   "kingmaker-cyclops-thresholders": {
     "gmOnly": "Only the GM can replace these actors.",
-    "replaced": "Replaced {replaced} actor(s) with cyclops versions, refreshed {refreshed} already-replaced actor(s), and updated {tokens} scene token(s).",
+    "replaced": "Replaced {replaced} actor(s) with cyclops versions, refreshed {refreshed} already-replaced actor(s), updated {spells} legacy spell(s) to the remaster, and updated {tokens} scene token(s).",
     "noneFound": "None of the chosen Kingmaker actors are in this world. Import the Kingmaker adventure first.",
     "dialog": {
       "title": "Kingmaker: Make Cyclopes",
-      "content": "Replace which actors with their cyclops versions? Actors already replaced keep their data and only get fresh art and full HP.",
+      "content": "Replace which actors with their cyclops versions? Actors already replaced keep their data and only get fresh art, full HP, and remastered spells.",
       "thresholders": "Thresholders",
       "foras": "Foras",
       "all": "All four"
