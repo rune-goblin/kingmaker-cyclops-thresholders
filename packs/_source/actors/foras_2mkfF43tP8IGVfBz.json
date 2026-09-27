@@ -140,16 +140,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.mGzWQjNPCtlz97Cn"
     },
     {
-      "_id": "3U5DhF2KyfP8LLfc",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.1dsahW4g1ggXtypx"
-      },
       "img": "systems/pf2e/icons/spells/time-stop.webp",
-      "name": "Time Stop",
-      "sort": 300000,
+      "name": "Freeze Time",
       "system": {
         "area": null,
         "cost": {
@@ -159,7 +151,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting time stop, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but only for you, effects specifically targeting or affecting you, and effects you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond the time stop's duration, such as wall of fire, it immediately affects others again, but it doesn't have any of the effects that happen only when you first cast the spell.</p>"
+          "value": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting <em>freeze time</em>, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but for only you, effects specifically targeting or affecting you, and effects that you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond <em>freeze time</em>'s duration, such as @UUID[Compendium.pf2e.spells-srd.Item.Wall of Fire], it immediately affects others again, but it doesn't have any of the effects that happen only when you first Cast the Spell.</p>"
         },
         "duration": {
           "sustained": false,
@@ -168,21 +160,16 @@
         "level": {
           "value": 10
         },
-        "location": {
-          "heightenedLevel": 10,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "time-stop",
         "target": {
           "value": ""
         },
@@ -200,26 +187,31 @@
             "manipulate"
           ]
         },
+        "slug": "freeze-time",
+        "location": {
+          "heightenedLevel": 10,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.3U5DhF2KyfP8LLfc"
-    },
-    {
-      "_id": "mWEHpvzZ2tIlnCxG",
+      "_id": "3U5DhF2KyfP8LLfc",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.3U5DhF2KyfP8LLfc",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.fkDeKktdmbeplYRY"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.1dsahW4g1ggXtypx"
       },
+      "sort": 300000,
+      "effects": []
+    },
+    {
       "img": "icons/magic/control/control-influence-crown-gold.webp",
       "name": "Overwhelming Presence",
-      "sort": 400000,
       "system": {
         "area": {
           "type": "burst",
@@ -237,7 +229,7 @@
           }
         },
         "description": {
-          "value": "<p>You surround yourself with supernatural splendor, appearing to be a god or similarly majestic being. You choose the aspects of your new majestic appearance. This causes the targets to pay tribute to you by bowing or using some other action in keeping with your appearance. The number of times a target must do this depends on the result of their Will save. Paying tribute is a manipulate action or move action, as chosen by the creature paying tribute. A creature under this effect must pay tribute to you at least once on each of its turns if possible. While affected by this spell, a creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by you and can't use hostile actions against you. The target is then temporarily immune for 1 minute.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target must pay tribute twice.</p>\n<p><strong>Failure</strong> The target must pay tribute six times.</p>\n<p><strong>Critical Failure</strong> As failure, and the target must spend all its actions paying tribute if possible.</p>"
+          "value": "<p>You surround yourself with supernatural splendor, appearing to be a god or similarly majestic being, with an appearance, regalia, and iconography of your choice. Targets must attempt a Will save. Regardless of the outcome, the target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target must pay tribute to you two times. Paying tribute requires that the target spend a single action, which has either the move trait (as they bow) or manipulate trait (as they offer up a token in their hands). They must pay tribute at least once on each of their turns, if possible. While affected, the target is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] by you and can't use hostile actions against you.</p>\n<p><strong>Failure</strong> As success, but the target must pay tribute a total of six times.</p>\n<p><strong>Critical Failure</strong> As failure, but the target must spend all its actions paying tribute, and they cannot take other actions until the tribute is fully paid.</p>"
         },
         "duration": {
           "sustained": false,
@@ -246,21 +238,16 @@
         "level": {
           "value": 9
         },
-        "location": {
-          "heightenedLevel": 9,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "overwhelming-presence",
         "target": {
           "value": "any number of creatures"
         },
@@ -282,26 +269,31 @@
             "visual"
           ]
         },
+        "slug": "overwhelming-presence",
+        "location": {
+          "heightenedLevel": 9,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.mWEHpvzZ2tIlnCxG"
-    },
-    {
-      "_id": "xSNWYeHdxXhPsx1C",
+      "_id": "mWEHpvzZ2tIlnCxG",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.mWEHpvzZ2tIlnCxG",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.ItZgGznUBhgWBwFG"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.fkDeKktdmbeplYRY"
       },
+      "sort": 400000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/telepathic-demand.webp",
       "name": "Telepathic Demand",
-      "sort": 500000,
       "system": {
         "area": null,
         "cost": {
@@ -316,7 +308,7 @@
           }
         },
         "description": {
-          "value": "<p>You send the target a message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer. Your message is insidious and has the effect of @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion}, with the message substituting for the spoken suggestion. On a successful save, the target is temporarily immune for 1 day, and on a critical success, the target is temporarily immune for 1 month. You can target a creature only if you have previously been in telepathic contact with it before, such as via the telepathy spell.</p>"
+          "value": "<p>You send the target a message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer. Your message is insidious and has the effect of a @UUID[Compendium.pf2e.spells-srd.Item.Suggestion] spell, with the message substituting for the spoken suggestion. On a successful save, the target is temporarily immune for 1 day, and on a critical success, the target is temporarily immune for 1 month. You can target a creature only if you've previously been in telepathic contact with it before, such as via the telepathy spell.</p>"
         },
         "duration": {
           "sustained": false,
@@ -325,21 +317,16 @@
         "level": {
           "value": 9
         },
-        "location": {
-          "heightenedLevel": 9,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core 2"
         },
         "range": {
           "value": "planetary"
         },
         "requirements": "",
         "rules": [],
-        "slug": "telepathic-demand",
         "target": {
           "value": "1 creature you've telepathically contacted before"
         },
@@ -361,26 +348,31 @@
             "mental"
           ]
         },
+        "slug": "telepathic-demand",
+        "location": {
+          "heightenedLevel": 9,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.xSNWYeHdxXhPsx1C"
-    },
-    {
-      "_id": "2nVIyRPqoV87mSQY",
+      "_id": "xSNWYeHdxXhPsx1C",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.xSNWYeHdxXhPsx1C",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.FmNDwqMEjeTEGPrY"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.ItZgGznUBhgWBwFG"
       },
+      "sort": 500000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/unfathomable-song.webp",
       "name": "Unfathomable Song",
-      "sort": 600000,
       "system": {
         "area": null,
         "cost": {
@@ -395,7 +387,7 @@
           }
         },
         "description": {
-          "value": "<p>Fleeting notes of a strange and unnatural song fill the air, overtaking the mind. Each target must attempt a Will save when you cast the spell, and again the first time you Sustain this Spell each round. A creature needs to attempt only one save against the song each round, and you have to keep the same targets when you Sustain the Spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected, can't be affected on subsequent rounds, and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected this round, but it can be affected on subsequent rounds.</p>\n<p><strong>Failure</strong> Roll 1d4 on the table below.</p>\n<p><strong>Critical Failure</strong> Roll 1d4+1 on the table below.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Result</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</td>\n</tr>\n<tr>\n<td>2</td>\n<td>The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round</td>\n</tr>\n<tr>\n<td>3</td>\n<td>The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} for 1 round</td>\n</tr>\n<tr>\n<td>4</td>\n<td>The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round</td>\n</tr>\n<tr>\n<td>5</td>\n<td>The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for an unlimited duration</td>\n</tr>\n</tbody>\n</table>"
+          "value": "<p>Fleeting notes of a strange and unnatural song fill the air, overtaking the mind. Each target must attempt a Will save when you cast the spell, and again the first time you Sustain this Spell each round. A creature needs to attempt only one save against the song each round, and you have to keep the same targets when you Sustain the Spell.</p><hr /><p><strong>Critical Success</strong> The target is unaffected, can't be affected on subsequent rounds, and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected this round, but it can be affected on subsequent rounds.</p>\n<p><strong>Failure</strong> Roll [[/r 1d4]] on the table below.</p>\n<p><strong>Critical Failure</strong> Roll [[/r 1d4+1]] on the table below.</p><table class=\"pf2e remaster\"><thead><tr><th>Result</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}</td></tr><tr><td>2</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 round</td></tr><tr><td>3</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 4} for 1 round</td></tr><tr><td>4</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round</td></tr><tr><td>5</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for an unlimited duration</td></tr></tbody></table>"
         },
         "duration": {
           "sustained": true,
@@ -404,21 +396,16 @@
         "level": {
           "value": 9
         },
-        "location": {
-          "heightenedLevel": 9,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "unfathomable-song",
         "target": {
           "value": "up to 5 creatures"
         },
@@ -440,26 +427,31 @@
             "mental"
           ]
         },
+        "slug": "unfathomable-song",
+        "location": {
+          "heightenedLevel": 9,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.2nVIyRPqoV87mSQY"
-    },
-    {
-      "_id": "heS02FhaKh5ty0q5",
+      "_id": "2nVIyRPqoV87mSQY",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.2nVIyRPqoV87mSQY",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.FmNDwqMEjeTEGPrY"
       },
+      "sort": 600000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/maze.webp",
-      "name": "Maze",
-      "sort": 700000,
+      "name": "Quandary",
       "system": {
         "area": null,
         "cost": {
@@ -469,7 +461,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You transport the target into an extradimensional maze of eldritch origin and trap it there. Once each turn, the target can spend 1 action to attempt a Survival check or Perception check against your spell DC to escape the maze. The possible outcomes are as follows. Teleportation magic doesn't help the creature escape unless the magic can transport across planes, such as plane shift. When the spell ends, either because the target escaped or the duration ran out, the target returns to the space it occupied when it was banished, or to the nearest space if the original is now filled.</p>\n<hr /><p><strong>Critical Success</strong> The target escapes and the spell ends.</p>\n<p><strong>Success</strong> The target is on the right path to the exit. If the target was already on the right path, it escapes the maze and the spell ends.</p>\n<p><strong>Failure</strong> The target makes no progress toward escape.</p>\n<p><strong>Critical Failure</strong> The target makes no progress toward escape, and if it was on the right path, it no longer is.</p>"
+          "value": "<p>You transport the target into an extraplanar puzzle room of mysterious origin, locking them there. Once each turn as a single action, the target can attempt an @Check[occultism] check, @Check[perception] check, or @Check[thievery] check against your spell DC to solve the puzzle. Teleportation effects can't carry the target outside the puzzle room unless they can also traverse the planes, such as @UUID[Compendium.pf2e.spells-srd.Item.Interplanar Teleport]. When the spell ends, the target returns to the space it occupied when it was banished, or to the nearest space if the original is now filled.</p><hr /><p><strong>Critical Success</strong> The target solves the puzzle and escapes.</p>\n<p><strong>Success</strong> The target is on the right path to the solution. If it was already on the right path, it solves the puzzle and escapes.</p>\n<p><strong>Failure</strong> The target makes no progress toward a solution.</p>\n<p><strong>Critical Failure</strong> The target makes no progress and, if it was on the right path, it no longer is.</p>"
         },
         "duration": {
           "sustained": true,
@@ -478,21 +470,16 @@
         "level": {
           "value": 8
         },
-        "location": {
-          "heightenedLevel": 8,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "maze",
         "target": {
           "value": "1 creature"
         },
@@ -512,26 +499,31 @@
             "teleportation"
           ]
         },
+        "slug": "quandary",
+        "location": {
+          "heightenedLevel": 8,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.heS02FhaKh5ty0q5"
-    },
-    {
-      "_id": "xJ95MQh2KmCTnuCk",
+      "_id": "heS02FhaKh5ty0q5",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.heS02FhaKh5ty0q5",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.uEyfLoFQsRKBRIcB"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7"
       },
+      "sort": 700000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/scintillating-pattern.webp",
-      "name": "Scintillating Pattern",
-      "sort": 800000,
+      "name": "Confusing Colors",
       "system": {
         "area": {
           "type": "burst",
@@ -549,7 +541,7 @@
           }
         },
         "description": {
-          "value": "<p>A field of cascading, ever-changing colors manifests in the air. Creatures are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} while inside the pattern, as are those within 20 feet of the pattern's area. A creature must attempt a Will save if it is inside the pattern when you cast it, enters the pattern, ends its turn within the pattern, or uses a Seek or Interact action on the pattern. A creature currently affected by the pattern doesn't need to attempt new saves.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for [[/r 1d4 #rounds]]{1d4 rounds}. After the Stunned condition ends, the creature is Confused for the remaining duration of the spell.</p>"
+          "value": "<p>A cloud of cascading, ever-changing colors manifests in the air. Creatures are @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] while inside the cloud, as are those within 20 feet of the cloud's area. A creature must attempt a Will save if it is inside the cloud when you cast it, enters the cloud, ends its turn within the cloud, or uses a @UUID[Compendium.pf2e.actionspf2e.Item.Seek] or Interact action on the cloud. A creature currently affected by the cloud doesn't need to attempt new saves.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for [[/r 1d4 #rounds]]{1d4 rounds}. After the stunned condition ends, the creature is confused for the remaining duration of the spell.</p>"
         },
         "duration": {
           "sustained": true,
@@ -558,21 +550,16 @@
         "level": {
           "value": 8
         },
-        "location": {
-          "heightenedLevel": 8,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core 2"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "scintillating-pattern",
         "target": {
           "value": ""
         },
@@ -589,8 +576,14 @@
             "illusion",
             "incapacitation",
             "manipulate",
+            "subtle",
             "visual"
           ]
+        },
+        "slug": "confusing-colors",
+        "location": {
+          "heightenedLevel": 8,
+          "value": "n4uBILCtoQcDwVBY"
         },
         "_migration": {
           "version": 0.959,
@@ -598,20 +591,20 @@
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.xJ95MQh2KmCTnuCk"
-    },
-    {
-      "_id": "4sKmsNRrcotDHQEp",
+      "_id": "xJ95MQh2KmCTnuCk",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.xJ95MQh2KmCTnuCk",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.uEyfLoFQsRKBRIcB"
       },
+      "sort": 800000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/uncontrollable-dance.webp",
       "name": "Uncontrollable Dance",
-      "sort": 900000,
       "system": {
         "area": null,
         "cost": {
@@ -626,7 +619,7 @@
           }
         },
         "description": {
-          "value": "<p>The target is overcome with an all-consuming urge to dance. For the duration of the spell, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and can't use reactions. While affected, the creature can't use actions with the move trait except to dance, using the Stride action to move up to half its Speed.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The spell's duration is 3 rounds, and the target must spend at least 1 action each turn dancing.</p>\n<p><strong>Failure</strong> The spell's duration is 1 minute, and the target must spend at least 2 actions each turn dancing.</p>\n<p><strong>Critical Failure</strong> The spell's duration is 1 minute, and the target must spend all its actions each turn dancing.</p>"
+          "value": "<p>The target is overcome with an all-consuming urge to dance. For the duration of the spell, the target is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] and can't use reactions. While affected, the creature can't use move actions except to dance, using the Stride action to move up to half its Speed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The spell's duration is 3 rounds, and the target must spend at least 1 action each turn dancing.</p>\n<p><strong>Failure</strong> The spell's duration is 1 minute, and the target must spend at least 2 actions each turn dancing.</p>\n<p><strong>Critical Failure</strong> The spell's duration is 1 minute, and the target must spend all its actions each turn dancing.</p>"
         },
         "duration": {
           "sustained": false,
@@ -635,21 +628,16 @@
         "level": {
           "value": 8
         },
-        "location": {
-          "heightenedLevel": 8,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "touch"
         },
         "requirements": "",
         "rules": [],
-        "slug": "uncontrollable-dance",
         "target": {
           "value": "1 creature"
         },
@@ -669,14 +657,27 @@
             "mental"
           ]
         },
+        "slug": "uncontrollable-dance",
+        "location": {
+          "heightenedLevel": 8,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.4sKmsNRrcotDHQEp"
+      "_id": "4sKmsNRrcotDHQEp",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.4sKmsNRrcotDHQEp",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB"
+      },
+      "sort": 900000,
+      "effects": []
     },
     {
       "_id": "LsWgPr5t1CZAXkcC",
@@ -770,16 +771,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.LsWgPr5t1CZAXkcC"
     },
     {
-      "_id": "49EBa5OQQvpJaMAV",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG"
-      },
       "img": "systems/pf2e/icons/spells/visions-of-danger.webp",
       "name": "Visions of Danger",
-      "sort": 1100000,
       "system": {
         "area": {
           "type": "burst",
@@ -791,6 +784,7 @@
         "counteraction": false,
         "damage": {
           "0": {
+            "applyMod": false,
             "category": null,
             "formula": "8d8",
             "kinds": [
@@ -807,13 +801,14 @@
           }
         },
         "description": {
-          "value": "<p>An illusion of horrific creatures fills the spell's area. The creatures look like Tiny swarming monsters with a specific appearance of your choice, such as Hellish flies or animated saw blades. The burst deals 8d8 mental damage (basic Will save) to each creature that's inside the burst when it's created, enters the burst, or starts its turn inside the burst. A creature that critically succeeds at its will save can immediately attempt to disbelieve the illusion. A creature that tries to Interact with the monsters or observes one with a Seek action can attempt to disbelieve the illusion. Creatures that disbelieve the illusion take no damage from the illusion thereafter.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The mental damage increases by 1d8.</p>"
+          "value": "<p>An illusion of horrific creatures fills the spell's area. The creatures look like Tiny swarming monsters with a specific appearance of your choice, such as fiendish flies or animated saw blades. The burst deals 8d8 mental damage with a basic Will save to each creature that's inside the burst when it's created, enters the burst, or starts its turn inside the burst. A creature that critically succeeds at its Will save can immediately attempt to disbelieve the illusion. A creature that tries to Interact with the monsters or observes one with a @UUID[Compendium.pf2e.actionspf2e.Item.Seek] action can attempt to disbelieve the illusion. Creatures that disbelieve the illusion take no damage from the illusion thereafter.</p><hr /><p><strong>Heightened (+1)</strong> The mental damage increases by 1d8</p>"
         },
         "duration": {
           "sustained": false,
           "value": "1 minute"
         },
         "heightening": {
+          "area": 0,
           "damage": {
             "0": "1d8"
           },
@@ -823,21 +818,16 @@
         "level": {
           "value": 7
         },
-        "location": {
-          "heightenedLevel": 7,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core 2"
         },
         "range": {
           "value": "500 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "visions-of-danger",
         "target": {
           "value": ""
         },
@@ -857,26 +847,31 @@
             "visual"
           ]
         },
+        "slug": "visions-of-danger",
+        "location": {
+          "heightenedLevel": 7,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.49EBa5OQQvpJaMAV"
-    },
-    {
-      "_id": "F1sApBiCWsEuYfNb",
+      "_id": "49EBa5OQQvpJaMAV",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.49EBa5OQQvpJaMAV",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG"
       },
+      "sort": 1100000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/warp-mind.webp",
       "name": "Warp Mind",
-      "sort": 1200000,
       "system": {
         "area": null,
         "cost": {
@@ -891,7 +886,7 @@
           }
         },
         "description": {
-          "value": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so dispel magic and other effects that counteract spells can't counteract them. However, alter reality, miracle, primal phenomenon, restoration, or wish can still counteract the effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target spends the first action on its next turn with the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} condition.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Confused permanently.</p>"
+          "value": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] and other effects that counteract spells can't counteract them. However, @UUID[Compendium.pf2e.spells-srd.Item.Wish] rituals and abilities that can remove non-magical effects can still counteract the effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target spends the first action on its next turn with the @UUID[Compendium.pf2e.conditionitems.Item.Confused] condition.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Confused permanently.</p>"
         },
         "duration": {
           "sustained": false,
@@ -900,21 +895,16 @@
         "level": {
           "value": 7
         },
-        "location": {
-          "heightenedLevel": 7,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "warp-mind",
         "target": {
           "value": "1 creature"
         },
@@ -935,26 +925,31 @@
             "mental"
           ]
         },
+        "slug": "warp-mind",
+        "location": {
+          "heightenedLevel": 7,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.F1sApBiCWsEuYfNb"
-    },
-    {
-      "_id": "SM1uJWtx419dPSce",
+      "_id": "F1sApBiCWsEuYfNb",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.F1sApBiCWsEuYfNb",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs"
       },
+      "sort": 1200000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/feeblemind.webp",
-      "name": "Feeblemind",
-      "sort": 1300000,
+      "name": "Never Mind",
       "system": {
         "area": null,
         "cost": {
@@ -969,7 +964,7 @@
           }
         },
         "description": {
-          "value": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through remove curse or another effect that targets curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as -5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>"
+          "value": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 4} with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>"
         },
         "duration": {
           "sustained": false,
@@ -978,21 +973,16 @@
         "level": {
           "value": 6
         },
-        "location": {
-          "heightenedLevel": 6,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "feeblemind",
         "target": {
           "value": "1 creature"
         },
@@ -1013,14 +1003,27 @@
             "mental"
           ]
         },
+        "slug": "never-mind",
+        "location": {
+          "heightenedLevel": 6,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.SM1uJWtx419dPSce"
+      "_id": "SM1uJWtx419dPSce",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.SM1uJWtx419dPSce",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD"
+      },
+      "sort": 1300000,
+      "effects": []
     },
     {
       "_id": "wnjm2bwpFnUkhkH1",
@@ -1117,16 +1120,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.wnjm2bwpFnUkhkH1"
     },
     {
-      "_id": "xPw1gXrFokTqGtfi",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki"
-      },
       "img": "systems/pf2e/icons/spells/true-seeing.webp",
-      "name": "True Seeing",
-      "sort": 1500000,
+      "name": "Truesight",
       "system": {
         "area": null,
         "cost": {
@@ -1136,7 +1131,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>"
+          "value": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion, morph or polymorph effect in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>"
         },
         "duration": {
           "sustained": false,
@@ -1145,21 +1140,16 @@
         "level": {
           "value": 6
         },
-        "location": {
-          "heightenedLevel": 6,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "true-seeing",
         "target": {
           "value": ""
         },
@@ -1180,14 +1170,27 @@
             "revelation"
           ]
         },
+        "slug": "truesight",
+        "location": {
+          "heightenedLevel": 6,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.xPw1gXrFokTqGtfi"
+      "_id": "xPw1gXrFokTqGtfi",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.xPw1gXrFokTqGtfi",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki"
+      },
+      "sort": 1500000,
+      "effects": []
     },
     {
       "_id": "tz6R9Wdc8MgaNUd3",
@@ -1281,16 +1284,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.tz6R9Wdc8MgaNUd3"
     },
     {
-      "_id": "zd9tXYxgRRy820gg",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN"
-      },
       "img": "icons/creatures/slimes/slime-face-teeth-purple.webp",
-      "name": "Crushing Despair",
-      "sort": 1700000,
+      "name": "Wave of Despair",
       "system": {
         "area": {
           "type": "cone",
@@ -1308,7 +1303,7 @@
           }
         },
         "description": {
-          "value": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>"
+          "value": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically slowed 1 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1318,8 +1313,8 @@
           "levels": {
             "7": {
               "area": {
-                "areaType": "cone",
-                "value": "60"
+                "type": "cone",
+                "value": 60
               }
             }
           },
@@ -1328,21 +1323,16 @@
         "level": {
           "value": 5
         },
-        "location": {
-          "heightenedLevel": 5,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "crushing-despair",
         "target": {
           "value": ""
         },
@@ -1362,14 +1352,27 @@
             "mental"
           ]
         },
+        "slug": "wave-of-despair",
+        "location": {
+          "heightenedLevel": 5,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.zd9tXYxgRRy820gg"
+      "_id": "zd9tXYxgRRy820gg",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.zd9tXYxgRRy820gg",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN"
+      },
+      "sort": 1700000,
+      "effects": []
     },
     {
       "_id": "m8Kn2eETKFc8W93s",
@@ -1457,16 +1460,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.m8Kn2eETKFc8W93s"
     },
     {
-      "_id": "BUQERYNEYsR8xXWL",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
-      },
       "img": "systems/pf2e/icons/spells/tongues.webp",
-      "name": "Tongues",
-      "sort": 1900000,
+      "name": "Truespeech",
       "system": {
         "area": null,
         "cost": {
@@ -1485,21 +1480,16 @@
         "level": {
           "value": 5
         },
-        "location": {
-          "heightenedLevel": 5,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "touch"
         },
         "requirements": "",
         "rules": [],
-        "slug": "tongues",
         "target": {
           "value": "1 creature"
         },
@@ -1518,26 +1508,31 @@
             "manipulate"
           ]
         },
+        "slug": "truespeech",
+        "location": {
+          "heightenedLevel": 5,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.BUQERYNEYsR8xXWL"
-    },
-    {
-      "_id": "YyyjQ87YvyySslEp",
+      "_id": "BUQERYNEYsR8xXWL",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.BUQERYNEYsR8xXWL",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.ddKBoCjmSyPSHcws"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
       },
+      "sort": 1900000,
+      "effects": []
+    },
+    {
       "img": "icons/creatures/abilities/mouth-teeth-crooked-blue.webp",
       "name": "Unusual Anatomy",
-      "sort": 2000000,
       "system": {
         "area": null,
         "cost": {
@@ -1546,6 +1541,7 @@
         "counteraction": false,
         "damage": {
           "0": {
+            "applyMod": false,
             "category": null,
             "formula": "2d6",
             "kinds": [
@@ -1557,7 +1553,7 @@
         },
         "defense": null,
         "description": {
-          "value": "<p>You transform your flesh and organs into a bizarre amalgam of glistening skin, rough scales, tufts of hair, and tumorous protuberances. This has three effects:</p>\n<ul>\n<li>You gain resistance 10 to precision damage and resistance 10 to extra damage from critical hits. If the resistance is greater than the extra damage, it reduces the extra damage to 0 but doesn't reduce the attack's normal damage.</li>\n<li>You gain darkvision.</li>\n<li>Acid oozes from your skin. Any creature that hits you with an unarmed attack or with a non-reach melee weapon takes 2d6 acid damage.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistances increase by 5, and the acid damage increases by 1d6.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.LMzFBnOEPzDGzHg4]{Spell Effect: Unusual Anatomy}</p>"
+          "value": "<p>You transform your flesh and organs into a bizarre amalgam of glistening skin, rough scales, tufts of hair, and tumorous protuberances. This has three effects:</p>\n<ul>\n<li>You gain resistance 10 to precision damage and resistance 10 to extra damage from critical hits. If the resistance is greater than the extra damage, it reduces the extra damage to 0 but doesn't reduce the attack's normal damage.</li>\n<li>You gain darkvision.</li>\n<li>Acid oozes from your skin. Any creature that hits you with an unarmed attack or with a non-reach melee weapon takes 2d6 acid damage.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistances increase by 5, and the acid damage increases by 1d6.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Unusual Anatomy]</p>"
         },
         "duration": {
           "sustained": false,
@@ -1567,26 +1563,22 @@
           "damage": {
             "0": "1d6"
           },
-          "interval": 1,
+          "interval": 2,
           "type": "interval"
         },
         "level": {
           "value": 5
         },
-        "location": {
-          "value": "mGzWQjNPCtlz97Cn"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core 2"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "unusual-anatomy",
         "target": {
           "value": ""
         },
@@ -1603,26 +1595,30 @@
             "sorcerer"
           ]
         },
+        "slug": "unusual-anatomy",
+        "location": {
+          "value": "mGzWQjNPCtlz97Cn"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.YyyjQ87YvyySslEp"
-    },
-    {
-      "_id": "bdQTZ8TxfHXWH5S1",
+      "_id": "YyyjQ87YvyySslEp",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.YyyjQ87YvyySslEp",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.ddKBoCjmSyPSHcws"
       },
+      "sort": 2000000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/confusion.webp",
       "name": "Confusion",
-      "sort": 2100000,
       "system": {
         "area": null,
         "cost": {
@@ -1637,7 +1633,7 @@
           }
         },
         "description": {
-          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1656,60 +1652,60 @@
         "level": {
           "value": 4
         },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+          "value": "1 creature"
+        },
+        "time": {
+          "value": "2"
+        },
+        "traits": {
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult"
+          ],
+          "value": [
+            "concentrate",
+            "emotion",
+            "manipulate",
+            "mental"
+          ]
+        },
+        "slug": "confusion",
         "location": {
           "heightenedLevel": 6,
           "value": "n4uBILCtoQcDwVBY"
         },
-        "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
-        },
-        "range": {
-          "value": "30 feet"
-        },
-        "requirements": "",
-        "rules": [],
-        "slug": "confusion",
-        "target": {
-          "value": "1 creature"
-        },
-        "time": {
-          "value": "2"
-        },
-        "traits": {
-          "rarity": "common",
-          "traditions": [
-            "arcane",
-            "occult"
-          ],
-          "value": [
-            "concentrate",
-            "emotion",
-            "manipulate",
-            "mental"
-          ]
-        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.bdQTZ8TxfHXWH5S1"
-    },
-    {
-      "_id": "XuMuDAOhC1NEiMGa",
+      "_id": "bdQTZ8TxfHXWH5S1",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.bdQTZ8TxfHXWH5S1",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY"
       },
+      "sort": 2100000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/confusion.webp",
       "name": "Confusion",
-      "sort": 2200000,
       "system": {
         "area": null,
         "cost": {
@@ -1724,7 +1720,7 @@
           }
         },
         "description": {
-          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1743,21 +1739,16 @@
         "level": {
           "value": 4
         },
-        "location": {
-          "heightenedLevel": 4,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "confusion",
         "target": {
           "value": "1 creature"
         },
@@ -1777,26 +1768,31 @@
             "mental"
           ]
         },
+        "slug": "confusion",
+        "location": {
+          "heightenedLevel": 4,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.XuMuDAOhC1NEiMGa"
-    },
-    {
-      "_id": "hXveNgRe7R3zhe8D",
+      "_id": "XuMuDAOhC1NEiMGa",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.XuMuDAOhC1NEiMGa",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY"
       },
+      "sort": 2200000,
+      "effects": []
+    },
+    {
       "img": "icons/creatures/mammals/bats-movement-flying-black.webp",
       "name": "Fly",
-      "sort": 2300000,
       "system": {
         "area": null,
         "cost": {
@@ -1806,7 +1802,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>"
+          "value": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Fly]</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1815,21 +1811,16 @@
         "level": {
           "value": 4
         },
-        "location": {
-          "heightenedLevel": 4,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "touch"
         },
         "requirements": "",
         "rules": [],
-        "slug": "fly",
         "target": {
           "value": "1 creature"
         },
@@ -1840,6 +1831,7 @@
           "rarity": "common",
           "traditions": [
             "arcane",
+            "divine",
             "occult",
             "primal"
           ],
@@ -1848,26 +1840,31 @@
             "manipulate"
           ]
         },
+        "slug": "fly",
+        "location": {
+          "heightenedLevel": 4,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.hXveNgRe7R3zhe8D"
-    },
-    {
-      "_id": "hBqyOP9KWdfuofb8",
+      "_id": "hXveNgRe7R3zhe8D",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.hXveNgRe7R3zhe8D",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.pkcOby5prOausy1k"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8"
       },
+      "sort": 2300000,
+      "effects": []
+    },
+    {
       "img": "icons/sundries/gaming/playing-cards-black.webp",
       "name": "Read Omens",
-      "sort": 2400000,
       "system": {
         "area": null,
         "cost": {
@@ -1886,21 +1883,16 @@
         "level": {
           "value": 4
         },
-        "location": {
-          "heightenedLevel": 4,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "read-omens",
         "target": {
           "value": ""
         },
@@ -1919,26 +1911,31 @@
             "prediction"
           ]
         },
+        "slug": "read-omens",
+        "location": {
+          "heightenedLevel": 4,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.hBqyOP9KWdfuofb8"
-    },
-    {
-      "_id": "MK7POOrwQieMsBuE",
+      "_id": "hBqyOP9KWdfuofb8",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.hBqyOP9KWdfuofb8",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.HqTI6wRrck1YXp3F"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.pkcOby5prOausy1k"
       },
+      "sort": 2400000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/telepathy.webp",
       "name": "Telepathy",
-      "sort": 2500000,
       "system": {
         "area": null,
         "cost": {
@@ -1948,7 +1945,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You can communicate telepathically with creatures within 30 feet. Once you establish a connection by communicating with a creature, the communication is two-way. You can communicate only with creatures that share a language with you.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Telepathy loses the linguistic trait. You can communicate telepathically with creatures using shared mental imagery even if you don't share a language.</p>"
+          "value": "<p>You can communicate telepathically with creatures within 30 feet. Once you establish a connection by communicating with a creature, the communication is two-way. You can communicate only with creatures that share a language with you.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can communicate telepathically with creatures using shared mental imagery even if you don't share a language; <em>telepathy</em> loses the linguistic trait.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1957,21 +1954,16 @@
         "level": {
           "value": 4
         },
-        "location": {
-          "heightenedLevel": 4,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "telepathy",
         "target": {
           "value": ""
         },
@@ -1991,14 +1983,27 @@
             "mental"
           ]
         },
+        "slug": "telepathy",
+        "location": {
+          "heightenedLevel": 4,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.MK7POOrwQieMsBuE"
+      "_id": "MK7POOrwQieMsBuE",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.MK7POOrwQieMsBuE",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.HqTI6wRrck1YXp3F"
+      },
+      "sort": 2500000,
+      "effects": []
     },
     {
       "_id": "DRsGGQsXYBjEg28E",
@@ -2120,16 +2125,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.DRsGGQsXYBjEg28E"
     },
     {
-      "_id": "xmMJz5KzHFq5Jenp",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS"
-      },
       "img": "systems/pf2e/icons/spells/enthrall.webp",
       "name": "Enthrall",
-      "sort": 2700000,
       "system": {
         "area": null,
         "cost": {
@@ -2144,7 +2141,7 @@
           }
         },
         "description": {
-          "value": "<p>Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.</p>\n<p>Each creature that comes within range has to attempt a save when you Sustain the Spell. If you're speaking, enthrall gains the linguistic trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and notices that you tried to use magic.</p>\n<p><strong>Success</strong> The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer Fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.</p>\n<p><strong>Critical Failure</strong> As failure, but the target can't attempt a save to end the fascination if it disagrees with you.</p>"
+          "value": "<p>Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.</p>\n<p>Each creature that comes within range has to attempt a save when you Sustain the spell. If you're speaking, enthrall gains the linguistic trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and notices that you tried to use magic.</p>\n<p><strong>Success</strong> The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.</p>\n<p><strong>Critical Failure</strong> As failure, but the target can't attempt a save to end the fascination if it disagrees with you.</p>"
         },
         "duration": {
           "sustained": true,
@@ -2153,21 +2150,16 @@
         "level": {
           "value": 3
         },
-        "location": {
-          "heightenedLevel": 3,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "enthrall",
         "target": {
           "value": "all creatures in range"
         },
@@ -2187,26 +2179,31 @@
             "manipulate"
           ]
         },
+        "slug": "enthrall",
+        "location": {
+          "heightenedLevel": 3,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.xmMJz5KzHFq5Jenp"
-    },
-    {
-      "_id": "6U9MzTKlhrZhEOb8",
+      "_id": "xmMJz5KzHFq5Jenp",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.xmMJz5KzHFq5Jenp",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.ZYoC630tNGutgbE0"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS"
       },
+      "sort": 2700000,
+      "effects": []
+    },
+    {
       "img": "icons/magic/light/orb-lightbulb-gray.webp",
       "name": "Hypercognition",
-      "sort": 2800000,
       "system": {
         "area": null,
         "cost": {
@@ -2225,21 +2222,16 @@
         "level": {
           "value": 3
         },
-        "location": {
-          "heightenedLevel": 3,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "hypercognition",
         "target": {
           "value": ""
         },
@@ -2255,160 +2247,74 @@
             "concentrate"
           ]
         },
-        "_migration": {
-          "version": 0.959,
-          "previous": null
-        }
-      },
-      "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.6U9MzTKlhrZhEOb8"
-    },
-    {
-      "_id": "WrubUjVD68jjmsdM",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3"
-      },
-      "img": "icons/magic/time/hourglass-tilted-gray.webp",
-      "name": "Slow",
-      "sort": 2900000,
-      "system": {
-        "area": null,
-        "cost": {
-          "value": ""
-        },
-        "counteraction": false,
-        "damage": {},
-        "defense": {
-          "save": {
-            "basic": false,
-            "statistic": "fortitude"
-          }
-        },
-        "description": {
-          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
-        },
-        "duration": {
-          "sustained": false,
-          "value": "1 minute"
-        },
-        "heightening": {
-          "levels": {
-            "6": {
-              "target": {
-                "value": "10 creatures"
-              }
-            }
-          },
-          "type": "fixed"
-        },
-        "level": {
-          "value": 3
-        },
-        "location": {
-          "heightenedLevel": 6,
-          "value": "n4uBILCtoQcDwVBY"
-        },
-        "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
-        },
-        "range": {
-          "value": "30 feet"
-        },
-        "requirements": "",
-        "rules": [],
-        "slug": "slow",
-        "target": {
-          "value": "1 creature"
-        },
-        "time": {
-          "value": "2"
-        },
-        "traits": {
-          "rarity": "common",
-          "traditions": [
-            "arcane",
-            "occult",
-            "primal"
-          ],
-          "value": [
-            "concentrate",
-            "manipulate"
-          ]
-        },
-        "_migration": {
-          "version": 0.959,
-          "previous": null
-        }
-      },
-      "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.WrubUjVD68jjmsdM"
-    },
-    {
-      "_id": "NiKyFKpJ9Opjul5P",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3"
-      },
-      "img": "icons/magic/time/hourglass-tilted-gray.webp",
-      "name": "Slow",
-      "sort": 3000000,
-      "system": {
-        "area": null,
-        "cost": {
-          "value": ""
-        },
-        "counteraction": false,
-        "damage": {},
-        "defense": {
-          "save": {
-            "basic": false,
-            "statistic": "fortitude"
-          }
-        },
-        "description": {
-          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
-        },
-        "duration": {
-          "sustained": false,
-          "value": "1 minute"
-        },
-        "heightening": {
-          "levels": {
-            "6": {
-              "target": {
-                "value": "10 creatures"
-              }
-            }
-          },
-          "type": "fixed"
-        },
-        "level": {
-          "value": 3
-        },
+        "slug": "hypercognition",
         "location": {
           "heightenedLevel": 3,
           "value": "n4uBILCtoQcDwVBY"
         },
+        "_migration": {
+          "version": 0.959,
+          "previous": null
+        }
+      },
+      "type": "spell",
+      "_id": "6U9MzTKlhrZhEOb8",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.6U9MzTKlhrZhEOb8",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.ZYoC630tNGutgbE0"
+      },
+      "sort": 2800000,
+      "effects": []
+    },
+    {
+      "img": "icons/magic/time/hourglass-tilted-gray.webp",
+      "name": "Slow",
+      "system": {
+        "area": null,
+        "cost": {
+          "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "fortitude"
+          }
+        },
+        "description": {
+          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
+        },
+        "duration": {
+          "sustained": false,
+          "value": "1 minute"
+        },
+        "heightening": {
+          "levels": {
+            "6": {
+              "target": {
+                "value": "10 creatures"
+              }
+            }
+          },
+          "type": "fixed"
+        },
+        "level": {
+          "value": 3
+        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "slow",
         "target": {
           "value": "1 creature"
         },
@@ -2427,26 +2333,117 @@
             "manipulate"
           ]
         },
+        "slug": "slow",
+        "location": {
+          "heightenedLevel": 6,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.NiKyFKpJ9Opjul5P"
-    },
-    {
-      "_id": "0gAW4MVf6r1mjgQo",
+      "_id": "WrubUjVD68jjmsdM",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.WrubUjVD68jjmsdM",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3"
       },
+      "sort": 2900000,
+      "effects": []
+    },
+    {
+      "img": "icons/magic/time/hourglass-tilted-gray.webp",
+      "name": "Slow",
+      "system": {
+        "area": null,
+        "cost": {
+          "value": ""
+        },
+        "counteraction": false,
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "fortitude"
+          }
+        },
+        "description": {
+          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
+        },
+        "duration": {
+          "sustained": false,
+          "value": "1 minute"
+        },
+        "heightening": {
+          "levels": {
+            "6": {
+              "target": {
+                "value": "10 creatures"
+              }
+            }
+          },
+          "type": "fixed"
+        },
+        "level": {
+          "value": 3
+        },
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+          "value": "1 creature"
+        },
+        "time": {
+          "value": "2"
+        },
+        "traits": {
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+          ],
+          "value": [
+            "concentrate",
+            "manipulate"
+          ]
+        },
+        "slug": "slow",
+        "location": {
+          "heightenedLevel": 3,
+          "value": "n4uBILCtoQcDwVBY"
+        },
+        "_migration": {
+          "version": 0.959,
+          "previous": null
+        }
+      },
+      "type": "spell",
+      "_id": "NiKyFKpJ9Opjul5P",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.NiKyFKpJ9Opjul5P",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3"
+      },
+      "sort": 3000000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/vampiric-touch.webp",
-      "name": "Vampiric Touch",
-      "sort": 3100000,
+      "name": "Vampiric Feast",
       "system": {
         "area": null,
         "cost": {
@@ -2455,6 +2452,7 @@
         "counteraction": false,
         "damage": {
           "0": {
+            "applyMod": false,
             "category": null,
             "formula": "6d6",
             "kinds": [
@@ -2487,21 +2485,16 @@
         "level": {
           "value": 3
         },
-        "location": {
-          "heightenedLevel": 3,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "touch"
         },
         "requirements": "",
         "rules": [],
-        "slug": "vampiric-touch",
         "target": {
           "value": "1 living creature"
         },
@@ -2522,14 +2515,27 @@
             "void"
           ]
         },
+        "slug": "vampiric-feast",
+        "location": {
+          "heightenedLevel": 3,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.0gAW4MVf6r1mjgQo"
+      "_id": "0gAW4MVf6r1mjgQo",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.0gAW4MVf6r1mjgQo",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE"
+      },
+      "sort": 3100000,
+      "effects": []
     },
     {
       "_id": "vQGnmyDaJKZvWUZR",
@@ -2608,16 +2614,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.vQGnmyDaJKZvWUZR"
     },
     {
-      "_id": "M2DCNsHSKEV01t4D",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv"
-      },
       "img": "systems/pf2e/icons/spells/hideous-laughter.webp",
-      "name": "Hideous Laughter",
-      "sort": 3300000,
+      "name": "Laughing Fit",
       "system": {
         "area": null,
         "cost": {
@@ -2632,7 +2630,7 @@
           }
         },
         "description": {
-          "value": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is plagued with uncontrollable laughter. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and can't use actions or reactions for 1 round. It then suffers the failure effects.</p>"
+          "value": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is plagued with uncontrollable laughter. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] and can't use actions or reactions for 1 round. It then takes the effects of a failure.</p>"
         },
         "duration": {
           "sustained": true,
@@ -2641,21 +2639,16 @@
         "level": {
           "value": 2
         },
-        "location": {
-          "heightenedLevel": 2,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "hideous-laughter",
         "target": {
           "value": "1 living creature"
         },
@@ -2675,26 +2668,31 @@
             "mental"
           ]
         },
+        "slug": "laughing-fit",
+        "location": {
+          "heightenedLevel": 2,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.M2DCNsHSKEV01t4D"
-    },
-    {
-      "_id": "U0IzrHK5Azu0DpIr",
+      "_id": "M2DCNsHSKEV01t4D",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.M2DCNsHSKEV01t4D",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv"
       },
+      "sort": 3300000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/see-invisibility.webp",
-      "name": "See Invisibility",
-      "sort": 3400000,
+      "name": "See the Unseen",
       "system": {
         "area": null,
         "cost": {
@@ -2704,7 +2702,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You can see @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures and objects. They appear to you as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Spell Effect: See the Unseen}</p>"
+          "value": "<p>Your gaze pierces through illusions and finds @UUID[Compendium.pf2e.conditionitems.Item.Invisible] creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them @UUID[Compendium.pf2e.conditionitems.Item.Concealed] and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: See the Unseen]</p>"
         },
         "duration": {
           "sustained": false,
@@ -2713,21 +2711,16 @@
         "level": {
           "value": 2
         },
-        "location": {
-          "heightenedLevel": 2,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "see-invisibility",
         "target": {
           "value": ""
         },
@@ -2747,26 +2740,31 @@
             "revelation"
           ]
         },
+        "slug": "see-the-unseen",
+        "location": {
+          "heightenedLevel": 2,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.U0IzrHK5Azu0DpIr"
-    },
-    {
-      "_id": "2cYhUifQCncyasg9",
+      "_id": "U0IzrHK5Azu0DpIr",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.U0IzrHK5Azu0DpIr",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
       },
-      "img": "icons/magic/light/hand-sparks-smoke-teal.webp",
-      "name": "Touch of Idiocy",
-      "sort": 3500000,
+      "sort": 3400000,
+      "effects": []
+    },
+    {
+      "img": "systems/pf2e/icons/spells/feeblemind.webp",
+      "name": "Stupefy",
       "system": {
         "area": null,
         "cost": {
@@ -2781,32 +2779,27 @@
           }
         },
         "description": {
-          "value": "<p>You dull the target's mind; the target must attempt a Will save.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}.</p>"
+          "value": "<p>You dull the target's mind, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 3} for 1 minute.</p>"
         },
         "duration": {
           "sustained": false,
-          "value": "1 minute"
+          "value": "varies"
         },
         "level": {
           "value": 2
         },
-        "location": {
-          "heightenedLevel": 2,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
-          "value": "touch"
+          "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "touch-of-idiocy",
         "target": {
-          "value": "1 living creature"
+          "value": "1 creature"
         },
         "time": {
           "value": "2"
@@ -2823,26 +2816,31 @@
             "mental"
           ]
         },
+        "slug": "stupefy",
+        "location": {
+          "heightenedLevel": 2,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.2cYhUifQCncyasg9"
-    },
-    {
-      "_id": "MZNfcmcN7DGt7G0x",
+      "_id": "2cYhUifQCncyasg9",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.2cYhUifQCncyasg9",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h"
       },
+      "sort": 3500000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/chill-touch.webp",
-      "name": "Chill Touch",
-      "sort": 3600000,
+      "name": "Void Warp",
       "system": {
         "area": null,
         "cost": {
@@ -2851,9 +2849,9 @@
         "counteraction": false,
         "damage": {
           "0": {
-            "applyMod": true,
+            "applyMod": false,
             "category": null,
-            "formula": "1d4",
+            "formula": "2d4",
             "kinds": [
               "damage"
             ],
@@ -2868,7 +2866,7 @@
           }
         },
         "description": {
-          "value": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round on a failed Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d4.</p>"
+          "value": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2884,22 +2882,18 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
-          "value": "touch"
+          "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "chill-touch",
         "target": {
-          "value": "1 living or undead creature"
+          "value": "1 living creature"
         },
         "time": {
           "value": "2"
@@ -2918,26 +2912,30 @@
             "void"
           ]
         },
+        "slug": "void-warp",
+        "location": {
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.MZNfcmcN7DGt7G0x"
-    },
-    {
-      "_id": "6wBbM8iV8gUN6gxv",
+      "_id": "MZNfcmcN7DGt7G0x",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.MZNfcmcN7DGt7G0x",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
       },
+      "sort": 3600000,
+      "effects": []
+    },
+    {
       "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
-      "name": "Color Spray",
-      "sort": 3700000,
+      "name": "Dizzying Colors",
       "system": {
         "area": {
           "type": "cone",
@@ -2955,7 +2953,7 @@
           }
         },
         "description": {
-          "value": "<p>Swirling colors affect viewers based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, and Dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned for 1 round and Blinded for 1 minute.</p>"
+          "value": "<p>You unleash a swirling multitude of colors that overwhelms creatures based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}, @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round, and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for 1 round and blinded for 1 minute.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2964,21 +2962,16 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "heightenedLevel": 1,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "color-spray",
         "target": {
           "value": ""
         },
@@ -2999,26 +2992,31 @@
             "visual"
           ]
         },
+        "slug": "dizzying-colors",
+        "location": {
+          "heightenedLevel": 1,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.6wBbM8iV8gUN6gxv"
-    },
-    {
-      "_id": "pP19GmMTWJ4BbmAW",
+      "_id": "6wBbM8iV8gUN6gxv",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.6wBbM8iV8gUN6gxv",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kl2q6JvBZwed4B6v"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl"
       },
-      "img": "systems/pf2e/icons/spells/dancing-lights.webp",
-      "name": "Dancing Lights",
-      "sort": 3800000,
+      "sort": 3700000,
+      "effects": []
+    },
+    {
+      "img": "systems/pf2e/icons/spells/light.webp",
+      "name": "Light",
       "system": {
         "area": null,
         "cost": {
@@ -3028,29 +3026,25 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>"
+          "value": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Light]</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>"
         },
         "duration": {
-          "sustained": true,
-          "value": ""
+          "sustained": false,
+          "value": "until your next daily preparations"
         },
         "level": {
           "value": 1
         },
-        "location": {
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "dancing-lights",
         "target": {
           "value": ""
         },
@@ -3061,6 +3055,7 @@
           "rarity": "common",
           "traditions": [
             "arcane",
+            "divine",
             "occult",
             "primal"
           ],
@@ -3071,26 +3066,30 @@
             "manipulate"
           ]
         },
+        "slug": "light",
+        "location": {
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.pP19GmMTWJ4BbmAW"
-    },
-    {
-      "_id": "fCaL1fy3L1pHWtZ8",
+      "_id": "pP19GmMTWJ4BbmAW",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.pP19GmMTWJ4BbmAW",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4"
       },
+      "sort": 3800000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/daze.webp",
       "name": "Daze",
-      "sort": 3900000,
       "system": {
         "area": null,
         "cost": {
@@ -3099,9 +3098,9 @@
         "counteraction": false,
         "damage": {
           "0": {
-            "applyMod": true,
+            "applyMod": false,
             "category": null,
-            "formula": "0",
+            "formula": "1d6",
             "kinds": [
               "damage"
             ],
@@ -3116,11 +3115,11 @@
           }
         },
         "description": {
-          "value": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
+          "value": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
         },
         "duration": {
           "sustained": false,
-          "value": "1 round"
+          "value": ""
         },
         "heightening": {
           "damage": {
@@ -3132,20 +3131,16 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "60 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "daze",
         "target": {
           "value": "1 creature"
         },
@@ -3167,26 +3162,30 @@
             "nonlethal"
           ]
         },
+        "slug": "daze",
+        "location": {
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.fCaL1fy3L1pHWtZ8"
-    },
-    {
-      "_id": "AXrhGbQoCSzRSdGF",
+      "_id": "fCaL1fy3L1pHWtZ8",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.fCaL1fy3L1pHWtZ8",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
       },
+      "sort": 3900000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/magic-missile.webp",
-      "name": "Magic Missile",
-      "sort": 4000000,
+      "name": "Force Barrage",
       "system": {
         "area": null,
         "cost": {
@@ -3207,7 +3206,7 @@
         },
         "defense": null,
         "description": {
-          "value": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>"
+          "value": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3216,60 +3215,60 @@
         "level": {
           "value": 1
         },
+        "overlays": {},
+        "publication": {
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "requirements": "",
+        "rules": [],
+        "target": {
+          "value": "1 creature"
+        },
+        "time": {
+          "value": "1 to 3"
+        },
+        "traits": {
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult"
+          ],
+          "value": [
+            "concentrate",
+            "force",
+            "manipulate"
+          ]
+        },
+        "slug": "force-barrage",
         "location": {
           "heightenedLevel": 9,
           "value": "n4uBILCtoQcDwVBY"
         },
-        "overlays": {},
-        "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
-        },
-        "range": {
-          "value": "120 feet"
-        },
-        "requirements": "",
-        "rules": [],
-        "slug": "magic-missile",
-        "target": {
-          "value": "1 creature"
-        },
-        "time": {
-          "value": "1 to 3"
-        },
-        "traits": {
-          "rarity": "common",
-          "traditions": [
-            "arcane",
-            "occult"
-          ],
-          "value": [
-            "concentrate",
-            "force",
-            "manipulate"
-          ]
-        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.AXrhGbQoCSzRSdGF"
-    },
-    {
-      "_id": "FIZwTtGqexRFMZJn",
+      "_id": "AXrhGbQoCSzRSdGF",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.AXrhGbQoCSzRSdGF",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
       },
+      "sort": 4000000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/magic-missile.webp",
-      "name": "Magic Missile",
-      "sort": 4100000,
+      "name": "Force Barrage",
       "system": {
         "area": null,
         "cost": {
@@ -3290,7 +3289,7 @@
         },
         "defense": null,
         "description": {
-          "value": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>"
+          "value": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3299,22 +3298,17 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "heightenedLevel": 7,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "overlays": {},
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "magic-missile",
         "target": {
           "value": "1 creature"
         },
@@ -3333,26 +3327,31 @@
             "manipulate"
           ]
         },
+        "slug": "force-barrage",
+        "location": {
+          "heightenedLevel": 7,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.FIZwTtGqexRFMZJn"
-    },
-    {
-      "_id": "9ui7319eQa5IFNTA",
+      "_id": "FIZwTtGqexRFMZJn",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.FIZwTtGqexRFMZJn",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.dINQzhqGmIsqGMUY"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
       },
+      "sort": 4100000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/mending.webp",
       "name": "Mending",
-      "sort": 4200000,
       "system": {
         "area": null,
         "cost": {
@@ -3362,7 +3361,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken} condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>"
+          "value": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the @UUID[Compendium.pf2e.conditionitems.Item.Broken] condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3386,21 +3385,16 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "heightenedLevel": 1,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "touch"
         },
         "requirements": "",
         "rules": [],
-        "slug": "mending",
         "target": {
           "value": "non-magical object of light Bulk or less"
         },
@@ -3420,26 +3414,31 @@
             "manipulate"
           ]
         },
+        "slug": "mending",
+        "location": {
+          "heightenedLevel": 1,
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.9ui7319eQa5IFNTA"
-    },
-    {
-      "_id": "aYzAwnnZRB6D1DF6",
+      "_id": "9ui7319eQa5IFNTA",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.9ui7319eQa5IFNTA",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Qw3fnUlaUbnn7ipC"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.dINQzhqGmIsqGMUY"
       },
+      "sort": 4200000,
+      "effects": []
+    },
+    {
       "img": "icons/magic/symbols/runes-triangle-blue.webp",
       "name": "Prestidigitation",
-      "sort": 4300000,
       "system": {
         "area": null,
         "cost": {
@@ -3449,7 +3448,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the Spell. Each time you Sustain the Spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or spell component.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p>Prestidigitation can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the Spell.</p>"
+          "value": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p><ul><li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li><li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li><li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li><li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object at 1 minute per Bulk.</li></ul><p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>"
         },
         "duration": {
           "sustained": true,
@@ -3458,20 +3457,16 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "10 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "prestidigitation",
         "target": {
           "value": "1 object (cook, lift, or tidy only)"
         },
@@ -3492,26 +3487,30 @@
             "manipulate"
           ]
         },
+        "slug": "prestidigitation",
+        "location": {
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.aYzAwnnZRB6D1DF6"
-    },
-    {
-      "_id": "ROnChptKmhH0TUYb",
+      "_id": "aYzAwnnZRB6D1DF6",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.aYzAwnnZRB6D1DF6",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Qw3fnUlaUbnn7ipC"
       },
+      "sort": 4300000,
+      "effects": []
+    },
+    {
       "img": "systems/pf2e/icons/spells/ray-of-enfeeblement.webp",
-      "name": "Ray of Enfeeblement",
-      "sort": 4400000,
+      "name": "Enfeeble",
       "system": {
         "area": null,
         "cost": {
@@ -3526,30 +3525,25 @@
           }
         },
         "description": {
-          "value": "<p>A ray that saps a foe's strength flashes from your hand. Attempt a ranged spell attack against the target. If you succeed, that creature attempts a Fortitude save to determine the spell's effect. If your attack roll is a critical success, use the outcome for one degree of success worse than the result of its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>\n<p><strong>Critical Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}.</p>"
+          "value": "<p>You sap the target's strength, depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3} for 1 minute.</p>"
         },
         "duration": {
           "sustained": false,
-          "value": "1 minute"
+          "value": "varies"
         },
         "level": {
           "value": 1
         },
-        "location": {
-          "heightenedLevel": 1,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "ray-of-enfeeblement",
         "target": {
           "value": "1 creature"
         },
@@ -3564,10 +3558,14 @@
             "occult"
           ],
           "value": [
-            "attack",
             "concentrate",
             "manipulate"
           ]
+        },
+        "slug": "enfeeble",
+        "location": {
+          "heightenedLevel": 1,
+          "value": "n4uBILCtoQcDwVBY"
         },
         "_migration": {
           "version": 0.959,
@@ -3575,20 +3573,20 @@
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.ROnChptKmhH0TUYb"
-    },
-    {
-      "_id": "3ozBCUgdgVaspTRw",
+      "_id": "ROnChptKmhH0TUYb",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.ROnChptKmhH0TUYb",
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
         "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA"
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc"
       },
+      "sort": 4400000,
+      "effects": []
+    },
+    {
       "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
       "name": "Read Aura",
-      "sort": 4500000,
       "system": {
         "area": null,
         "cost": {
@@ -3598,7 +3596,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical, and if it is, you learn the school of magic.</p>\n<p>If the object is illusory, you detect this only if the effect's level is lower than the rank of your read aura spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>"
+          "value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.Identify Magic] on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Read Aura]</p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3622,20 +3620,16 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "30 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "read-aura",
         "target": {
           "value": "1 object"
         },
@@ -3657,14 +3651,26 @@
             "manipulate"
           ]
         },
+        "slug": "read-aura",
+        "location": {
+          "value": "n4uBILCtoQcDwVBY"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.3ozBCUgdgVaspTRw"
+      "_id": "3ozBCUgdgVaspTRw",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.3ozBCUgdgVaspTRw",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA"
+      },
+      "sort": 4500000,
+      "effects": []
     },
     {
       "_id": "cT6GWIeYxH6D6PL3",
@@ -3754,16 +3760,8 @@
       "_key": "!actors.items!2mkfF43tP8IGVfBz.cT6GWIeYxH6D6PL3"
     },
     {
-      "_id": "MZWyyUzfRisfkPRr",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.i8PBZsnoCrK7IWph"
-      },
       "img": "systems/pf2e/icons/spells/tentacular-limbs.webp",
       "name": "Tentacular Limbs",
-      "sort": 4700000,
       "system": {
         "area": null,
         "cost": {
@@ -3773,7 +3771,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>Your arms turn into long, pliable tentacles, increasing your reach when you're delivering touch range spells and making unarmed Strikes with your arms (such as fist and claw Strikes) to 10 feet. This doesn't change the reach of your melee weapon attacks. During the duration, whenever you Cast a Spell, you can add an additional action to that spell's casting to temporarily extend your reach to 20 feet to deliver that spell.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> When you add an additional action to a spell to temporarily extend your reach, your reach increases by an additional 10 feet to deliver that spell.</p>"
+          "value": "<p>Your arms turn into long, pliable tentacles, increasing your reach when you're delivering touch range spells and making unarmed Strikes with your arms (such as fist and claw Strikes) to 10 feet. This doesn't change the reach of your melee weapon attacks. During the duration, whenever you Cast a Spell, you can add an additional action to that spell's casting to temporarily extend your reach to 20 feet to deliver that spell.</p><hr /><p><strong>Heightened (+2)</strong> When you add an additional action to a spell to temporarily extend your reach, your reach increases by an additional 10 feet to deliver that spell.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3782,20 +3780,16 @@
         "level": {
           "value": 1
         },
-        "location": {
-          "value": "mGzWQjNPCtlz97Cn"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core 2"
         },
         "range": {
           "value": ""
         },
         "requirements": "",
         "rules": [],
-        "slug": "tentacular-limbs",
         "target": {
           "value": ""
         },
@@ -3812,14 +3806,26 @@
             "sorcerer"
           ]
         },
+        "slug": "tentacular-limbs",
+        "location": {
+          "value": "mGzWQjNPCtlz97Cn"
+        },
         "_migration": {
           "version": 0.959,
           "previous": null
         }
       },
       "type": "spell",
-      "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.MZWyyUzfRisfkPRr"
+      "_id": "MZWyyUzfRisfkPRr",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.MZWyyUzfRisfkPRr",
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.i8PBZsnoCrK7IWph"
+      },
+      "sort": 4700000,
+      "effects": []
     },
     {
       "_id": "9xLtvFQAoJh8tSOd",
