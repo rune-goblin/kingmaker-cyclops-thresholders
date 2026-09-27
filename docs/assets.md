@@ -1,8 +1,8 @@
 # Cyclops Thresholders: art to generate
 
-Six images replace the Kingmaker Thresholder art. Save each file at the path shown; the actor sources already reference these paths.
+Eight images replace the Kingmaker Thresholder art. Save each file at the path shown; the actor sources already reference these paths.
 
-Generate all six with Image Gen 2.5 Sunburst.
+Generate all eight with Image Gen 2.5 Sunburst.
 
 ## Shared style
 
@@ -49,3 +49,15 @@ A cyclops cleric of Yog-Sothoth leaps forward, dagger raised overhead and wreath
 - **File:** `assets/tokens/thresholder-mystic-cyclops.webp`
 
 Head-and-torso crop of the Mystic from portrait 5: indigo hood framing pale-blond hair, the hollow eye socket under the glowing spiral sigil, and a wide unsettling grin. The raised dagger with violet flame breaks past the top of the ring, and the edge of the indigo cloak sweeps in from the left.
+
+## 7. Foras: portrait
+
+- **File:** `assets/portraits/foras-cyclops.webp`
+
+Foras, the ageless cyclops sorcerer who leads the Thresholders, stands tall and still, one hand raised with fingers splayed as time bends around him. He is lean for a giant, with sharp aristocratic features, a close-trimmed dark beard, and long black hair swept back from a high forehead. His single great eye socket is empty and smooth, and a spiral scar carved deep into the brow above it glows faintly violet. He wears fine explorer's clothing of deep indigo and black under a long high-collared coat, and a religious symbol of Yog-Sothoth, a cluster of iridescent spheres, hangs at his chest. His other hand grips a tall staff of power crowned with a violet crystal. Shards of frozen motion hang in the air around him: suspended droplets, drifting dust, and a clock-like ring of faint violet light at his back. His expression is cold, patient, and certain.
+
+## 8. Foras: token
+
+- **File:** `assets/tokens/foras-cyclops.webp`
+
+Head-and-torso crop of Foras from portrait 7: swept-back black hair and trimmed beard, the empty eye socket under the glowing violet spiral scar, the high indigo collar, and the iridescent symbol of Yog-Sothoth. The violet crystal of his staff breaks past the top-right of the ring, and his raised splayed hand breaks past the left edge.
