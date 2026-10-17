@@ -1193,19 +1193,10 @@
       "effects": []
     },
     {
-      "_id": "tz6R9Wdc8MgaNUd3",
-      "_stats": {
-        "coreVersion": "14.361",
-        "systemId": "pf2e",
-        "systemVersion": "8.5.1",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.2w4OpAGihn1JSHFD"
-      },
-      "img": "systems/pf2e/icons/spells/black-tentacles.webp",
-      "name": "Black Tentacles",
-      "sort": 1600000,
+      "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+      "name": "Slither",
       "system": {
         "area": {
-          "details": "20-foot burst adjacent to a flat surface",
           "type": "burst",
           "value": 20
         },
@@ -1214,7 +1205,7 @@
         },
         "counteraction": false,
         "damage": {
-          "0": {
+          "hBNB5kWrMV8T2CuH": {
             "applyMod": false,
             "category": null,
             "formula": "3d6",
@@ -1222,40 +1213,54 @@
               "damage"
             ],
             "materials": [],
-            "type": "bludgeoning"
+            "type": "piercing"
+          },
+          "mY0vhGfbdzA69pIz": {
+            "applyMod": false,
+            "category": "persistent",
+            "formula": "1d6",
+            "kinds": [
+              "damage"
+            ],
+            "materials": [],
+            "type": "poison"
           }
         },
         "defense": {
-          "passive": {
-            "statistic": "fortitude-dc"
-          },
-          "save": null
+          "save": {
+            "basic": false,
+            "statistic": "reflex"
+          }
         },
         "description": {
-          "value": "<p><strong>Area</strong> 20-foot burst adjacent to a flat surface</p>\n<hr />\n<p>Oily black tentacles rise up and attempt to capture creatures in the area. Make spell attack rolls against the Fortitude DC of each creature in the area. Any creature you succeed against is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} and takes 3d6 bludgeoning damage. Whenever a creature ends its turn in the area, the tentacles attempt to grab that creature if they haven't already, and they deal @Damage[1d6[bludgeoning]] damage to any creature already Grabbed.</p>\n<p>The tentacles' Escape DC is equal to your spell DC. A creature can attack a tentacle in an attempt to release its grip. Its AC is equal to your spell DC, and it is destroyed if it takes 12 or more damage. Even if destroyed, additional tentacles continue to grow in the area until the duration ends. You can Dismiss the spell.</p>"
+          "value": "<p>A mass of snakes made of shadow rise up to capture creatures in the area. Each creature in the area when you Cast the Spell takes 3d6 piercing damage and 1d6 persistent poison damage from a biting snake, and it's grabbed or restrained depending on its Reflex save. A creature that ends its turn in the area must also attempt this save, even if it's already grabbed or restrained by the snakes. You can Dismiss the spell.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] by a snake. The snakes' [[/act escape]] DC is equal to your spell DC. A creature can attack a snake to release the creature. A snake's AC is equal to your spell DC, and it's destroyed if it takes 12 or more damage at once. New snakes continually regrow as long as the spell lasts, so destroying snakes doesn't prevent <em>slither</em> from capturing more creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Restrained] by a snake.</p><hr /><p><strong>Heightened (+2)</strong> The persistent poison damage increases by 1d6 and snake HP increases by 6.</p>"
         },
         "duration": {
           "sustained": false,
           "value": "1 minute"
         },
+        "heightening": {
+          "area": 0,
+          "damage": {
+            "hBNB5kWrMV8T2CuH": "0",
+            "mY0vhGfbdzA69pIz": "1d6"
+          },
+          "interval": 2,
+          "type": "interval"
+        },
         "level": {
           "value": 5
         },
-        "location": {
-          "heightenedLevel": 5,
-          "value": "n4uBILCtoQcDwVBY"
-        },
         "publication": {
-          "license": "OGL",
-          "remaster": false,
-          "title": "Pathfinder Core Rulebook"
+          "license": "ORC",
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "range": {
           "value": "120 feet"
         },
         "requirements": "",
         "rules": [],
-        "slug": "black-tentacles",
         "target": {
           "value": ""
         },
@@ -1269,10 +1274,15 @@
             "occult"
           ],
           "value": [
-            "attack",
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "shadow"
           ]
+        },
+        "slug": "slither",
+        "location": {
+          "heightenedLevel": 5,
+          "value": "n4uBILCtoQcDwVBY"
         },
         "_migration": {
           "version": 0.959,
@@ -1280,8 +1290,16 @@
         }
       },
       "type": "spell",
+      "_id": "tz6R9Wdc8MgaNUd3",
+      "_key": "!actors.items!2mkfF43tP8IGVfBz.tz6R9Wdc8MgaNUd3",
+      "sort": 1600000,
       "effects": [],
-      "_key": "!actors.items!2mkfF43tP8IGVfBz.tz6R9Wdc8MgaNUd3"
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "pf2e",
+        "systemVersion": "8.5.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t"
+      }
     },
     {
       "img": "icons/creatures/slimes/slime-face-teeth-purple.webp",

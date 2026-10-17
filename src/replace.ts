@@ -66,12 +66,23 @@ function isRemaster(item: { system?: unknown } | undefined): boolean {
   return !!(item?.system as ItemSource['system'])?.publication?.remaster;
 }
 
-// Only a legacy world spell is swapped, so spells the GM already remastered or edited survive.
+function compendiumSource(item: unknown): string | undefined {
+  return (item as { _stats?: { compendiumSource?: string | null } })?._stats?.compendiumSource ?? undefined;
+}
+
+// A GM edit keeps the item's compendiumSource and a GM swap creates a new item id, so both survive;
+// only legacy spells and slots the module itself moved to a different spell are swapped.
+function isStale(current: unknown, source: ItemSource): boolean {
+  if (!isRemaster(current as ItemSource)) return true;
+  const was = compendiumSource(current);
+  return !!was && was !== compendiumSource(source);
+}
+
 async function syncSpells(actor: Actor, source: ActorSource): Promise<number> {
   const updates = source.items.filter((i) => {
     if (i.type !== 'spell' || !isRemaster(i)) return false;
     const current = actor.items.get(i._id);
-    return !!current && !isRemaster(current);
+    return !!current && isStale(current, i);
   });
   if (!updates.length) return 0;
   await actor.updateEmbeddedDocuments('Item', updates, REPLACE_WHOLE);
