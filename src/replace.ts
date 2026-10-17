@@ -78,11 +78,20 @@ function isStale(current: unknown, source: ItemSource): boolean {
   return !!was && was !== compendiumSource(source);
 }
 
+// Earlier module versions copied spells from pf2e's raw source, whose links name their target
+// instead of its id. Foundry resolves only ids, so those links render as "Unknown".
+function hasNameLinks(item: unknown): boolean {
+  const description = (item as { system?: { description?: { value?: string } } })?.system?.description?.value ?? '';
+  return [...description.matchAll(/@UUID\[Compendium\.[^\]]*?\.Item\.([^\]]+)\]/g)].some(
+    ([, target]) => !/^[A-Za-z0-9]{16}$/.test(target),
+  );
+}
+
 async function syncSpells(actor: Actor, source: ActorSource): Promise<number> {
   const updates = source.items.filter((i) => {
-    if (i.type !== 'spell' || !isRemaster(i)) return false;
+    if (i.type !== 'spell') return false;
     const current = actor.items.get(i._id);
-    return !!current && isStale(current, i);
+    return !!current && (hasNameLinks(current) || (isRemaster(i) && isStale(current, i)));
   });
   if (!updates.length) return 0;
   await actor.updateEmbeddedDocuments('Item', updates, REPLACE_WHOLE);
@@ -90,7 +99,7 @@ async function syncSpells(actor: Actor, source: ActorSource): Promise<number> {
 }
 
 // A second run must not wipe GM edits made since the first, so it touches only art, token size, HP,
-// and spells still on legacy data.
+// and spells still on legacy data or broken links.
 async function refresh(actor: Actor, source: ActorSource): Promise<number> {
   const { img, prototypeToken: proto, system } = source;
   await actor.update({

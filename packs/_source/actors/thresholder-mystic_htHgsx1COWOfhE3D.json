@@ -511,7 +511,7 @@
           }
         },
         "description": {
-          "value": "<p>You surround yourself with supernatural splendor, appearing to be a god or similarly majestic being, with an appearance, regalia, and iconography of your choice. Targets must attempt a Will save. Regardless of the outcome, the target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target must pay tribute to you two times. Paying tribute requires that the target spend a single action, which has either the move trait (as they bow) or manipulate trait (as they offer up a token in their hands). They must pay tribute at least once on each of their turns, if possible. While affected, the target is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] by you and can't use hostile actions against you.</p>\n<p><strong>Failure</strong> As success, but the target must pay tribute a total of six times.</p>\n<p><strong>Critical Failure</strong> As failure, but the target must spend all its actions paying tribute, and they cannot take other actions until the tribute is fully paid.</p>"
+          "value": "<p>You surround yourself with supernatural splendor, appearing to be a god or similarly majestic being, with an appearance, regalia, and iconography of your choice. Targets must attempt a Will save. Regardless of the outcome, the target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target must pay tribute to you two times. Paying tribute requires that the target spend a single action, which has either the move trait (as they bow) or manipulate trait (as they offer up a token in their hands). They must pay tribute at least once on each of their turns, if possible. While affected, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by you and can't use hostile actions against you.</p>\n<p><strong>Failure</strong> As success, but the target must pay tribute a total of six times.</p>\n<p><strong>Critical Failure</strong> As failure, but the target must spend all its actions paying tribute, and they cannot take other actions until the tribute is fully paid.</p>"
         },
         "duration": {
           "sustained": false,
@@ -556,28 +556,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "MRJLyqA3J9FvP8zW",
       "_key": "!actors.items!htHgsx1COWOfhE3D.MRJLyqA3J9FvP8zW",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.fkDeKktdmbeplYRY",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.fkDeKktdmbeplYRY"
       },
       "sort": 300000,
       "effects": []
@@ -673,13 +663,8 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
@@ -688,66 +673,49 @@
       "sort": 400000,
       "effects": [],
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.10VcmSYNBrvBphu1",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.10VcmSYNBrvBphu1"
       }
     },
     {
       "_id": "tlo47Qcd8VgrL52N",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C"
       },
       "img": "icons/sundries/documents/document-sealed-signatures-red.webp",
       "name": "Divine Decree",
       "sort": 500000,
       "system": {
         "description": {
-          "gm": "",
-          "value": "<p>You utter a potent litany from your faith, a mandate that harms those who oppose your ideals. You deal 7d10 spirit damage to your enemies in the area; each enemy must attempt a Fortitude save.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is enfeebled 2 for 1 minute. If you're on your home plane and the creature is not, the creature is sent back to its home plane. A creature of 10th level or lower must also succeed at a Will save or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 minute; if it critically fails, it dies (this is a death effect).</p>\n<hr>\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the level of creatures that must attempt a second save on a critical failure increases by 2.</p>"
+          "value": "<p>You utter a potent litany from your faith, a mandate that harms those who oppose your ideals. You deal 7d10 spirit damage to your enemies in the area; each enemy must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is enfeebled 2 for 1 minute. If you're on your home plane and the creature is not, the creature is sent back to its home plane. A creature of 10th level or lower must also succeed at a @Check[will|options:inflicts:paralyzed] save or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 minute; if it critically fails, it dies (this is a death effect).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the level of creatures that must attempt a second save on a critical failure increases by 2.</p>"
         },
         "rules": [],
         "slug": "divine-decree",
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         },
         "traits": {
-          "otherTags": [],
-          "value": [
-            "concentrate",
-            "manipulate",
-            "sanctified"
-          ],
           "rarity": "common",
           "traditions": [
             "divine"
+          ],
+          "value": [
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
           ]
         },
         "publication": {
-          "title": "Pathfinder Player Core",
-          "authors": "",
           "license": "ORC",
-          "remaster": true
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "level": {
           "value": 7
@@ -757,7 +725,7 @@
           "value": ""
         },
         "range": {
-          "value": "40 feet"
+          "value": ""
         },
         "area": {
           "type": "emanation",
@@ -767,8 +735,8 @@
           "value": "2"
         },
         "duration": {
-          "value": "varies",
-          "sustained": false
+          "sustained": false,
+          "value": "varies"
         },
         "damage": {
           "0": {
@@ -796,6 +764,7 @@
         },
         "counteraction": false,
         "heightening": {
+          "area": 0,
           "damage": {
             "0": "1d10"
           },
@@ -805,11 +774,6 @@
       },
       "type": "spell",
       "effects": [],
-      "folder": null,
-      "flags": {},
-      "ownership": {
-        "default": 0
-      },
       "_key": "!actors.items!htHgsx1COWOfhE3D.tlo47Qcd8VgrL52N"
     },
     {
@@ -853,7 +817,7 @@
           }
         },
         "description": {
-          "value": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus an additional 8d4 void damage to living creatures. Each creature in the area must attempt a Reflex save.</p>\n<p>If the globe overlaps with an area of magical light or affects a creature affected by magical light, <em>eclipse burst</em> attempts to counteract the light effect.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.Blinded] by the darkness for an unlimited duration.</p><hr /><p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>"
+          "value": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus an additional 8d4 void damage to living creatures. Each creature in the area must attempt a Reflex save.</p>\n<p>If the globe overlaps with an area of magical light or affects a creature affected by magical light, <em>eclipse burst</em> attempts to counteract the light effect.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by the darkness for an unlimited duration.</p><hr /><p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>"
         },
         "duration": {
           "sustained": false,
@@ -907,28 +871,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "Gqa433g61calPNMK",
       "_key": "!actors.items!htHgsx1COWOfhE3D.Gqa433g61calPNMK",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.0jadeyQIItIuRgeH",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.0jadeyQIItIuRgeH"
       },
       "sort": 600000,
       "effects": []
@@ -1014,13 +968,8 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
@@ -1029,67 +978,49 @@
       "sort": 700000,
       "effects": [],
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.jj5d830iUi2ZlQfs",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.jj5d830iUi2ZlQfs"
       }
     },
     {
       "_id": "htcFFa0WaaYySTYi",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE"
       },
       "img": "systems/pf2e/icons/spells/spiritual-blast.webp",
       "name": "Spirit Blast",
       "sort": 800000,
       "system": {
         "description": {
-          "gm": "",
-          "value": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 spirit damage with a basic Fortitude save.</p>\n<hr>\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+          "value": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 spirit damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
         },
         "rules": [],
         "slug": "spirit-blast",
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         },
         "traits": {
-          "otherTags": [],
-          "value": [
-            "concentrate",
-            "manipulate",
-            "spirit"
-          ],
           "rarity": "common",
           "traditions": [
             "divine",
             "occult"
+          ],
+          "value": [
+            "concentrate",
+            "manipulate",
+            "spirit"
           ]
         },
         "publication": {
-          "title": "Pathfinder Player Core",
-          "authors": "",
           "license": "ORC",
-          "remaster": true
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "level": {
           "value": 6
@@ -1106,8 +1037,8 @@
           "value": "2"
         },
         "duration": {
-          "value": "",
-          "sustained": false
+          "sustained": false,
+          "value": ""
         },
         "damage": {
           "0": {
@@ -1144,11 +1075,6 @@
       },
       "type": "spell",
       "effects": [],
-      "folder": null,
-      "flags": {},
-      "ownership": {
-        "default": 0
-      },
       "_key": "!actors.items!htHgsx1COWOfhE3D.htcFFa0WaaYySTYi"
     },
     {
@@ -1230,13 +1156,8 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
@@ -1245,15 +1166,10 @@
       "sort": 900000,
       "effects": [],
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.k0qJfSZH5xUEggwU",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.k0qJfSZH5xUEggwU"
       }
     },
     {
@@ -1268,7 +1184,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You create an @UUID[Compendium.pf2e.conditionitems.Item.Invisible], floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you.</p>\n<p>The first time you Sustain the spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>"
+          "value": "<p>You create an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you.</p>\n<p>The first time you Sustain the spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>"
         },
         "duration": {
           "sustained": true,
@@ -1311,28 +1227,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "CprDOKVQdD4ns3OG",
       "_key": "!actors.items!htHgsx1COWOfhE3D.CprDOKVQdD4ns3OG",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21"
       },
       "sort": 1000000,
       "effects": []
@@ -1340,54 +1246,41 @@
     {
       "_id": "wSFGCkY0QbK1tNXY",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.R9xqCBblkS5KE4y7",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.R9xqCBblkS5KE4y7"
       },
       "img": "systems/pf2e/icons/spells/sending.webp",
       "name": "Sending",
       "sort": 1100000,
       "system": {
         "description": {
-          "gm": "",
           "value": "<p>You send the creature a mental message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer.</p>"
         },
         "rules": [],
         "slug": "sending",
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         },
         "traits": {
-          "otherTags": [],
-          "value": [
-            "concentrate",
-            "manipulate",
-            "mental"
-          ],
           "rarity": "common",
           "traditions": [
             "arcane",
             "divine",
             "occult"
+          ],
+          "value": [
+            "concentrate",
+            "manipulate",
+            "mental"
           ]
         },
         "publication": {
-          "title": "Pathfinder Player Core",
-          "authors": "",
           "license": "ORC",
-          "remaster": true
+          "remaster": true,
+          "title": "Pathfinder Player Core"
         },
         "level": {
           "value": 5
@@ -1404,8 +1297,8 @@
           "value": "3"
         },
         "duration": {
-          "value": "",
-          "sustained": false
+          "sustained": false,
+          "value": ""
         },
         "damage": {},
         "defense": null,
@@ -1419,11 +1312,6 @@
       },
       "type": "spell",
       "effects": [],
-      "folder": null,
-      "flags": {},
-      "ownership": {
-        "default": 0
-      },
       "_key": "!actors.items!htHgsx1COWOfhE3D.wSFGCkY0QbK1tNXY"
     },
     {
@@ -1480,28 +1368,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "YHm0mGz8W2WgAqup",
       "_key": "!actors.items!htHgsx1COWOfhE3D.YHm0mGz8W2WgAqup",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
       },
       "sort": 1200000,
       "effects": []
@@ -1509,53 +1387,40 @@
     {
       "_id": "KHY8D4gKo3q1CayG",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0"
       },
       "img": "icons/magic/water/wave-water-teal.webp",
       "name": "Air Walk",
       "sort": 1300000,
       "system": {
         "description": {
-          "gm": "",
           "value": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>"
         },
         "rules": [],
         "slug": "air-walk",
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         },
         "traits": {
-          "otherTags": [],
-          "value": [
-            "air",
-            "concentrate",
-            "manipulate"
-          ],
           "rarity": "common",
           "traditions": [
             "divine",
             "primal"
+          ],
+          "value": [
+            "air",
+            "concentrate",
+            "manipulate"
           ]
         },
         "publication": {
-          "title": "Pathfinder Core Rulebook",
-          "authors": "",
           "license": "OGL",
-          "remaster": false
+          "remaster": false,
+          "title": "Pathfinder Core Rulebook"
         },
         "level": {
           "value": 4
@@ -1572,8 +1437,8 @@
           "value": "2"
         },
         "duration": {
-          "value": "5 minutes",
-          "sustained": false
+          "sustained": false,
+          "value": "5 minutes"
         },
         "damage": {},
         "defense": null,
@@ -1587,65 +1452,47 @@
       },
       "type": "spell",
       "effects": [],
-      "folder": null,
-      "flags": {},
-      "ownership": {
-        "default": 0
-      },
       "_key": "!actors.items!htHgsx1COWOfhE3D.KHY8D4gKo3q1CayG"
     },
     {
       "_id": "oKlo3e5B3EVBuZrJ",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.uNsliWpl8Q1JdFcM",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.uNsliWpl8Q1JdFcM"
       },
       "img": "systems/pf2e/icons/spells/discern-lies.webp",
       "name": "Discern Lies",
       "sort": 1400000,
       "system": {
         "description": {
-          "gm": "",
           "value": "<p>Falsehoods ring in your ears like discordant notes. You gain a +4 status bonus to Perception checks when someone Lies.</p>"
         },
         "rules": [],
         "slug": "discern-lies",
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         },
         "traits": {
-          "otherTags": [],
-          "value": [
-            "concentrate",
-            "manipulate",
-            "mental",
-            "revelation"
-          ],
           "rarity": "uncommon",
           "traditions": [
             "arcane",
             "divine",
             "occult"
+          ],
+          "value": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "revelation"
           ]
         },
         "publication": {
-          "title": "Pathfinder Core Rulebook",
-          "authors": "",
           "license": "OGL",
-          "remaster": false
+          "remaster": false,
+          "title": "Pathfinder Core Rulebook"
         },
         "level": {
           "value": 4
@@ -1662,8 +1509,8 @@
           "value": "2"
         },
         "duration": {
-          "value": "10 minutes",
-          "sustained": false
+          "sustained": false,
+          "value": "10 minutes"
         },
         "damage": {},
         "defense": null,
@@ -1677,11 +1524,6 @@
       },
       "type": "spell",
       "effects": [],
-      "folder": null,
-      "flags": {},
-      "ownership": {
-        "default": 0
-      },
       "_key": "!actors.items!htHgsx1COWOfhE3D.oKlo3e5B3EVBuZrJ"
     },
     {
@@ -1701,7 +1543,7 @@
           }
         },
         "description": {
-          "value": "<p>The flow of time congeals around an object or creature, holding it in place. The target must attempt a Will save (an unattended object automatically critically fails its save).</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1} as time thickens around it.</p>\n<p><strong>Failure</strong> Time ceases to pass for the target for 1 round. It is invulnerable to all damage, it can't be targeted or affected by anything, and no rounds elapse for any timed durations, conditions, afflictions, and other effects it has. While in stasis, the target can't be moved, and it remains fixed in place, defying gravity if need be.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is held in stasis for 3 rounds. At the end of each of its turns, it can attempt a Will save to reduce the remaining duration by 1 round or end it entirely on a critical success.</p>"
+          "value": "<p>The flow of time congeals around an object or creature, holding it in place. The target must attempt a Will save (an unattended object automatically critically fails its save).</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} as time thickens around it.</p>\n<p><strong>Failure</strong> Time ceases to pass for the target for 1 round. It is invulnerable to all damage, it can't be targeted or affected by anything, and no rounds elapse for any timed durations, conditions, afflictions, and other effects it has. While in stasis, the target can't be moved, and it remains fixed in place, defying gravity if need be.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is held in stasis for 3 rounds. At the end of each of its turns, it can attempt a Will save to reduce the remaining duration by 1 round or end it entirely on a critical success.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1742,28 +1584,18 @@
           "value": "eSXITfBnqJ3s71nu"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "aPhwoKXwQdIdBEhK",
       "_key": "!actors.items!htHgsx1COWOfhE3D.aPhwoKXwQdIdBEhK",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.cOwSsSXRsBaXUvlr",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.cOwSsSXRsBaXUvlr"
       },
       "sort": 1500000,
       "effects": []
@@ -1785,7 +1617,7 @@
           }
         },
         "description": {
-          "value": "<p>You blind the target. The effect is determined by the target's Fortitude save. The target then becomes temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] until its next turn begins.</p>\n<p><strong>Failure</strong> The target is Blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded permanently.</p>"
+          "value": "<p>You blind the target. The effect is determined by the target's Fortitude save. The target then becomes temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until its next turn begins.</p>\n<p><strong>Failure</strong> The target is Blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded permanently.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1829,28 +1661,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "TBEE3azoN9u7uZgv",
       "_key": "!actors.items!htHgsx1COWOfhE3D.TBEE3azoN9u7uZgv",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D"
       },
       "sort": 1600000,
       "effects": []
@@ -1883,7 +1705,7 @@
           }
         },
         "description": {
-          "value": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>"
+          "value": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>"
         },
         "duration": {
           "sustained": false,
@@ -1957,28 +1779,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "r1qZPUZI5Lymimgh",
       "_key": "!actors.items!htHgsx1COWOfhE3D.r1qZPUZI5Lymimgh",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa"
       },
       "sort": 1700000,
       "effects": []
@@ -2048,28 +1860,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "0cJ2YqTRToE01GKs",
       "_key": "!actors.items!htHgsx1COWOfhE3D.0cJ2YqTRToE01GKs",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14"
       },
       "sort": 1800000,
       "effects": []
@@ -2139,28 +1941,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "xKxxEp5wvT1qCUbg",
       "_key": "!actors.items!htHgsx1COWOfhE3D.xKxxEp5wvT1qCUbg",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.LQzlKbYjZSMFQawP"
       },
       "sort": 1900000,
       "effects": []
@@ -2180,7 +1972,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.pf2e.conditionitems.Item.Concealed].</p>"
+          "value": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the <em>darkness</em>. This also suppresses magical light of your <em>darkness</em> spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p><hr /><p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2224,28 +2016,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "GAtKLtc3n6ips8gl",
       "_key": "!actors.items!htHgsx1COWOfhE3D.GAtKLtc3n6ips8gl",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c"
       },
       "sort": 2000000,
       "effects": []
@@ -2267,7 +2049,7 @@
           }
         },
         "description": {
-          "value": "<p>The target loses hearing; it must attempt a Fortitude save. The target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Deafened] for 1 round.</p>\n<p><strong>Failure</strong> The target is Deafened for 10 minutes.</p>\n<p><strong>Critical Failure</strong> The target is Deafened permanently.</p>"
+          "value": "<p>The target loses hearing; it must attempt a Fortitude save. The target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Failure</strong> The target is Deafened for 10 minutes.</p>\n<p><strong>Critical Failure</strong> The target is Deafened permanently.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2310,28 +2092,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "VOUS80Uew7PrZvZf",
       "_key": "!actors.items!htHgsx1COWOfhE3D.VOUS80Uew7PrZvZf",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.fZPCv2VHuM2yPbC8",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.fZPCv2VHuM2yPbC8"
       },
       "sort": 2100000,
       "effects": []
@@ -2391,28 +2163,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "4zhyJ40HLIzQiTNq",
       "_key": "!actors.items!htHgsx1COWOfhE3D.4zhyJ40HLIzQiTNq",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG"
       },
       "sort": 2200000,
       "effects": []
@@ -2429,7 +2191,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells due to the magical words involved in casting, with the exception of subtle spells.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Silence]</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell creates an aura in a 10-foot emanation around the touched creature, silencing all sound in or passing through it. While within the aura, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>"
+          "value": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells due to the magical words involved in casting, with the exception of subtle spells.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.mmJNE57hC7G3SPae]{Spell Effect: Silence}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell creates an aura in a 10-foot emanation around the touched creature, silencing all sound in or passing through it. While within the aura, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>"
         },
         "duration": {
           "sustained": false,
@@ -2471,28 +2233,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "Z4GJecadiZMWCeY5",
       "_key": "!actors.items!htHgsx1COWOfhE3D.Z4GJecadiZMWCeY5",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gIdDLrbswTV3OBJy",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gIdDLrbswTV3OBJy"
       },
       "sort": 2300000,
       "effects": []
@@ -2512,7 +2264,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>Blessings from beyond help your companions strike true. You and your allies gain a +1 status bonus to attack rolls while within the emanation. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet.</p>\n<p>Bless can counteract @UUID[Compendium.pf2e.spells-srd.Item.Bane].</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Bless]</p>"
+          "value": "<p>Blessings from beyond help your companions strike true. You and your allies gain a +1 status bonus to attack rolls while within the emanation. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet.</p>\n<p>Bless can counteract @UUID[Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx]{Bane}.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Gqy7K6FnbLtwGpud]{Spell Effect: Bless}</p>"
         },
         "duration": {
           "sustained": false,
@@ -2555,28 +2307,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "du0iTMGFf7cp43pO",
       "_key": "!actors.items!htHgsx1COWOfhE3D.du0iTMGFf7cp43pO",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu"
       },
       "sort": 2400000,
       "effects": []
@@ -2598,7 +2340,7 @@
           }
         },
         "description": {
-          "value": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] condition), release what it's holding, drop @UUID[Compendium.pf2e.conditionitems.Item.Prone], or stand in place. It can't @UUID[Compendium.pf2e.actionspf2e.Item.Delay] or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition), release what it's holding, drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, or stand in place. It can't @UUID[Compendium.pf2e.actionspf2e.Item.A72nHGUtNXgY5Ey9]{Delay} or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2653,28 +2395,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "jBvgQvayMZ26rsZE",
       "_key": "!actors.items!htHgsx1COWOfhE3D.jBvgQvayMZ26rsZE",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf"
       },
       "sort": 2500000,
       "effects": []
@@ -2707,7 +2439,7 @@
           }
         },
         "description": {
-          "value": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
+          "value": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2759,28 +2491,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "FM5sp2o8d6YOOMPR",
       "_key": "!actors.items!htHgsx1COWOfhE3D.FM5sp2o8d6YOOMPR",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
       },
       "sort": 2600000,
       "effects": []
@@ -2836,28 +2558,18 @@
           "value": "eSXITfBnqJ3s71nu"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "icPQOkeGm0CBTbgv",
       "_key": "!actors.items!htHgsx1COWOfhE3D.icPQOkeGm0CBTbgv",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.3wmX7htzOXiHLdAn",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.3wmX7htzOXiHLdAn"
       },
       "sort": 2700000,
       "effects": []
@@ -2890,7 +2602,7 @@
           }
         },
         "description": {
-          "value": "<p>You demolish the target's corrupted essence with energy from Creation's Forge. You deal 2d6 vitality damage with a basic Fortitude save. If the creature critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>"
+          "value": "<p>You demolish the target's corrupted essence with energy from Creation's Forge. You deal 2d6 vitality damage with a basic Fortitude save. If the creature critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2940,28 +2652,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "e7Au5jXzvfjw44jq",
       "_key": "!actors.items!htHgsx1COWOfhE3D.e7Au5jXzvfjw44jq",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg"
       },
       "sort": 2800000,
       "effects": []
@@ -2978,7 +2680,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You ward an ally against the attacks and hostile spells from the target enemy. The target ally gains a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Forbidding Ward]</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>"
+          "value": "<p>You ward an ally against the attacks and hostile spells from the target enemy. The target ally gains a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ctMxYPGEpstvhW9C]{Spell Effect: Forbidding Ward}</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>"
         },
         "duration": {
           "sustained": true,
@@ -3020,28 +2722,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "4MPJxd7QjSK63LFG",
       "_key": "!actors.items!htHgsx1COWOfhE3D.4MPJxd7QjSK63LFG",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.RA7VKcen3p56rVyZ",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.RA7VKcen3p56rVyZ"
       },
       "sort": 2900000,
       "effects": []
@@ -3058,7 +2750,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Guidance]</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Effect: Guidance Immunity]</p>"
+          "value": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.3qHKBDF7lrHw8jFK]{Spell Effect: Guidance}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.3LyOkV25p7wA181H]{Effect: Guidance Immunity}</p>"
         },
         "duration": {
           "sustained": false,
@@ -3100,28 +2792,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "9NKqkhpXWP1OZ1i3",
       "_key": "!actors.items!htHgsx1COWOfhE3D.9NKqkhpXWP1OZ1i3",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs"
       },
       "sort": 3000000,
       "effects": []
@@ -3313,28 +2995,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "eOSUGsCi1ijuMbJ8",
       "_key": "!actors.items!htHgsx1COWOfhE3D.eOSUGsCi1ijuMbJ8",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
       },
       "sort": 3100000,
       "effects": []
@@ -3528,28 +3200,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "BE2xNZAElJcdqb7A",
       "_key": "!actors.items!htHgsx1COWOfhE3D.BE2xNZAElJcdqb7A",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
       },
       "sort": 3200000,
       "effects": []
@@ -3623,28 +3285,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "KexXSXgosRbCqYfJ",
       "_key": "!actors.items!htHgsx1COWOfhE3D.KexXSXgosRbCqYfJ",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ"
       },
       "sort": 3300000,
       "effects": []
@@ -3702,28 +3354,18 @@
           "value": "AjjeSlBUiJKE8SOB"
         },
         "_migration": {
-          "version": 0.955,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.954,
-            "foundry": "14.360",
-            "system": "8.0.3"
-          }
+          "version": 0.959,
+          "previous": null
         }
       },
       "type": "spell",
       "_id": "dNyctY3FYw0jfKSH",
       "_key": "!actors.items!htHgsx1COWOfhE3D.dNyctY3FYw0jfKSH",
       "_stats": {
-        "coreVersion": "14.360",
+        "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.0.3",
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "duplicateSource": null,
-        "exportSource": null
+        "systemVersion": "8.6.1",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ"
       },
       "sort": 3400000,
       "effects": []

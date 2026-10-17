@@ -86,4 +86,8 @@ Code style: global `~/.claude/CLAUDE.md` — comment only the non-obvious *why*.
 - `dist/` is gitignored — served via the dev scaffold's `dist` symlink after build; CI builds it for releases.
 - Vite does **not** type-check — run `npm run check` (the release workflow does too).
 - `npm run dev` = Vite HMR dev server on `:30001` reverse-proxying Foundry (`:30000`). It proxies an *already-running* Foundry — start Foundry and **launch a world with the module enabled** first, or there's no esmodule to hot-swap. Then browse `:30001/game` (not `:30000`). `.svelte` edits hot-swap; editing `src/index.ts` full-reloads. `npm run watch` = old `vite build --watch` (browse `:30000`, manual F5; Foundry hot-reloads `.hbs`/`.css`/`.json` but not esmodules).
+- Embedded spells must be the unmodified pf2e originals. After adding or swapping one (only its
+  `_stats.compendiumSource` and `system.location` matter), run `npm run sync-spells`. Never copy spells
+  from `_pf2e-source`: its links name their target, and only pf2e's build turns them into the ids Foundry
+  resolves, so raw copies render "Unknown" links.
 - Persist state in document flags, not raw socket; raw socket for transient signals only (skill's `multi-client-sync.md`).

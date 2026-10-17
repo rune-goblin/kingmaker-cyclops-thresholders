@@ -4,39 +4,14 @@
 // directory: assets and packs travel with it, so it works without the repo present. Run with
 // `npm run deploy`. Override the target with FOUNDRY_DATA, else it reuses .dev-paths.json.
 import {
-  existsSync, readFileSync, lstatSync, unlinkSync, rmSync, mkdirSync, cpSync, copyFileSync,
+  existsSync, lstatSync, unlinkSync, rmSync, mkdirSync, cpSync, copyFileSync,
 } from 'node:fs';
 import { join, basename, dirname } from 'node:path';
-import { homedir } from 'node:os';
 import { execFileSync } from 'node:child_process';
+import { detectFoundryData } from './foundry-data.ts';
 
 const repo = process.cwd();
-const home = homedir();
 const ID = 'kingmaker-cyclops-thresholders';
-const CONFIG = join(repo, '.dev-paths.json');
-
-// Same resolution order as scripts/setup.ts: env override, cached dev path, then the
-// per-platform defaults (v14's versioned folder first, then a plain install).
-function detectFoundryData(): string | undefined {
-  if (process.env.FOUNDRY_DATA) return process.env.FOUNDRY_DATA;
-  if (existsSync(CONFIG)) {
-    try {
-      const { foundryData } = JSON.parse(readFileSync(CONFIG, 'utf8')) as { foundryData?: string };
-      if (foundryData && existsSync(foundryData)) return foundryData;
-    } catch {
-      /* malformed cache — fall through to detection */
-    }
-  }
-  let base: string;
-  if (process.platform === 'darwin') base = join(home, 'Library/Application Support');
-  else if (process.platform === 'win32') base = process.env.LOCALAPPDATA ?? join(home, 'AppData/Local');
-  else base = process.env.XDG_DATA_HOME ?? join(home, '.local/share');
-  for (const name of ['FoundryVTT-v14', 'FoundryVTT']) {
-    const dd = join(base, name, 'Data');
-    if (existsSync(dd)) return dd;
-  }
-  return undefined;
-}
 
 const foundryData = detectFoundryData();
 if (!foundryData) {

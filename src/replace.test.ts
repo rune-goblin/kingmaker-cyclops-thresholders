@@ -4,10 +4,10 @@ import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
 
 const MYSTIC_ID = THRESHOLDER_IDS[2];
 
-const spell = (id: string, remaster: boolean, compendiumSource: string | null = `pf2e.${id}`) => ({
+const spell = (id: string, remaster: boolean, compendiumSource: string | null = `pf2e.${id}`, description?: string) => ({
   _id: id,
   type: 'spell',
-  system: { publication: { remaster } },
+  system: { publication: { remaster }, ...(description && { description: { value: description } }) },
   _stats: { compendiumSource },
 });
 
@@ -112,6 +112,25 @@ describe('replaceActors', () => {
       { recursive: false },
     );
     expect(foras.createEmbeddedDocuments).not.toHaveBeenCalled();
+  });
+
+  it('replaces a spell whose links name their target instead of its id with the module copy', async () => {
+    const byName = '@UUID[Compendium.pf2e.spells-srd.Item.Interplanar Teleport]';
+    const byId = '@UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}';
+    const foras = worldActor(FORAS_ID, true);
+    Object.assign(foras.items.get('edited')!, spell('edited', true, undefined, byName));
+    Object.assign(foras.items.get('kept')!, spell('kept', false, undefined, byName));
+    Object.assign(foras.items.get('untracked')!, spell('untracked', true, null, byId));
+    setup([foras]);
+
+    const result = await replaceActors([FORAS_ID]);
+
+    expect(result.spells).toBe(4);
+    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith(
+      'Item',
+      [spell('legacy', true), spell('edited', true), spell('kept', false), spell('swapped', true)],
+      { recursive: false },
+    );
   });
 
   it('heals a wounded token and skips one already current', async () => {

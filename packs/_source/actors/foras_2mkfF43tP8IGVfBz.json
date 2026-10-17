@@ -151,7 +151,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting <em>freeze time</em>, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but for only you, effects specifically targeting or affecting you, and effects that you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond <em>freeze time</em>'s duration, such as @UUID[Compendium.pf2e.spells-srd.Item.Wall of Fire], it immediately affects others again, but it doesn't have any of the effects that happen only when you first Cast the Spell.</p>"
+          "value": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting <em>freeze time</em>, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but for only you, effects specifically targeting or affecting you, and effects that you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond <em>freeze time</em>'s duration, such as @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}, it immediately affects others again, but it doesn't have any of the effects that happen only when you first Cast the Spell.</p>"
         },
         "duration": {
           "sustained": false,
@@ -203,7 +203,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.1dsahW4g1ggXtypx"
       },
       "sort": 300000,
@@ -229,7 +229,7 @@
           }
         },
         "description": {
-          "value": "<p>You surround yourself with supernatural splendor, appearing to be a god or similarly majestic being, with an appearance, regalia, and iconography of your choice. Targets must attempt a Will save. Regardless of the outcome, the target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target must pay tribute to you two times. Paying tribute requires that the target spend a single action, which has either the move trait (as they bow) or manipulate trait (as they offer up a token in their hands). They must pay tribute at least once on each of their turns, if possible. While affected, the target is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] by you and can't use hostile actions against you.</p>\n<p><strong>Failure</strong> As success, but the target must pay tribute a total of six times.</p>\n<p><strong>Critical Failure</strong> As failure, but the target must spend all its actions paying tribute, and they cannot take other actions until the tribute is fully paid.</p>"
+          "value": "<p>You surround yourself with supernatural splendor, appearing to be a god or similarly majestic being, with an appearance, regalia, and iconography of your choice. Targets must attempt a Will save. Regardless of the outcome, the target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target must pay tribute to you two times. Paying tribute requires that the target spend a single action, which has either the move trait (as they bow) or manipulate trait (as they offer up a token in their hands). They must pay tribute at least once on each of their turns, if possible. While affected, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by you and can't use hostile actions against you.</p>\n<p><strong>Failure</strong> As success, but the target must pay tribute a total of six times.</p>\n<p><strong>Critical Failure</strong> As failure, but the target must spend all its actions paying tribute, and they cannot take other actions until the tribute is fully paid.</p>"
         },
         "duration": {
           "sustained": false,
@@ -285,7 +285,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.fkDeKktdmbeplYRY"
       },
       "sort": 400000,
@@ -308,7 +308,7 @@
           }
         },
         "description": {
-          "value": "<p>You send the target a message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer. Your message is insidious and has the effect of a @UUID[Compendium.pf2e.spells-srd.Item.Suggestion] spell, with the message substituting for the spoken suggestion. On a successful save, the target is temporarily immune for 1 day, and on a critical success, the target is temporarily immune for 1 month. You can target a creature only if you've previously been in telepathic contact with it before, such as via the telepathy spell.</p>"
+          "value": "<p>You send the target a message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer. Your message is insidious and has the effect of a @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion} spell, with the message substituting for the spoken suggestion. On a successful save, the target is temporarily immune for 1 day, and on a critical success, the target is temporarily immune for 1 month. You can target a creature only if you've previously been in telepathic contact with it before, such as via the telepathy spell.</p>"
         },
         "duration": {
           "sustained": false,
@@ -364,7 +364,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.ItZgGznUBhgWBwFG"
       },
       "sort": 500000,
@@ -387,7 +387,7 @@
           }
         },
         "description": {
-          "value": "<p>Fleeting notes of a strange and unnatural song fill the air, overtaking the mind. Each target must attempt a Will save when you cast the spell, and again the first time you Sustain this Spell each round. A creature needs to attempt only one save against the song each round, and you have to keep the same targets when you Sustain the Spell.</p><hr /><p><strong>Critical Success</strong> The target is unaffected, can't be affected on subsequent rounds, and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected this round, but it can be affected on subsequent rounds.</p>\n<p><strong>Failure</strong> Roll [[/r 1d4]] on the table below.</p>\n<p><strong>Critical Failure</strong> Roll [[/r 1d4+1]] on the table below.</p><table class=\"pf2e remaster\"><thead><tr><th>Result</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}</td></tr><tr><td>2</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 round</td></tr><tr><td>3</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 4} for 1 round</td></tr><tr><td>4</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round</td></tr><tr><td>5</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} for an unlimited duration</td></tr></tbody></table>"
+          "value": "<p>Fleeting notes of a strange and unnatural song fill the air, overtaking the mind. Each target must attempt a Will save when you cast the spell, and again the first time you Sustain this Spell each round. A creature needs to attempt only one save against the song each round, and you have to keep the same targets when you Sustain the Spell.</p><hr /><p><strong>Critical Success</strong> The target is unaffected, can't be affected on subsequent rounds, and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected this round, but it can be affected on subsequent rounds.</p>\n<p><strong>Failure</strong> Roll [[/r 1d4]] on the table below.</p>\n<p><strong>Critical Failure</strong> Roll [[/r 1d4+1]] on the table below.</p><table class=\"pf2e remaster\"><thead><tr><th>Result</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</td></tr><tr><td>2</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round</td></tr><tr><td>3</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} for 1 round</td></tr><tr><td>4</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round</td></tr><tr><td>5</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for an unlimited duration</td></tr></tbody></table>"
         },
         "duration": {
           "sustained": true,
@@ -443,7 +443,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.FmNDwqMEjeTEGPrY"
       },
       "sort": 600000,
@@ -461,7 +461,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You transport the target into an extraplanar puzzle room of mysterious origin, locking them there. Once each turn as a single action, the target can attempt an @Check[occultism] check, @Check[perception] check, or @Check[thievery] check against your spell DC to solve the puzzle. Teleportation effects can't carry the target outside the puzzle room unless they can also traverse the planes, such as @UUID[Compendium.pf2e.spells-srd.Item.Interplanar Teleport]. When the spell ends, the target returns to the space it occupied when it was banished, or to the nearest space if the original is now filled.</p><hr /><p><strong>Critical Success</strong> The target solves the puzzle and escapes.</p>\n<p><strong>Success</strong> The target is on the right path to the solution. If it was already on the right path, it solves the puzzle and escapes.</p>\n<p><strong>Failure</strong> The target makes no progress toward a solution.</p>\n<p><strong>Critical Failure</strong> The target makes no progress and, if it was on the right path, it no longer is.</p>"
+          "value": "<p>You transport the target into an extraplanar puzzle room of mysterious origin, locking them there. Once each turn as a single action, the target can attempt an @Check[occultism] check, @Check[perception] check, or @Check[thievery] check against your spell DC to solve the puzzle. Teleportation effects can't carry the target outside the puzzle room unless they can also traverse the planes, such as @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}. When the spell ends, the target returns to the space it occupied when it was banished, or to the nearest space if the original is now filled.</p><hr /><p><strong>Critical Success</strong> The target solves the puzzle and escapes.</p>\n<p><strong>Success</strong> The target is on the right path to the solution. If it was already on the right path, it solves the puzzle and escapes.</p>\n<p><strong>Failure</strong> The target makes no progress toward a solution.</p>\n<p><strong>Critical Failure</strong> The target makes no progress and, if it was on the right path, it no longer is.</p>"
         },
         "duration": {
           "sustained": true,
@@ -515,7 +515,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7"
       },
       "sort": 700000,
@@ -541,7 +541,7 @@
           }
         },
         "description": {
-          "value": "<p>A cloud of cascading, ever-changing colors manifests in the air. Creatures are @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] while inside the cloud, as are those within 20 feet of the cloud's area. A creature must attempt a Will save if it is inside the cloud when you cast it, enters the cloud, ends its turn within the cloud, or uses a @UUID[Compendium.pf2e.actionspf2e.Item.Seek] or Interact action on the cloud. A creature currently affected by the cloud doesn't need to attempt new saves.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned] for [[/r 1d4 #rounds]]{1d4 rounds}. After the stunned condition ends, the creature is confused for the remaining duration of the spell.</p>"
+          "value": "<p>A cloud of cascading, ever-changing colors manifests in the air. Creatures are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} while inside the cloud, as are those within 20 feet of the cloud's area. A creature must attempt a Will save if it is inside the cloud when you cast it, enters the cloud, ends its turn within the cloud, or uses a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or Interact action on the cloud. A creature currently affected by the cloud doesn't need to attempt new saves.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for [[/r 1d4 #rounds]]{1d4 rounds}. After the stunned condition ends, the creature is confused for the remaining duration of the spell.</p>"
         },
         "duration": {
           "sustained": true,
@@ -596,7 +596,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.uEyfLoFQsRKBRIcB"
       },
       "sort": 800000,
@@ -619,7 +619,7 @@
           }
         },
         "description": {
-          "value": "<p>The target is overcome with an all-consuming urge to dance. For the duration of the spell, the target is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] and can't use reactions. While affected, the creature can't use move actions except to dance, using the Stride action to move up to half its Speed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The spell's duration is 3 rounds, and the target must spend at least 1 action each turn dancing.</p>\n<p><strong>Failure</strong> The spell's duration is 1 minute, and the target must spend at least 2 actions each turn dancing.</p>\n<p><strong>Critical Failure</strong> The spell's duration is 1 minute, and the target must spend all its actions each turn dancing.</p>"
+          "value": "<p>The target is overcome with an all-consuming urge to dance. For the duration of the spell, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and can't use reactions. While affected, the creature can't use move actions except to dance, using the Stride action to move up to half its Speed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The spell's duration is 3 rounds, and the target must spend at least 1 action each turn dancing.</p>\n<p><strong>Failure</strong> The spell's duration is 1 minute, and the target must spend at least 2 actions each turn dancing.</p>\n<p><strong>Critical Failure</strong> The spell's duration is 1 minute, and the target must spend all its actions each turn dancing.</p>"
         },
         "duration": {
           "sustained": false,
@@ -673,7 +673,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB"
       },
       "sort": 900000,
@@ -684,7 +684,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.O6VQC1Bs4aSYDa6R"
       },
       "img": "icons/commodities/treasure/mask-wood-tan.webp",
@@ -801,7 +801,7 @@
           }
         },
         "description": {
-          "value": "<p>An illusion of horrific creatures fills the spell's area. The creatures look like Tiny swarming monsters with a specific appearance of your choice, such as fiendish flies or animated saw blades. The burst deals 8d8 mental damage with a basic Will save to each creature that's inside the burst when it's created, enters the burst, or starts its turn inside the burst. A creature that critically succeeds at its Will save can immediately attempt to disbelieve the illusion. A creature that tries to Interact with the monsters or observes one with a @UUID[Compendium.pf2e.actionspf2e.Item.Seek] action can attempt to disbelieve the illusion. Creatures that disbelieve the illusion take no damage from the illusion thereafter.</p><hr /><p><strong>Heightened (+1)</strong> The mental damage increases by 1d8</p>"
+          "value": "<p>An illusion of horrific creatures fills the spell's area. The creatures look like Tiny swarming monsters with a specific appearance of your choice, such as fiendish flies or animated saw blades. The burst deals 8d8 mental damage with a basic Will save to each creature that's inside the burst when it's created, enters the burst, or starts its turn inside the burst. A creature that critically succeeds at its Will save can immediately attempt to disbelieve the illusion. A creature that tries to Interact with the monsters or observes one with a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action can attempt to disbelieve the illusion. Creatures that disbelieve the illusion take no damage from the illusion thereafter.</p><hr /><p><strong>Heightened (+1)</strong> The mental damage increases by 1d8</p>"
         },
         "duration": {
           "sustained": false,
@@ -863,7 +863,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG"
       },
       "sort": 1100000,
@@ -886,7 +886,7 @@
           }
         },
         "description": {
-          "value": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so @UUID[Compendium.pf2e.spells-srd.Item.Dispel Magic] and other effects that counteract spells can't counteract them. However, @UUID[Compendium.pf2e.spells-srd.Item.Wish] rituals and abilities that can remove non-magical effects can still counteract the effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target spends the first action on its next turn with the @UUID[Compendium.pf2e.conditionitems.Item.Confused] condition.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Confused permanently.</p>"
+          "value": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} and other effects that counteract spells can't counteract them. However, @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} rituals and abilities that can remove non-magical effects can still counteract the effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target spends the first action on its next turn with the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} condition.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Confused permanently.</p>"
         },
         "duration": {
           "sustained": false,
@@ -941,7 +941,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs"
       },
       "sort": 1200000,
@@ -964,7 +964,7 @@
           }
         },
         "description": {
-          "value": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 4} with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>"
+          "value": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1019,7 +1019,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD"
       },
       "sort": 1300000,
@@ -1030,7 +1030,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE"
       },
       "img": "systems/pf2e/icons/spells/spiritual-blast.webp",
@@ -1186,7 +1186,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki"
       },
       "sort": 1500000,
@@ -1233,7 +1233,7 @@
           }
         },
         "description": {
-          "value": "<p>A mass of snakes made of shadow rise up to capture creatures in the area. Each creature in the area when you Cast the Spell takes 3d6 piercing damage and 1d6 persistent poison damage from a biting snake, and it's grabbed or restrained depending on its Reflex save. A creature that ends its turn in the area must also attempt this save, even if it's already grabbed or restrained by the snakes. You can Dismiss the spell.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] by a snake. The snakes' [[/act escape]] DC is equal to your spell DC. A creature can attack a snake to release the creature. A snake's AC is equal to your spell DC, and it's destroyed if it takes 12 or more damage at once. New snakes continually regrow as long as the spell lasts, so destroying snakes doesn't prevent <em>slither</em> from capturing more creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.Restrained] by a snake.</p><hr /><p><strong>Heightened (+2)</strong> The persistent poison damage increases by 1d6 and snake HP increases by 6.</p>"
+          "value": "<p>A mass of snakes made of shadow rise up to capture creatures in the area. Each creature in the area when you Cast the Spell takes 3d6 piercing damage and 1d6 persistent poison damage from a biting snake, and it's grabbed or restrained depending on its Reflex save. A creature that ends its turn in the area must also attempt this save, even if it's already grabbed or restrained by the snakes. You can Dismiss the spell.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by a snake. The snakes' [[/act escape]] DC is equal to your spell DC. A creature can attack a snake to release the creature. A snake's AC is equal to your spell DC, and it's destroyed if it takes 12 or more damage at once. New snakes continually regrow as long as the spell lasts, so destroying snakes doesn't prevent <em>slither</em> from capturing more creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by a snake.</p><hr /><p><strong>Heightened (+2)</strong> The persistent poison damage increases by 1d6 and snake HP increases by 6.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1297,7 +1297,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.xFp4EwVcYwSG336t"
       }
     },
@@ -1321,7 +1321,7 @@
           }
         },
         "description": {
-          "value": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically slowed 1 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>"
+          "value": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically slowed 1 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1386,7 +1386,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN"
       },
       "sort": 1700000,
@@ -1397,7 +1397,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.OAt2ZEns1gIOCgrn"
       },
       "img": "icons/creatures/webs/web-nest-ball-teal.webp",
@@ -1542,7 +1542,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K"
       },
       "sort": 1900000,
@@ -1571,7 +1571,7 @@
         },
         "defense": null,
         "description": {
-          "value": "<p>You transform your flesh and organs into a bizarre amalgam of glistening skin, rough scales, tufts of hair, and tumorous protuberances. This has three effects:</p>\n<ul>\n<li>You gain resistance 10 to precision damage and resistance 10 to extra damage from critical hits. If the resistance is greater than the extra damage, it reduces the extra damage to 0 but doesn't reduce the attack's normal damage.</li>\n<li>You gain darkvision.</li>\n<li>Acid oozes from your skin. Any creature that hits you with an unarmed attack or with a non-reach melee weapon takes 2d6 acid damage.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistances increase by 5, and the acid damage increases by 1d6.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Unusual Anatomy]</p>"
+          "value": "<p>You transform your flesh and organs into a bizarre amalgam of glistening skin, rough scales, tufts of hair, and tumorous protuberances. This has three effects:</p>\n<ul>\n<li>You gain resistance 10 to precision damage and resistance 10 to extra damage from critical hits. If the resistance is greater than the extra damage, it reduces the extra damage to 0 but doesn't reduce the attack's normal damage.</li>\n<li>You gain darkvision.</li>\n<li>Acid oozes from your skin. Any creature that hits you with an unarmed attack or with a non-reach melee weapon takes 2d6 acid damage.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistances increase by 5, and the acid damage increases by 1d6.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.LMzFBnOEPzDGzHg4]{Spell Effect: Unusual Anatomy}</p>"
         },
         "duration": {
           "sustained": false,
@@ -1628,7 +1628,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.ddKBoCjmSyPSHcws"
       },
       "sort": 2000000,
@@ -1651,7 +1651,7 @@
           }
         },
         "description": {
-          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1715,7 +1715,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY"
       },
       "sort": 2100000,
@@ -1738,7 +1738,7 @@
           }
         },
         "description": {
-          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1802,7 +1802,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY"
       },
       "sort": 2200000,
@@ -1820,7 +1820,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Fly]</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>"
+          "value": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.MuRBCiZn5IKeaoxi]{Spell Effect: Fly}</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>"
         },
         "duration": {
           "sustained": false,
@@ -1874,7 +1874,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8"
       },
       "sort": 2300000,
@@ -1945,7 +1945,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.pkcOby5prOausy1k"
       },
       "sort": 2400000,
@@ -2017,7 +2017,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.HqTI6wRrck1YXp3F"
       },
       "sort": 2500000,
@@ -2028,7 +2028,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.qhJfRnkCRrMI4G1O"
       },
       "img": "icons/creatures/magical/spirit-fire-yellow.webp",
@@ -2159,7 +2159,7 @@
           }
         },
         "description": {
-          "value": "<p>Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.</p>\n<p>Each creature that comes within range has to attempt a save when you Sustain the spell. If you're speaking, enthrall gains the linguistic trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and notices that you tried to use magic.</p>\n<p><strong>Success</strong> The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Fascinated] with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.</p>\n<p><strong>Critical Failure</strong> As failure, but the target can't attempt a save to end the fascination if it disagrees with you.</p>"
+          "value": "<p>Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.</p>\n<p>Each creature that comes within range has to attempt a save when you Sustain the spell. If you're speaking, enthrall gains the linguistic trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and notices that you tried to use magic.</p>\n<p><strong>Success</strong> The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.</p>\n<p><strong>Critical Failure</strong> As failure, but the target can't attempt a save to end the fascination if it disagrees with you.</p>"
         },
         "duration": {
           "sustained": true,
@@ -2213,7 +2213,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS"
       },
       "sort": 2700000,
@@ -2281,7 +2281,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.ZYoC630tNGutgbE0"
       },
       "sort": 2800000,
@@ -2304,7 +2304,7 @@
           }
         },
         "description": {
-          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2367,7 +2367,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3"
       },
       "sort": 2900000,
@@ -2390,7 +2390,7 @@
           }
         },
         "description": {
-          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
+          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2453,7 +2453,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3"
       },
       "sort": 3000000,
@@ -2549,7 +2549,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE"
       },
       "sort": 3100000,
@@ -2560,7 +2560,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp"
       },
       "img": "systems/pf2e/icons/spells/death-knell.webp",
@@ -2648,7 +2648,7 @@
           }
         },
         "description": {
-          "value": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is plagued with uncontrollable laughter. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.Prone] and can't use actions or reactions for 1 round. It then takes the effects of a failure.</p>"
+          "value": "<p>The target is overtaken with uncontrollable laughter. It must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is plagued with uncontrollable laughter. It can't use reactions.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and can't use actions or reactions for 1 round. It then takes the effects of a failure.</p>"
         },
         "duration": {
           "sustained": true,
@@ -2702,7 +2702,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv"
       },
       "sort": 3300000,
@@ -2720,7 +2720,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>Your gaze pierces through illusions and finds @UUID[Compendium.pf2e.conditionitems.Item.Invisible] creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them @UUID[Compendium.pf2e.conditionitems.Item.Concealed] and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: See the Unseen]</p>"
+          "value": "<p>Your gaze pierces through illusions and finds @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Spell Effect: See the Unseen}</p>"
         },
         "duration": {
           "sustained": false,
@@ -2774,7 +2774,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9"
       },
       "sort": 3400000,
@@ -2797,7 +2797,7 @@
           }
         },
         "description": {
-          "value": "<p>You dull the target's mind, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 1} until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 3} for 1 minute.</p>"
+          "value": "<p>You dull the target's mind, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} for 1 minute.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2850,7 +2850,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h"
       },
       "sort": 3500000,
@@ -2884,7 +2884,7 @@
           }
         },
         "description": {
-          "value": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+          "value": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
         },
         "duration": {
           "sustained": false,
@@ -2945,7 +2945,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN"
       },
       "sort": 3600000,
@@ -2971,7 +2971,7 @@
           }
         },
         "description": {
-          "value": "<p>You unleash a swirling multitude of colors that overwhelms creatures based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Dazzled] for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}, @UUID[Compendium.pf2e.conditionitems.Item.Blinded] for 1 round, and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for 1 round and blinded for 1 minute.</p>"
+          "value": "<p>You unleash a swirling multitude of colors that overwhelms creatures based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for 1 round and blinded for 1 minute.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3026,7 +3026,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl"
       },
       "sort": 3700000,
@@ -3044,7 +3044,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Light]</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>"
+          "value": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ]{Spell Effect: Light}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>"
         },
         "duration": {
           "sustained": false,
@@ -3099,7 +3099,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4"
       },
       "sort": 3800000,
@@ -3133,7 +3133,7 @@
           }
         },
         "description": {
-          "value": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
+          "value": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3195,7 +3195,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
       },
       "sort": 3900000,
@@ -3278,7 +3278,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
       },
       "sort": 4000000,
@@ -3361,7 +3361,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
       },
       "sort": 4100000,
@@ -3379,7 +3379,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the @UUID[Compendium.pf2e.conditionitems.Item.Broken] condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>"
+          "value": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken} condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3448,7 +3448,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.dINQzhqGmIsqGMUY"
       },
       "sort": 4200000,
@@ -3520,7 +3520,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.Qw3fnUlaUbnn7ipC"
       },
       "sort": 4300000,
@@ -3543,7 +3543,7 @@
           }
         },
         "description": {
-          "value": "<p>You sap the target's strength, depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 3} for 1 minute.</p>"
+          "value": "<p>You sap the target's strength, depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 minute.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3596,7 +3596,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc"
       },
       "sort": 4400000,
@@ -3614,7 +3614,7 @@
         "damage": {},
         "defense": null,
         "description": {
-          "value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.Identify Magic] on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Read Aura]</p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>"
+          "value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.J6OhRNSN23KzOPRL]{Spell Effect: Read Aura}</p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>"
         },
         "duration": {
           "sustained": false,
@@ -3684,7 +3684,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA"
       },
       "sort": 4500000,
@@ -3695,7 +3695,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw"
       },
       "img": "icons/creatures/invertebrates/tick-cross-glowing-purple.webp",
@@ -3839,7 +3839,7 @@
       "_stats": {
         "coreVersion": "14.361",
         "systemId": "pf2e",
-        "systemVersion": "8.5.1",
+        "systemVersion": "8.6.1",
         "compendiumSource": "Compendium.pf2e.spells-srd.Item.i8PBZsnoCrK7IWph"
       },
       "sort": 4700000,
