@@ -20,7 +20,9 @@ The macro updates the chosen world actors in place (same ids, so journal links h
 
 Each spell is the unmodified pf2e original. After adding or swapping a spell in `packs/_source/actors`, run `npm run sync-spells` to copy the originals in from your installed pf2e system, then `npm run build`.
 
-Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`.
+Spells copied by releases before 0.1.7 show "Unknown" links. To repair actors already in a world, run **Kingmaker: Restore Cyclops Spells** from the same compendium: it replaces every pf2e spell on the converted actors, and on their unlinked tokens, with the compendium original, keeping each spell's slot and rank.
+
+Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`, and `.restoreSpells()` runs the repair.
 
 ## Art
 

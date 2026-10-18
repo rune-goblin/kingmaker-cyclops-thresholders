@@ -1,12 +1,14 @@
 import './styles.css';
 import { MODULE_ID } from './constants';
 import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
+import { restoreSpells } from './restore';
 
 interface ModuleApi {
   version: string;
   replace: () => Promise<void>;
   replaceThresholders: () => Promise<void>;
   replaceForas: () => Promise<void>;
+  restoreSpells: () => Promise<void>;
 }
 
 const CHOICES: Record<string, string[] | undefined> = {
@@ -24,6 +26,17 @@ async function runReplace(only?: string[]): Promise<void> {
   const key = replaced || refreshed ? `${MODULE_ID}.replaced` : `${MODULE_ID}.noneFound`;
   ui.notifications.info(
     game.i18n.format(key, { replaced: String(replaced), refreshed: String(refreshed), tokens: String(tokens), spells: String(spells) }),
+  );
+}
+
+async function runRestore(): Promise<void> {
+  if (!game.user.isGM) {
+    ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.gmOnly`));
+    return;
+  }
+  const { actors, tokens, spells } = await restoreSpells();
+  ui.notifications.info(
+    game.i18n.format(`${MODULE_ID}.restored`, { actors: String(actors), tokens: String(tokens), spells: String(spells) }),
   );
 }
 
@@ -55,6 +68,7 @@ Hooks.once('ready', () => {
     replace: promptReplace,
     replaceThresholders: () => runReplace(THRESHOLDER_IDS),
     replaceForas: () => runReplace([FORAS_ID]),
+    restoreSpells: runRestore,
   };
   // `api` is the Foundry convention for a public API, but isn't a typed field on Module.
   if (module) (module as { api?: ModuleApi }).api = api;
