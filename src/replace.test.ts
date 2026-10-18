@@ -4,61 +4,61 @@ import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
 
 const MYSTIC_ID = THRESHOLDER_IDS[2];
 
-const spell = (id: string, compendiumSource: string | null = `pf2e.${id}`) => ({
+const spell = (id: string, remaster: boolean, compendiumSource: string | null = `pf2e.${id}`, description?: string) => ({
   _id: id,
   type: 'spell',
-  sort: 7,
-  system: { description: { value: 'module copy' }, location: { value: 'entry', heightenedLevel: 8 } },
+  system: { publication: { remaster }, ...(description && { description: { value: description } }) },
   _stats: { compendiumSource },
-});
-
-const original = (id: string) => ({
-  _id: id,
-  type: 'spell',
-  sort: 7,
-  folder: null,
-  system: { description: { value: `original pf2e.${id}` }, location: { value: 'entry', heightenedLevel: 8 } },
-  _stats: { compendiumSource: `pf2e.${id}`, systemVersion: '8.6.1' },
 });
 
 function source(id: string) {
   return {
     _id: id,
     img: `portraits/${id}.webp`,
-    items: [{ _id: 'old' }, { _id: 'new' }, spell('cast'), spell('missing'), spell('local', null), spell('absent')],
+    items: [
+      { _id: 'old' },
+      { _id: 'new' },
+      spell('legacy', true),
+      spell('edited', true),
+      spell('kept', false),
+      spell('swapped', true),
+      spell('untracked', true),
+    ],
     prototypeToken: { width: 2, height: 2, texture: { src: `tokens/${id}.webp` } },
     system: { attributes: { hp: { max: 390, value: 390 } } },
     flags: { [MODULE_ID]: { replaces: `Compendium.pf2e.kingmaker-bestiary.Actor.${id}` } },
   };
 }
 
-function worldActor(id: string, replaced: boolean, compendiumSource?: string) {
-  const ids = ['old', 'cast', 'missing', 'local', 'gm-added'];
+function worldActor(id: string, replaced: boolean) {
+  const items = [
+    { id: 'old' },
+    { id: 'legacy', ...spell('legacy', false) },
+    { id: 'edited', ...spell('edited', true) },
+    { id: 'kept', ...spell('kept', false) },
+    { id: 'swapped', ...spell('swapped', true, 'pf2e.previous') },
+    { id: 'untracked', ...spell('untracked', true, null) },
+  ];
   return {
     id,
-    _stats: { compendiumSource },
-    items: Object.assign(
-      ids.map((i) => ({ id: i })),
-      { has: (itemId: string) => ids.includes(itemId) },
-    ),
+    items: Object.assign(items, { get: (itemId: string) => items.find((i) => i.id === itemId) }),
     system: { attributes: { hp: { max: replaced ? 390 : 355, value: 100 } } },
-    getFlag: () => (replaced ? `Compendium.pf2e.kingmaker-bestiary.Actor.${id}` : undefined),
+    getFlag: () => (replaced ? 'yes' : undefined),
     update: vi.fn(),
     updateEmbeddedDocuments: vi.fn(),
     createEmbeddedDocuments: vi.fn(),
   };
 }
 
-function token(actorId: string, hp: number, deltaItems: string[] = []) {
+function token(actorId: string, hp: number, src = `tokens/${actorId}.webp`) {
   return {
     id: `tok-${actorId}`,
     actorId,
     actorLink: false,
     width: 2,
     height: 2,
-    texture: { src: `tokens/${actorId}.webp` },
-    delta: { items: { has: (id: string) => deltaItems.includes(id) } },
-    actor: { system: { attributes: { hp: { max: 390, value: hp } } }, updateEmbeddedDocuments: vi.fn() },
+    texture: { src },
+    actor: { system: { attributes: { hp: { max: 390, value: hp } } } },
   };
 }
 
@@ -67,12 +67,9 @@ function setup(actors: ReturnType<typeof worldActor>[], tokens: ReturnType<typeo
   const docs = [FORAS_ID, ...THRESHOLDER_IDS].map((id) => ({ toObject: () => source(id) }));
   vi.stubGlobal('game', {
     packs: { get: () => ({ getDocuments: async () => docs }) },
-    actors: { filter: (fn: (a: (typeof actors)[number]) => boolean) => actors.filter(fn) },
+    actors: { get: (id: string) => actors.find((a) => a.id === id), find: () => undefined },
     scenes: [scene],
   });
-  vi.stubGlobal('fromUuid', async (uuid: string) =>
-    uuid === 'pf2e.missing' ? null : { toObject: () => ({ ...original(uuid.slice(5)), _id: 'pf2e-id', folder: 'pf2e' }) },
-  );
   return scene;
 }
 
@@ -90,23 +87,17 @@ describe('replaceActors', () => {
       expect.objectContaining({ system: { attributes: { hp: { max: 390, value: 390 } } } }),
       { allowHPOverage: true },
     );
-    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith(
-      'Item',
-      [{ _id: 'old' }, original('cast'), spell('missing'), spell('local', null)],
-      { recursive: false },
-    );
-    expect(foras.createEmbeddedDocuments).toHaveBeenCalledWith('Item', [{ _id: 'new' }, original('absent')], {
-      keepId: true,
-    });
+    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith('Item', expect.any(Array), { recursive: false });
+    expect(foras.createEmbeddedDocuments).toHaveBeenCalledWith('Item', [{ _id: 'new' }], { keepId: true });
   });
 
-  it('refreshes art, token size, HP, and every module spell from the pf2e original on an actor already replaced', async () => {
+  it('only refreshes art, token size, HP, and legacy or swapped spells on an actor already replaced', async () => {
     const foras = worldActor(FORAS_ID, true);
     setup([foras]);
 
     const result = await replaceActors([FORAS_ID]);
 
-    expect(result).toEqual({ replaced: 0, refreshed: 1, tokens: 0, spells: 3 });
+    expect(result).toEqual({ replaced: 0, refreshed: 1, tokens: 0, spells: 2 });
     expect(foras.update).toHaveBeenCalledWith({
       img: `portraits/${FORAS_ID}.webp`,
       'prototypeToken.width': 2,
@@ -117,28 +108,36 @@ describe('replaceActors', () => {
     expect(foras.updateEmbeddedDocuments).toHaveBeenCalledOnce();
     expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith(
       'Item',
-      [original('cast'), spell('missing'), spell('local', null)],
+      [spell('legacy', true), spell('swapped', true)],
       { recursive: false },
     );
     expect(foras.createEmbeddedDocuments).not.toHaveBeenCalled();
   });
 
-  it('refreshes every copy of an actor, including ones imported from the module or duplicated', async () => {
-    const adventure = worldActor(FORAS_ID, true);
-    const imported = worldActor('imported', true, `Compendium.${MODULE_ID}.actors.Actor.${FORAS_ID}`);
-    const unrelated = worldActor('unrelated', false);
-    setup([adventure, imported, unrelated]);
+  it('replaces a spell whose links name their target instead of its id with the module copy', async () => {
+    const byName = '@UUID[Compendium.pf2e.spells-srd.Item.Interplanar Teleport]';
+    const byId = '@UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}';
+    const foras = worldActor(FORAS_ID, true);
+    Object.assign(foras.items.get('edited')!, spell('edited', true, undefined, byName));
+    Object.assign(foras.items.get('kept')!, spell('kept', false, undefined, byName));
+    Object.assign(foras.items.get('untracked')!, spell('untracked', true, null, byId));
+    setup([foras]);
 
     const result = await replaceActors([FORAS_ID]);
 
-    expect(result.refreshed).toBe(2);
-    expect(imported.updateEmbeddedDocuments).toHaveBeenCalled();
-    expect(unrelated.update).not.toHaveBeenCalled();
+    expect(result.spells).toBe(4);
+    expect(foras.updateEmbeddedDocuments).toHaveBeenCalledWith(
+      'Item',
+      [spell('legacy', true), spell('edited', true), spell('kept', false), spell('swapped', true)],
+      { recursive: false },
+    );
   });
 
-  it('heals a wounded token, replaces spells its delta overrides, and skips a token already current', async () => {
-    const wounded = token(FORAS_ID, 200, ['cast', 'gm-added']);
-    const scene = setup([worldActor(FORAS_ID, true), worldActor(MYSTIC_ID, true)], [wounded, token(MYSTIC_ID, 390)]);
+  it('heals a wounded token and skips one already current', async () => {
+    const scene = setup([worldActor(FORAS_ID, true), worldActor(MYSTIC_ID, true)], [
+      token(FORAS_ID, 200),
+      token(MYSTIC_ID, 390),
+    ]);
 
     const result = await replaceActors();
 
@@ -146,9 +145,6 @@ describe('replaceActors', () => {
     expect(scene.updateEmbeddedDocuments).toHaveBeenCalledWith('Token', [
       expect.objectContaining({ _id: `tok-${FORAS_ID}`, 'delta.system.attributes.hp.value': 390 }),
     ]);
-    expect(wounded.actor.updateEmbeddedDocuments).toHaveBeenCalledWith('Item', [original('cast')], {
-      recursive: false,
-    });
   });
 
   it('leaves actors outside the chosen set alone', async () => {

@@ -12,9 +12,7 @@ export interface ReplaceResult {
 interface ItemSource {
   _id: string;
   type?: string;
-  sort?: number;
-  system?: { location?: unknown; [key: string]: unknown };
-  _stats?: { compendiumSource?: string | null; [key: string]: unknown };
+  system?: { publication?: { remaster?: boolean } };
   [key: string]: unknown;
 }
 
@@ -28,16 +26,13 @@ interface ActorSource {
   [key: string]: unknown;
 }
 
-// Kingmaker imports its Adventure with keepId, so world actors share the bestiary id. The other
-// matches catch copies a GM imported by hand from the bestiary or this module, or duplicated.
-function findWorldActors(source: ActorSource): Actor[] {
+// Kingmaker imports its Adventure with keepId, so world actors share the bestiary id; the
+// compendiumSource fallback catches actors a GM re-imported from the bestiary by hand.
+function findWorldActor(source: ActorSource): Actor | undefined {
   const replaces = source.flags[MODULE_ID]?.replaces;
-  const origins = [replaces, `Compendium.${ACTOR_PACK}.Actor.${source._id}`];
-  return game.actors.filter(
-    (a) =>
-      a.id === source._id ||
-      origins.includes((a as unknown as { _stats: { compendiumSource?: string } })._stats.compendiumSource) ||
-      a.getFlag(MODULE_ID, 'replaces') === replaces,
+  return (
+    game.actors.get(source._id) ??
+    game.actors.find((a) => (a as unknown as { _stats: { compendiumSource?: string } })._stats.compendiumSource === replaces)
   );
 }
 
@@ -67,41 +62,44 @@ async function replace(actor: Actor, source: ActorSource): Promise<void> {
   await actor.createEmbeddedDocuments('Item', items.filter((i) => !existing.has(i._id)), { keepId: true });
 }
 
-function isSpell(item: ItemSource): boolean {
-  return item.type === 'spell';
+function isRemaster(item: { system?: unknown } | undefined): boolean {
+  return !!(item?.system as ItemSource['system'])?.publication?.remaster;
 }
 
-// Takes each spell from the pf2e compendium on this server, so actors get its exact original
-// rather than whatever copy the module shipped. Only the actor's slot and rank are kept.
-async function withOriginalSpells(source: ActorSource): Promise<ActorSource> {
-  const items = await Promise.all(
-    source.items.map(async (item) => {
-      const uuid = item._stats?.compendiumSource;
-      if (!isSpell(item) || !uuid) return item;
-      const original = (await fromUuid(uuid)) as { toObject(): ItemSource } | null;
-      if (!original) return item;
-      const data = original.toObject();
-      return {
-        ...data,
-        _id: item._id,
-        sort: item.sort,
-        folder: null,
-        system: { ...data.system, location: item.system?.location },
-        _stats: { ...data._stats, compendiumSource: uuid },
-      };
-    }),
+function compendiumSource(item: unknown): string | undefined {
+  return (item as { _stats?: { compendiumSource?: string | null } })?._stats?.compendiumSource ?? undefined;
+}
+
+// A GM edit keeps the item's compendiumSource and a GM swap creates a new item id, so both survive;
+// only legacy spells and slots the module itself moved to a different spell are swapped.
+function isStale(current: unknown, source: ItemSource): boolean {
+  if (!isRemaster(current as ItemSource)) return true;
+  const was = compendiumSource(current);
+  return !!was && was !== compendiumSource(source);
+}
+
+// Earlier module versions copied spells from pf2e's raw source, whose links name their target
+// instead of its id. Foundry resolves only ids, so those links render as "Unknown".
+function hasNameLinks(item: unknown): boolean {
+  const description = (item as { system?: { description?: { value?: string } } })?.system?.description?.value ?? '';
+  return [...description.matchAll(/@UUID\[Compendium\.[^\]]*?\.Item\.([^\]]+)\]/g)].some(
+    ([, target]) => !/^[A-Za-z0-9]{16}$/.test(target),
   );
-  return { ...source, items };
 }
 
 async function syncSpells(actor: Actor, source: ActorSource): Promise<number> {
-  const updates = source.items.filter((i) => isSpell(i) && actor.items.has(i._id));
+  const updates = source.items.filter((i) => {
+    if (i.type !== 'spell') return false;
+    const current = actor.items.get(i._id);
+    return !!current && (hasNameLinks(current) || (isRemaster(i) && isStale(current, i)));
+  });
   if (!updates.length) return 0;
   await actor.updateEmbeddedDocuments('Item', updates, REPLACE_WHOLE);
   return updates.length;
 }
 
-// A second run keeps the GM's other edits, so it touches only art, token size, HP, and the spells.
+// A second run must not wipe GM edits made since the first, so it touches only art, token size, HP,
+// and spells still on legacy data or broken links.
 async function refresh(actor: Actor, source: ActorSource): Promise<number> {
   const { img, prototypeToken: proto, system } = source;
   await actor.update({
@@ -138,7 +136,7 @@ function tokenUpdate(token: TokenDocument, source: ActorSource): TokenUpdate | n
 
 /**
  * Turn the chosen Kingmaker actors into their cyclops versions, in place. Safe to re-run: actors
- * already replaced keep their data and only get fresh art, token size, full HP, and original spells.
+ * already replaced keep their data and only get fresh art, token size, full HP, and remastered spells.
  */
 export async function replaceActors(only?: string[]): Promise<ReplaceResult> {
   const pack = game.packs.get(ACTOR_PACK);
@@ -149,32 +147,24 @@ export async function replaceActors(only?: string[]): Promise<ReplaceResult> {
 
   const result: ReplaceResult = { replaced: 0, refreshed: 0, tokens: 0, spells: 0 };
   const handled = new Map<string, ActorSource>();
-  for (const found of sources) {
-    const actors = findWorldActors(found);
-    if (!actors.length) continue;
-    const source = await withOriginalSpells(found);
-    for (const actor of actors) {
-      if (actor.getFlag(MODULE_ID, 'replaces')) {
-        result.spells += await refresh(actor, source);
-        result.refreshed++;
-      } else {
-        await replace(actor, source);
-        result.replaced++;
-      }
-      handled.set(actor.id!, source);
+  for (const source of sources) {
+    const actor = findWorldActor(source);
+    if (!actor) continue;
+    if (actor.getFlag(MODULE_ID, 'replaces')) {
+      result.spells += await refresh(actor, source);
+      result.refreshed++;
+    } else {
+      await replace(actor, source);
+      result.replaced++;
     }
+    handled.set(actor.id!, source);
   }
 
   for (const scene of game.scenes) {
-    const tokens = scene.tokens.filter((t) => !t.actorLink && !!t.actorId && handled.has(t.actorId));
-    // An unlinked token's own copy of a spell would hide the actor's fresh one.
-    for (const token of tokens) {
-      const spells = handled.get(token.actorId!)!.items.filter((i) => isSpell(i) && token.delta?.items.has(i._id));
-      if (!spells.length || !token.actor) continue;
-      await (token.actor as unknown as Actor).updateEmbeddedDocuments('Item', spells, REPLACE_WHOLE);
-      result.spells += spells.length;
-    }
-    const updates = tokens.map((t) => tokenUpdate(t, handled.get(t.actorId!)!)).filter((u) => u !== null);
+    const updates = scene.tokens
+      .filter((t) => !t.actorLink && !!t.actorId && handled.has(t.actorId))
+      .map((t) => tokenUpdate(t, handled.get(t.actorId!)!))
+      .filter((u) => u !== null);
     if (!updates.length) continue;
     await scene.updateEmbeddedDocuments('Token', updates);
     result.tokens += updates.length;

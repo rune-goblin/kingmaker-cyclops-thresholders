@@ -5,7 +5,7 @@
     "noneFound": "None of the chosen Kingmaker actors are in this world. Import the Kingmaker adventure first.",
     "dialog": {
       "title": "Kingmaker: Make Cyclopes",
-      "content": "Replace which actors with their cyclops versions? Actors already replaced keep their data and only get fresh art, full HP, and original spells from the pf2e compendium.",
+      "content": "Replace which actors with their cyclops versions? Actors already replaced keep their data and only get fresh art, full HP, and remastered spells.",
       "thresholders": "Thresholders",
       "foras": "Foras",
       "all": "All four"
