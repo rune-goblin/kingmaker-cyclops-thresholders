@@ -16,7 +16,7 @@ Traits swap `human` for `giant`, the Disciple's Athletics rises by 2, all four s
 1. Import the Kingmaker adventure into your world and enable this module.
 2. As GM, run the **Kingmaker: Make Cyclopes** macro from the *Cyclops Thresholders Macros* compendium and choose **Thresholders**, **Foras**, or **All four**.
 
-The macro updates the chosen world actors in place (same ids, so journal links hold), resizes their tokens on every scene, and sets current HP to the new maximum. Running it again is safe: actors it already replaced keep your edits and only get fresh art, token size, full HP, and the module's current version of any spell that is still on legacy data, was since swapped for a different one, or shows broken links. Re-importing the Kingmaker adventure restores the human versions; run the macro again afterwards.
+The macro updates the chosen world actors in place (same ids, so journal links hold), including any copy imported from this module or duplicated, resizes their tokens on every scene, and sets current HP to the new maximum. Every module spell comes straight from the pf2e compendium on your server, keeping only its slot and rank, and replaces any token's own copy too. Running it again is safe: actors it already replaced keep your other edits and only get fresh art, token size, full HP, and the original spells. Re-importing the Kingmaker adventure restores the human versions; run the macro again afterwards.
 
 Each spell is the unmodified pf2e original. After adding or swapping a spell in `packs/_source/actors`, run `npm run sync-spells` to copy the originals in from your installed pf2e system, then `npm run build`.
 
