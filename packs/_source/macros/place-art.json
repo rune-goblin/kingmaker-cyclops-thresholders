@@ -1,0 +1,13 @@
+{
+  "_id": "kmcycPlaceArt001",
+  "_key": "!macros!kmcycPlaceArt001",
+  "name": "Kingmaker: Candlemere Spiral",
+  "type": "script",
+  "img": "icons/svg/book.svg",
+  "scope": "global",
+  "command": "game.modules.get('kingmaker-cyclops-thresholders')?.api?.setUpCandlemere();",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

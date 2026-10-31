@@ -22,11 +22,23 @@ Each spell is the unmodified pf2e original. After adding or swapping a spell in 
 
 Spells copied by releases before 0.1.7 show "Unknown" links. To repair actors already in a world, run **Kingmaker: Restore Cyclops Spells** from the same compendium: it replaces every pf2e spell on the converted actors, and on their unlinked tokens, with the compendium original, keeping each spell's slot and rank.
 
-Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`, and `.restoreSpells()` runs the repair.
+## Candlemere Spiral
+
+Run **Kingmaker: Candlemere Spiral** from the same compendium. On the Candlemere Spiral scene it:
+
+- replaces the four mastiffs of Tindalos in the Garden (B6) with Ancient Leng Spiders from *Bestiary 2*, and the three Kingmaker quelaunts in the Black Sand Cavern (B12) with quelaunts from *Monster Core*. Each creature comes in exactly as the bestiary ships it, with no elite or weak adjustment, and an actor the world already holds is reused;
+- imports the *Candlemere Spiral Art* journal, with one image page per room encounter, and pins each page in its room as a round thumbnail of its art (the laboratory page goes in A11 on Candlemere Contested). Open a pin and use **Show Players** on the page to share the image;
+- gives the Leng envoy, mastiff of Tindalos, Niodrhast, and Ancient Leng Spider actors new portraits and tokens, and retextures their placed tokens. Only art changes; stats stay as Kingmaker and pf2e ship them.
+
+Running it again keeps pins you moved and resized, and only adds what is missing.
+
+To ship new pin positions, move the pins in a world, then run `npm run capture-art -- <world-id>` to copy them into `src/art-placements.json` and rebuild.
+
+Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`. `.restoreSpells()` runs the repair and `.setUpCandlemere()` runs the Candlemere Spiral macro.
 
 ## Art
 
-`docs/assets.md` holds generator prompts for the eight portraits and tokens. Drop the results into `assets/portraits/` and `assets/tokens/`.
+`docs/assets.md` holds generator prompts for the eight portraits and tokens. Drop the results into `assets/portraits/` and `assets/tokens/`. The Candlemere journal art lives in `assets/images/`.
 
 ## Build
 

@@ -1,0 +1,82 @@
+[
+  {
+    "page": "QDtHx1W7ZthfdNL0",
+    "scene": "Ug6YT5yMBh7JJmRh",
+    "x": 9491,
+    "y": 4212,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/cyclops-laboratory.webp"
+  },
+  {
+    "page": "e31PVcrOuvBK2nQz",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 9332,
+    "y": 6689,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/niodrhast.webp"
+  },
+  {
+    "page": "QXdm1lPxpAJwRZJr",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 4670,
+    "y": 6093,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/cyclops-monks.webp"
+  },
+  {
+    "page": "7CNBxKdbmWQndo5P",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 3000,
+    "y": 2288,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/leng-envoy-and-mastiff.webp"
+  },
+  {
+    "page": "aayowCjOVzlbCyJR",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 2968,
+    "y": 2460,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/mastiff-of-tindalos.webp"
+  },
+  {
+    "page": "cSgWGVE7YsHamqUQ",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 3179,
+    "y": 5157,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/leng-spider.webp"
+  },
+  {
+    "page": "idOiZjobWXqx575e",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 4902,
+    "y": 2752,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/leng-envoy.webp"
+  },
+  {
+    "page": "iIUruPFrFrXwqdZb",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 7706,
+    "y": 5200,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/quelaunts.webp"
+  },
+  {
+    "page": "i38iK4h4Gp2o8enx",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 6039,
+    "y": 5207,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/mystics-in-the-spheres.webp"
+  },
+  {
+    "page": "VS0ZeQAsnmTTggU5",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 6975,
+    "y": 3632,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/foras-the-master.webp"
+  }
+]

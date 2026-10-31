@@ -2,6 +2,7 @@ import './styles.css';
 import { MODULE_ID } from './constants';
 import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
 import { restoreSpells } from './restore';
+import { setUpCandlemere } from './art';
 
 interface ModuleApi {
   version: string;
@@ -9,6 +10,7 @@ interface ModuleApi {
   replaceThresholders: () => Promise<void>;
   replaceForas: () => Promise<void>;
   restoreSpells: () => Promise<void>;
+  setUpCandlemere: () => Promise<void>;
 }
 
 const CHOICES: Record<string, string[] | undefined> = {
@@ -37,6 +39,23 @@ async function runRestore(): Promise<void> {
   const { actors, tokens, spells } = await restoreSpells();
   ui.notifications.info(
     game.i18n.format(`${MODULE_ID}.restored`, { actors: String(actors), tokens: String(tokens), spells: String(spells) }),
+  );
+}
+
+async function runCandlemere(): Promise<void> {
+  if (!game.user.isGM) {
+    ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.gmOnly`));
+    return;
+  }
+  const { creatures, journal, notes, actors, tokens } = await setUpCandlemere();
+  ui.notifications.info(
+    game.i18n.format(`${MODULE_ID}.candlemere`, {
+      journal: game.i18n.localize(`${MODULE_ID}.${journal ? 'artImported' : 'artKept'}`),
+      creatures: String(creatures),
+      notes: String(notes),
+      actors: String(actors),
+      tokens: String(tokens),
+    }),
   );
 }
 
@@ -69,6 +88,7 @@ Hooks.once('ready', () => {
     replaceThresholders: () => runReplace(THRESHOLDER_IDS),
     replaceForas: () => runReplace([FORAS_ID]),
     restoreSpells: runRestore,
+    setUpCandlemere: runCandlemere,
   };
   // `api` is the Foundry convention for a public API, but isn't a typed field on Module.
   if (module) (module as { api?: ModuleApi }).api = api;

@@ -1,0 +1,203 @@
+{
+  "_id": "7GQ5pIphx6GyLjbj",
+  "_key": "!journal!7GQ5pIphx6GyLjbj",
+  "name": "Candlemere Spiral Art",
+  "pages": [
+    {
+      "_id": "QDtHx1W7ZthfdNL0",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.QDtHx1W7ZthfdNL0",
+      "name": "A11. Illocor and Kromori",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/cyclops-laboratory.webp",
+      "image": {
+        "caption": "Laboratory"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "e31PVcrOuvBK2nQz",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.e31PVcrOuvBK2nQz",
+      "name": "B2. Niodrhast",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/niodrhast.webp",
+      "image": {
+        "caption": "Chamber of the Worm"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "QXdm1lPxpAJwRZJr",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.QXdm1lPxpAJwRZJr",
+      "name": "B3. Rune-Scribed Room",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/cyclops-monks.webp",
+      "image": {
+        "caption": "Rune-Scribed Room"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "7CNBxKdbmWQndo5P",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.7CNBxKdbmWQndo5P",
+      "name": "B5. Leng Envoy and Mastiff",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/leng-envoy-and-mastiff.webp",
+      "image": {
+        "caption": "The Howling Room"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "aayowCjOVzlbCyJR",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.aayowCjOVzlbCyJR",
+      "name": "B5. Mastiff of Tindalos",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/mastiff-of-tindalos.webp",
+      "image": {
+        "caption": "The Howling Room"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "cSgWGVE7YsHamqUQ",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.cSgWGVE7YsHamqUQ",
+      "name": "B6. Ancient Leng Spiders",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/leng-spider.webp",
+      "image": {
+        "caption": "Garden"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "idOiZjobWXqx575e",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.idOiZjobWXqx575e",
+      "name": "B8. Leng Envoy",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/leng-envoy.webp",
+      "image": {
+        "caption": "Lecture Room"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "iIUruPFrFrXwqdZb",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.iIUruPFrFrXwqdZb",
+      "name": "B12. Quelaunts",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/quelaunts.webp",
+      "image": {
+        "caption": "Black Sand Cavern"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "i38iK4h4Gp2o8enx",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.i38iK4h4Gp2o8enx",
+      "name": "B13. Tolas and Noliskur",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/mystics-in-the-spheres.webp",
+      "image": {
+        "caption": "Acolyte Alcoves"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "VS0ZeQAsnmTTggU5",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.VS0ZeQAsnmTTggU5",
+      "name": "B14. Foras",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/foras-the-master.webp",
+      "image": {
+        "caption": "Ritual Chamber"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

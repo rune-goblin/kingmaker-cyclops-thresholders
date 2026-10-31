@@ -35,6 +35,12 @@
       "label": "Cyclops Thresholders Macros",
       "path": "packs/macros",
       "type": "Macro"
+    },
+    {
+      "name": "journal",
+      "label": "Cyclops Thresholders Art",
+      "path": "packs/journal",
+      "type": "JournalEntry"
     }
   ],
   "relationships": {

@@ -2,6 +2,6 @@ declare module '@foundryvtt/foundryvtt-cli' {
   export function extractPack(
     src: string,
     dest: string,
-    options?: { transformEntry?: (doc: never) => unknown },
+    options?: { documentType?: string; transformEntry?: (doc: never) => unknown },
   ): Promise<void>;
 }
