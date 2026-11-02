@@ -1,0 +1,13 @@
+{
+  "_id": "kmcycHelixRooms1",
+  "_key": "!macros!kmcycHelixRooms1",
+  "name": "Kingmaker: Helix Theorem",
+  "type": "script",
+  "img": "modules/kingmaker-cyclops-thresholders/assets/helix/helix-1-sealed.webp",
+  "scope": "global",
+  "command": "game.modules.get('kingmaker-cyclops-thresholders')?.api?.markHelixRooms();",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

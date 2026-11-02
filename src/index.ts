@@ -3,6 +3,7 @@ import { MODULE_ID } from './constants';
 import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
 import { restoreSpells } from './restore';
 import { setUpCandlemere } from './art';
+import { addSealControl, markHelixRooms } from './helix';
 
 interface ModuleApi {
   version: string;
@@ -11,6 +12,7 @@ interface ModuleApi {
   replaceForas: () => Promise<void>;
   restoreSpells: () => Promise<void>;
   setUpCandlemere: () => Promise<void>;
+  markHelixRooms: () => Promise<void>;
 }
 
 const CHOICES: Record<string, string[] | undefined> = {
@@ -59,6 +61,22 @@ async function runCandlemere(): Promise<void> {
   );
 }
 
+async function runHelix(): Promise<void> {
+  if (!game.user.isGM) {
+    ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.gmOnly`));
+    return;
+  }
+  const { scenes, tiles, missing } = await markHelixRooms();
+  if (!scenes) {
+    ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.helix.noScene`));
+    return;
+  }
+  ui.notifications.info(game.i18n.format(`${MODULE_ID}.helix.marked`, { tiles: String(tiles) }));
+  if (missing.length) {
+    ui.notifications.warn(game.i18n.format(`${MODULE_ID}.helix.missing`, { rooms: missing.join(', ') }));
+  }
+}
+
 async function promptReplace(): Promise<void> {
   if (!game.user.isGM) {
     ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.gmOnly`));
@@ -79,6 +97,8 @@ async function promptReplace(): Promise<void> {
   await runReplace(CHOICES[choice]);
 }
 
+Hooks.on('renderTileHUD', addSealControl);
+
 Hooks.once('ready', () => {
   const module = game.modules.get(MODULE_ID);
   const version = module?.version ?? '0.0.0';
@@ -89,6 +109,7 @@ Hooks.once('ready', () => {
     replaceForas: () => runReplace([FORAS_ID]),
     restoreSpells: runRestore,
     setUpCandlemere: runCandlemere,
+    markHelixRooms: runHelix,
   };
   // `api` is the Foundry convention for a public API, but isn't a typed field on Module.
   if (module) (module as { api?: ModuleApi }).api = api;

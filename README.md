@@ -32,9 +32,11 @@ Run **Kingmaker: Candlemere Spiral** from the same compendium. On the Candlemere
 
 Running it again keeps pins you moved and resized, and only adds what is missing.
 
+Run **Kingmaker: Helix Theorem** to mark the nine rooms of the Helix Theorem ritual on the Candlemere Spiral. Each room gets a hidden tile beside its room pin: a spiral sigil numbered in ritual order, from 1 in B14 at the centre to 9 in B1 at the mouth. Right-click a tile and use the eye button to show it to the players or hide it again. Use the sigil button to swap it between the open eye and the sealed, pale blue sigil as the party closes the gate in each room. Running it again keeps tiles you moved and only adds missing ones.
+
 To ship new pin positions, move the pins in a world, then run `npm run capture-art -- <world-id>` to copy them into `src/art-placements.json` and rebuild.
 
-Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`. `.restoreSpells()` runs the repair and `.setUpCandlemere()` runs the Candlemere Spiral macro.
+Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders').api.replaceThresholders()` or `.replaceForas()`. `.restoreSpells()` runs the repair and `.setUpCandlemere()` runs the Candlemere Spiral macro, and `.markHelixRooms()` runs the Helix Theorem macro.
 
 ## Art
 
