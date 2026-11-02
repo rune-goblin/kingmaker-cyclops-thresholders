@@ -40,6 +40,8 @@ Scripts can skip the prompt: `game.modules.get('kingmaker-cyclops-thresholders')
 
 `docs/assets.md` holds generator prompts for the eight portraits and tokens. Drop the results into `assets/portraits/` and `assets/tokens/`. The Candlemere journal art lives in `assets/images/`.
 
+Run `npm run optimize-art` after adding art. It encodes PNG, JPEG, and lossless WebP files as WebP at quality 80, and it leaves lossy WebP unchanged. It needs `cwebp` (`brew install webp`).
+
 ## Build
 
 `npm install && npm run build`, then `npm run setup` to link the module into Foundry.
