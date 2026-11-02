@@ -3,7 +3,8 @@ import { MODULE_ID } from './constants';
 import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
 import { restoreSpells } from './restore';
 import { setUpCandlemere } from './art';
-import { addSealControl, markHelixRooms } from './helix';
+import { addSealControl, openAllGates, placeHelixTiles, setAllHidden } from './helix';
+import { SPIRAL } from './swaps';
 
 interface ModuleApi {
   version: string;
@@ -66,15 +67,27 @@ async function runHelix(): Promise<void> {
     ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.gmOnly`));
     return;
   }
-  const { scenes, tiles, missing } = await markHelixRooms();
-  if (!scenes) {
+  const scene = game.scenes.get(SPIRAL);
+  if (!scene) {
     ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.helix.noScene`));
     return;
   }
-  ui.notifications.info(game.i18n.format(`${MODULE_ID}.helix.marked`, { tiles: String(tiles) }));
-  if (missing.length) {
-    ui.notifications.warn(game.i18n.format(`${MODULE_ID}.helix.missing`, { rooms: missing.join(', ') }));
-  }
+  const placed = await placeHelixTiles(scene);
+  if (placed) ui.notifications.info(game.i18n.format(`${MODULE_ID}.helix.placed`, { tiles: String(placed) }));
+
+  const t = (key: string) => game.i18n.localize(`${MODULE_ID}.helix.dialog.${key}`);
+  const choice = await foundry.applications.api.DialogV2.wait({
+    window: { title: t('title') },
+    content: `<p>${t('content')}</p>`,
+    buttons: [
+      { action: 'show', label: t('show'), icon: 'fa-solid fa-eye', default: true },
+      { action: 'hide', label: t('hide'), icon: 'fa-solid fa-eye-slash' },
+      { action: 'open', label: t('open'), icon: 'fa-solid fa-rotate-left' },
+    ],
+    rejectClose: false,
+  });
+  if (choice === 'show' || choice === 'hide') await setAllHidden(scene, choice === 'hide');
+  else if (choice === 'open') await openAllGates(scene);
 }
 
 async function promptReplace(): Promise<void> {

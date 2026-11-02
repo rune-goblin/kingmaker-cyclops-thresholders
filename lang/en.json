@@ -15,11 +15,17 @@
     "artKept": "Kept the existing Candlemere Spiral Art journal.",
     "candlemere": "{journal} Placed {creatures} creature token(s), pinned {notes} art note(s), and gave {actors} actor(s) and {tokens} scene token(s) new art.",
     "helix": {
-      "marked": "Placed {tiles} hidden Helix Theorem tile(s). Right-click a tile to show it to players or seal it.",
-      "missing": "No room pin for {rooms}, so those Helix Theorem steps have no tile.",
-      "noScene": "No scene holds the Candlemere Spiral room pins. Import Kingmaker's Candlemere Spiral scene first.",
+      "placed": "Placed {tiles} hidden Helix Theorem tile(s) on the Candlemere Spiral.",
+      "noScene": "This world has no Candlemere Spiral scene. Import it from Kingmaker first.",
       "seal": "Seal the gate",
-      "unseal": "Open the gate"
+      "unseal": "Open the gate",
+      "dialog": {
+        "title": "Helix Theorem",
+        "content": "Change all nine Helix Theorem tiles at once. To seal or open one gate, right-click its tile on the Tiles layer.",
+        "show": "Show to players",
+        "hide": "Hide from players",
+        "open": "Open all gates"
+      }
     }
   }
 }

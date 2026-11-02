@@ -1,4 +1,4 @@
-const SPIRAL = 'nRny3fEVnIYr2b7B';
+export const SPIRAL = 'nRny3fEVnIYr2b7B';
 
 interface Rect {
   x: number;

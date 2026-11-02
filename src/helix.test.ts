@@ -1,66 +1,70 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { MODULE_ID } from './constants';
-import { CHAPTER_9_ID, HELIX_ROOMS, TILE_SIZE, helixIcon, markHelixRooms, setSealed } from './helix';
+import { HELIX_ROOMS, TILE_SIZE, helixIcon, openAllGates, placeHelixTiles, setAllHidden, setSealed } from './helix';
 
-const roomPin = (page: string, x: number, y: number) => ({ entryId: CHAPTER_9_ID, pageId: page, x, y });
-
-const helixTile = (step: number, sealed = false) => ({
+const helixTile = (step: number, { sealed = false } = {}) => ({
+  id: `tile-${step}`,
   getFlag: (scope: string, key: string) =>
     scope === MODULE_ID ? ({ helixStep: step, sealed } as Record<string, unknown>)[key] : undefined,
   update: vi.fn(),
 });
 
-function scene(notes: unknown[], tiles: unknown[] = []) {
-  return { notes: { contents: notes }, tiles: { contents: tiles }, createEmbeddedDocuments: vi.fn() };
+const otherTile = { id: 'rug', getFlag: () => undefined, update: vi.fn() };
+
+function scene(tiles: unknown[] = []) {
+  return { tiles: { contents: tiles }, createEmbeddedDocuments: vi.fn(), updateEmbeddedDocuments: vi.fn() };
 }
 
-const allPins = () => HELIX_ROOMS.map((r, i) => roomPin(r.page, 1000 + i * 100, 500));
+type Created = { x: number; y: number; hidden: boolean; texture: { src: string }; flags: Record<string, { helixStep: number }> };
 
-describe('markHelixRooms', () => {
-  beforeEach(() => vi.unstubAllGlobals());
+describe('placeHelixTiles', () => {
+  it('centres a hidden open tile on the spiral in each of the nine rooms', async () => {
+    const spiral = scene([otherTile]);
 
-  it('places nine hidden open tiles in ritual order beside their room pins', async () => {
-    const spiral = scene(allPins());
-    vi.stubGlobal('game', { scenes: [spiral] });
-
-    expect(await markHelixRooms()).toEqual({ scenes: 1, tiles: 9, missing: [] });
-    const [type, created] = spiral.createEmbeddedDocuments.mock.calls[0];
+    expect(await placeHelixTiles(spiral)).toBe(9);
+    const [type, created] = spiral.createEmbeddedDocuments.mock.calls[0] as [string, Created[]];
     expect(type).toBe('Tile');
-    expect(created.map((t: { texture: { src: string } }) => t.texture.src)).toEqual(
-      HELIX_ROOMS.map((_, i) => helixIcon(i + 1, false)),
-    );
+    expect(created.map((t) => t.flags[MODULE_ID].helixStep)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    expect(created.every((t) => t.hidden && t.texture.src === helixIcon(false))).toBe(true);
     expect(created[0]).toMatchObject({
-      x: 1000 - 110 - TILE_SIZE / 2,
-      y: 500 - TILE_SIZE / 2,
-      hidden: true,
-      flags: { [MODULE_ID]: { helixStep: 1, sealed: false } },
+      x: HELIX_ROOMS[0].x - TILE_SIZE / 2,
+      y: HELIX_ROOMS[0].y - TILE_SIZE / 2,
+      width: TILE_SIZE,
+      height: TILE_SIZE,
     });
+    expect(spiral.updateEmbeddedDocuments).not.toHaveBeenCalled();
   });
 
-  it('adds only the steps a re-run finds missing', async () => {
-    const spiral = scene(allPins(), [helixTile(1), helixTile(2, true)]);
-    vi.stubGlobal('game', { scenes: [spiral] });
+  it('adds only the steps a re-run finds missing and leaves placed tiles where they are', async () => {
+    const spiral = scene([helixTile(1), helixTile(2, { sealed: true })]);
 
-    expect((await markHelixRooms()).tiles).toBe(7);
-    const created = spiral.createEmbeddedDocuments.mock.calls[0][1];
-    expect(created.map((t: { flags: Record<string, { helixStep: number }> }) => t.flags[MODULE_ID].helixStep)).toEqual([
-      3, 4, 5, 6, 7, 8, 9,
+    expect(await placeHelixTiles(spiral)).toBe(7);
+    const created = spiral.createEmbeddedDocuments.mock.calls[0][1] as Created[];
+    expect(created.map((t) => t.flags[MODULE_ID].helixStep)).toEqual([3, 4, 5, 6, 7, 8, 9]);
+    expect(spiral.updateEmbeddedDocuments).not.toHaveBeenCalled();
+  });
+});
+
+describe('bulk actions', () => {
+  it('shows every Helix tile and no other tile', async () => {
+    const spiral = scene([helixTile(1), otherTile, helixTile(2)]);
+
+    await setAllHidden(spiral, false);
+
+    expect(spiral.updateEmbeddedDocuments).toHaveBeenCalledWith('Tile', [
+      { _id: 'tile-1', hidden: false },
+      { _id: 'tile-2', hidden: false },
     ]);
   });
 
-  it('reports rooms whose pin the scene lacks', async () => {
-    const spiral = scene(allPins().filter((p) => p.pageId !== '0kSqo5oKQtD59pcX'));
-    vi.stubGlobal('game', { scenes: [spiral] });
+  it('opens every gate for a fresh attempt', async () => {
+    const spiral = scene([helixTile(1, { sealed: true }), otherTile]);
 
-    expect(await markHelixRooms()).toEqual({ scenes: 1, tiles: 8, missing: ['B10'] });
-  });
+    await openAllGates(spiral);
 
-  it('ignores scenes without the chapter 9 room pins', async () => {
-    const other = scene([roomPin('somewhereElse', 0, 0)]);
-    vi.stubGlobal('game', { scenes: [other] });
-
-    expect(await markHelixRooms()).toEqual({ scenes: 0, tiles: 0, missing: [] });
-    expect(other.createEmbeddedDocuments).not.toHaveBeenCalled();
+    expect(spiral.updateEmbeddedDocuments).toHaveBeenCalledWith('Tile', [
+      { _id: 'tile-1', 'texture.src': helixIcon(false), [`flags.${MODULE_ID}.sealed`]: false },
+    ]);
   });
 });
 
@@ -71,16 +75,14 @@ describe('setSealed', () => {
     await setSealed(tile, true);
 
     expect(tile.update).toHaveBeenCalledWith({
-      'texture.src': helixIcon(4, true),
+      'texture.src': helixIcon(true),
       [`flags.${MODULE_ID}.sealed`]: true,
     });
   });
 
   it('leaves tiles that are not Helix tiles alone', async () => {
-    const tile = { getFlag: () => undefined, update: vi.fn() };
+    await setSealed(otherTile, true);
 
-    await setSealed(tile, true);
-
-    expect(tile.update).not.toHaveBeenCalled();
+    expect(otherTile.update).not.toHaveBeenCalled();
   });
 });

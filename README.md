@@ -32,7 +32,7 @@ Run **Kingmaker: Candlemere Spiral** from the same compendium. On the Candlemere
 
 Running it again keeps pins you moved and resized, and only adds what is missing.
 
-Run **Kingmaker: Helix Theorem** to mark the nine rooms of the Helix Theorem ritual on the Candlemere Spiral. Each room gets a hidden tile beside its room pin: a spiral sigil numbered in ritual order, from 1 in B14 at the centre to 9 in B1 at the mouth. Right-click a tile and use the eye button to show it to the players or hide it again. Use the sigil button to swap it between the open eye and the sealed, pale blue sigil as the party closes the gate in each room. Running it again keeps tiles you moved and only adds missing ones.
+Run **Kingmaker: Helix Theorem** to mark the nine rooms of the Helix Theorem ritual on the Candlemere Spiral. The first run puts a hidden tile in each room, centred where the spiral corridor runs through it, from B14 at the centre out to B1. Each tile shows a spiral sigil around an eye. The macro then offers to show every tile to the players, hide them all, or open all the gates for a fresh attempt. To seal or open one gate, switch to the Tiles layer, right-click its tile, and use the door button in the left column (Foundry's eye button on the right only hides or shows the tile). Running the macro again keeps tiles you moved and only adds missing ones.
 
 To ship new pin positions, move the pins in a world, then run `npm run capture-art -- <world-id>` to copy them into `src/art-placements.json` and rebuild.
 
