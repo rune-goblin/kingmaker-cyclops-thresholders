@@ -143,7 +143,8 @@ export async function replaceActors(only?: string[]): Promise<ReplaceResult> {
   if (!pack) throw new Error(`${ACTOR_PACK} missing`);
   const sources = (await pack.getDocuments())
     .map((d) => d.toObject() as unknown as ActorSource)
-    .filter((s) => !only || only.includes(s._id));
+    // Actors the module adds outright, such as Ilmorra and Vashtrel, replace nothing.
+    .filter((s) => !!s.flags[MODULE_ID]?.replaces && (!only || only.includes(s._id)));
 
   const result: ReplaceResult = { replaced: 0, refreshed: 0, tokens: 0, spells: 0 };
   const handled = new Map<string, ActorSource>();

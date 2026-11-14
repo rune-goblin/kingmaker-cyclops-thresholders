@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { MODULE_ID } from './constants';
 import { FORAS_ID, THRESHOLDER_IDS, replaceActors } from './replace';
+import { ILMORRA_ID } from './additions';
 
 const MYSTIC_ID = THRESHOLDER_IDS[2];
 
@@ -62,9 +63,9 @@ function token(actorId: string, hp: number, src = `tokens/${actorId}.webp`) {
   };
 }
 
-function setup(actors: ReturnType<typeof worldActor>[], tokens: ReturnType<typeof token>[] = []) {
+function setup(actors: ReturnType<typeof worldActor>[], tokens: ReturnType<typeof token>[] = [], extra: object[] = []) {
   const scene = { tokens, updateEmbeddedDocuments: vi.fn() };
-  const docs = [FORAS_ID, ...THRESHOLDER_IDS].map((id) => ({ toObject: () => source(id) }));
+  const docs = [...[FORAS_ID, ...THRESHOLDER_IDS].map(source), ...extra].map((s) => ({ toObject: () => s }));
   vi.stubGlobal('game', {
     packs: { get: () => ({ getDocuments: async () => docs }) },
     actors: { get: (id: string) => actors.find((a) => a.id === id), find: () => undefined },
@@ -157,5 +158,15 @@ describe('replaceActors', () => {
     expect(result.replaced).toBe(1);
     expect(foras.update).not.toHaveBeenCalled();
     expect(mystic.update).toHaveBeenCalled();
+  });
+
+  it('leaves an actor the module adds outright, such as Ilmorra, alone', async () => {
+    const ilmorra = worldActor(ILMORRA_ID, false);
+    setup([ilmorra], [], [{ ...source(ILMORRA_ID), flags: {} }]);
+
+    const result = await replaceActors();
+
+    expect(result).toEqual({ replaced: 0, refreshed: 0, tokens: 0, spells: 0 });
+    expect(ilmorra.update).not.toHaveBeenCalled();
   });
 });

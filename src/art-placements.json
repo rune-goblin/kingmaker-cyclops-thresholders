@@ -48,12 +48,28 @@
     "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/leng-spider.webp"
   },
   {
+    "page": "Wb4sLq9TzYk2NmRe",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 3329,
+    "y": 5157,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/leng-spider-battle.webp"
+  },
+  {
     "page": "idOiZjobWXqx575e",
     "scene": "nRny3fEVnIYr2b7B",
     "x": 4902,
     "y": 2752,
     "iconSize": 64,
     "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/leng-envoy.webp"
+  },
+  {
+    "page": "Hq7vPz3KdR5wXmTa",
+    "scene": "nRny3fEVnIYr2b7B",
+    "x": 8550,
+    "y": 2520,
+    "iconSize": 64,
+    "icon": "modules/kingmaker-cyclops-thresholders/assets/pins/mortification-room.webp"
   },
   {
     "page": "iIUruPFrFrXwqdZb",

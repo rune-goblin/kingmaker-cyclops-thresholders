@@ -27,6 +27,7 @@ Spells copied by releases before 0.1.7 show "Unknown" links. To repair actors al
 Run **Kingmaker: Candlemere Spiral** from the same compendium. On the Candlemere Spiral scene it:
 
 - replaces the four mastiffs of Tindalos in the Garden (B6) with Ancient Leng Spiders from *Bestiary 2*, and the three Kingmaker quelaunts in the Black Sand Cavern (B12) with quelaunts from *Monster Core*. Each creature comes in exactly as the bestiary ships it, with no elite or weak adjustment, and an actor the world already holds is reused;
+- adds two hidden elite Thresholder disciples, Ilmorra and Vashtrel, to the Mortification Room (B10), meditating on its ritual circles. They come from this module's *Cyclops Thresholders* compendium. A token you delete stays deleted when you run the macro again;
 - imports the *Candlemere Spiral Art* journal, with one image page per room encounter, and pins each page in its room as a round thumbnail of its art (the laboratory page goes in A11 on Candlemere Contested). Open a pin and use **Show Players** on the page to share the image;
 - gives the Leng envoy, mastiff of Tindalos, Niodrhast, and Ancient Leng Spider actors new portraits and tokens, and retextures their placed tokens. Only art changes; stats stay as Kingmaker and pf2e ship them.
 

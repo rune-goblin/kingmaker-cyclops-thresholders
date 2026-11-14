@@ -118,6 +118,25 @@
       "flags": {}
     },
     {
+      "_id": "Wb4sLq9TzYk2NmRe",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.Wb4sLq9TzYk2NmRe",
+      "name": "B6. Leng Spider Battle",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/leng-spider-battle.webp",
+      "image": {
+        "caption": "Garden"
+      },
+      "sort": 650000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
       "_id": "idOiZjobWXqx575e",
       "_key": "!journal.pages!7GQ5pIphx6GyLjbj.idOiZjobWXqx575e",
       "name": "B8. Leng Envoy",
@@ -131,6 +150,25 @@
         "caption": "Lecture Room"
       },
       "sort": 700000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "Hq7vPz3KdR5wXmTa",
+      "_key": "!journal.pages!7GQ5pIphx6GyLjbj.Hq7vPz3KdR5wXmTa",
+      "name": "B10. Ilmorra and Vashtrel",
+      "type": "image",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "src": "modules/kingmaker-cyclops-thresholders/assets/images/mortification-room.webp",
+      "image": {
+        "caption": "Mortification Room"
+      },
+      "sort": 750000,
       "ownership": {
         "default": -1
       },
