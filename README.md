@@ -31,7 +31,7 @@ Run **Kingmaker: Candlemere Spiral** from the same compendium. On the Candlemere
 - imports the *Candlemere Spiral Art* journal, with one image page per room encounter, and pins each page in its room as a round thumbnail of its art (the laboratory page goes in A11 on Candlemere Contested). Open a pin and use **Show Players** on the page to share the image;
 - gives the Leng envoy, mastiff of Tindalos, Niodrhast, and Ancient Leng Spider actors new portraits and tokens, and retextures their placed tokens. Only art changes; stats stay as Kingmaker and pf2e ship them.
 
-Running it again keeps pins you moved and resized, and only adds what is missing.
+Running it again keeps pins you moved and resized, and only adds what is missing. It also brings the journal up to date: pages added in a module update appear, and each page takes the module's current image, title, and caption.
 
 Run **Kingmaker: Helix Theorem** to mark the nine rooms of the Helix Theorem ritual on the Candlemere Spiral. The first run puts a hidden tile in each room, centred where the spiral corridor runs through it, from B14 at the centre out to B1. Each tile shows a spiral sigil around an eye. The macro then offers to show every tile to the players, hide them all, or open all the gates for a fresh attempt. To seal or open one gate, switch to the Tiles layer, right-click its tile, and use the door button in the left column (Foundry's eye button on the right only hides or shows the tile). Running the macro again keeps tiles you moved and only adds missing ones.
 

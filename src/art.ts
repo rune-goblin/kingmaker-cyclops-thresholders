@@ -45,6 +45,7 @@ export const ACTOR_ART: { sources: string[]; img: string; token: string }[] = [
 export interface CandlemereResult {
   creatures: number;
   journal: boolean;
+  pages: number;
   notes: number;
   actors: number;
   tokens: number;
@@ -59,12 +60,36 @@ function artFor(actor: Actor): (typeof ACTOR_ART)[number] | undefined {
   return ACTOR_ART.find((art) => art.sources.some((s) => s === source || s.endsWith(`.${actor.id}`)));
 }
 
-async function importJournal(): Promise<boolean> {
-  if (game.journal.get(ART_JOURNAL_ID)) return false;
+interface PageSource {
+  _id: string;
+  name: string;
+  src: string;
+  image: { caption?: string };
+}
+
+// The world keeps its own copy of the journal, so pages the module adds or repoints after the first
+// import reach it only here; otherwise their pins open whichever page the journal last showed.
+async function syncJournal(): Promise<{ journal: boolean; pages: number }> {
   const pack = game.packs.get(JOURNAL_PACK);
   if (!pack) throw new Error(`${JOURNAL_PACK} missing`);
-  await game.journal.importFromCompendium(pack as never, ART_JOURNAL_ID, {}, { keepId: true });
-  return true;
+  const world = game.journal.get(ART_JOURNAL_ID);
+  if (!world) {
+    await game.journal.importFromCompendium(pack as never, ART_JOURNAL_ID, {}, { keepId: true });
+    return { journal: true, pages: 0 };
+  }
+
+  const source = (await pack.getDocument(ART_JOURNAL_ID)) as JournalEntry | undefined;
+  const pages = (source?.pages.contents ?? []).map((p) => p.toObject() as unknown as PageSource);
+  const missing = pages.filter((p) => !world.pages.has(p._id));
+  const stale = pages
+    .filter((p) => {
+      const current = world.pages.get(p._id) as unknown as PageSource | undefined;
+      return current && (current.src !== p.src || current.name !== p.name || current.image.caption !== p.image.caption);
+    })
+    .map((p) => ({ _id: p._id, name: p.name, src: p.src, 'image.caption': p.image.caption }));
+  if (missing.length) await world.createEmbeddedDocuments('JournalEntryPage', missing as never, { keepId: true });
+  if (stale.length) await world.updateEmbeddedDocuments('JournalEntryPage', stale);
+  return { journal: false, pages: missing.length + stale.length };
 }
 
 // Pins the GM already placed keep their position and size; only missing pins are added, and
@@ -127,13 +152,14 @@ async function applyArt(): Promise<{ actors: number; tokens: number }> {
 }
 
 /**
- * Put the module's creatures on the Candlemere Spiral, among them the elite disciples Ilmorra and Vashtrel in B10, import the art journal, pin each image page
- * in its room, and give the Leng envoys, mastiffs, Niodrhast, and Leng spiders their new portraits and tokens.
+ * Put the module's creatures on the Candlemere Spiral, among them the elite disciples Ilmorra and
+ * Vashtrel in B10, import the art journal or bring its pages up to date, pin each image page in its
+ * room, and give the Leng envoys, mastiffs, Niodrhast, and Leng spiders their new portraits and tokens.
  * Safe to re-run: moved pins stay where the GM left them.
  */
 export async function setUpCandlemere(): Promise<CandlemereResult> {
   const creatures = (await swapCreatures()) + (await addCreatures());
-  const journal = await importJournal();
+  const synced = await syncJournal();
   const notes = await pinPages();
-  return { creatures, journal, notes, ...(await applyArt()) };
+  return { creatures, ...synced, notes, ...(await applyArt()) };
 }

@@ -13,6 +13,7 @@
     },
     "artImported": "Imported the Candlemere Spiral Art journal.",
     "artKept": "Kept the existing Candlemere Spiral Art journal.",
+    "artUpdated": "Added or updated {pages} page(s) in the Candlemere Spiral Art journal.",
     "candlemere": "{journal} Placed {creatures} creature token(s), pinned {notes} art note(s), and gave {actors} actor(s) and {tokens} scene token(s) new art.",
     "helix": {
       "placed": "Placed {tiles} hidden Helix Theorem tile(s) on the Candlemere Spiral.",
