@@ -2,6 +2,7 @@ import { MODULE_ID } from './constants';
 import placements from './art-placements.json';
 import { swapCreatures } from './swaps';
 import { addCreatures } from './additions';
+import { addTreasure } from './treasure';
 
 const JOURNAL_PACK = `${MODULE_ID}.journal`;
 export const ART_JOURNAL_ID = '7GQ5pIphx6GyLjbj';
@@ -44,6 +45,7 @@ export const ACTOR_ART: { sources: string[]; img: string; token: string }[] = [
 
 export interface CandlemereResult {
   creatures: number;
+  treasure: number;
   journal: boolean;
   pages: number;
   notes: number;
@@ -153,13 +155,14 @@ async function applyArt(): Promise<{ actors: number; tokens: number }> {
 
 /**
  * Put the module's creatures on the Candlemere Spiral, among them the elite disciples Ilmorra and
- * Vashtrel in B10, import the art journal or bring its pages up to date, pin each image page in its
+ * Vashtrel in B10, put the Codex of the Coterminous Gate in the B14 treasure, import the art journal or bring its pages up to date, pin each image page in its
  * room, and give the Leng envoys, mastiffs, Niodrhast, and Leng spiders their new portraits and tokens.
  * Safe to re-run: moved pins stay where the GM left them.
  */
 export async function setUpCandlemere(): Promise<CandlemereResult> {
   const creatures = (await swapCreatures()) + (await addCreatures());
+  const treasure = await addTreasure();
   const synced = await syncJournal();
   const notes = await pinPages();
-  return { creatures, ...synced, notes, ...(await applyArt()) };
+  return { creatures, treasure, ...synced, notes, ...(await applyArt()) };
 }

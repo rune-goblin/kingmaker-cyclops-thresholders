@@ -1,0 +1,94 @@
+{
+  "_id": "BZb2xDI3sp59Vi6w",
+  "_key": "!items!BZb2xDI3sp59Vi6w",
+  "name": "Codex of the Coterminous Gate",
+  "type": "equipment",
+  "img": "icons/sundries/books/book-embossed-spiral-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>A heavy grimoire bound in grey hide, its pages crowded with Foras's cramped hand and diagrams of spheres that hurt to follow. The notes describe a door half-finished for Yog-Sothoth.</p><p>The Codex holds five rare spells: @UUID[Compendium.pf2e.spells-srd.Item.FEsuyf203wTNE2et]{Wails of the Damned}, @UUID[Compendium.pf2e.spells-srd.Item.m3lcOFm400lQCUps]{Power Word Kill} and @UUID[Compendium.kingmaker-cyclops-thresholders.items.Item.3XBb9RtCq9Wihewn]{The Hours Unbound} (9th rank), and @UUID[Compendium.pf2e.spells-srd.Item.1dsahW4g1ggXtypx]{Freeze Time} and @UUID[Compendium.pf2e.spells-srd.Item.U13bC0tNgrlHoeTK]{Gate} (10th rank).</p><p>Learning a spell from the Codex uses @UUID[Compendium.pf2e.actionspf2e.Item.Q5iIYCFdqJFM31GW]{Learn a Spell} at DC 42 for a 9th-rank spell and DC 47 for a 10th-rank spell.</p>",
+      "gm": "<p><strong>Regard.</strong> Each reading draws the regard of something beyond the spheres. The party shares one Regard track from 0 to 20; keep the number hidden and show the omens.</p><table><thead><tr><th>Learn a Spell result</th><th>9th rank</th><th>10th rank</th></tr></thead><tbody><tr><td>Critical success (learned)</td><td>+0</td><td>+1</td></tr><tr><td>Success (learned)</td><td>+1</td><td>+2</td></tr><tr><td>Failure</td><td>+2</td><td>+2</td></tr><tr><td>Critical failure</td><td>+3 and a Glimpse</td><td>+3 and a Glimpse</td></tr></tbody></table><p><strong>Stare Longer.</strong> After a failure, the reader may retry at once for +2 more Regard.</p><p><strong>Echoes.</strong> The first time each week a character casts a spell learned from the Codex, add 1 Regard (Gate adds 2). The Hours Unbound adds 1 on every cast.</p><p><strong>Mitigation.</strong> Warded study: Weight −1 (minimum 0). Second mind: another character reads the marginalia aloud, Occultism DC 38; success reduces the result cost by 1, critical failure raises it by 1. Blot the pages: burn a learned spell's pages to remove 1 Regard; nobody else can learn it from the book. Rite of Effacement: a week of downtime and a Religion check against DC 40; critical success −4, success −2, failure 0, critical failure +1. Once per week of downtime, never below the last omen threshold reached.</p><p><strong>Omens.</strong> 5 The Glance (clocks run wrong, dreams of spheres) · 10 The Heralds (one encounter with creatures of about 16th level) · 15 The Thinning (teleportation within 1 mile of a reader needs a DC 11 flat check; the GM sets the arrival within 1d4 weeks) · 20 The Arrival (the Iridescent Herald manifests).</p><p><strong>Glimpse (1d6).</strong> 1 the reader ages 1d10 years · 2 @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} until the next daily preparation · 3 the reader's shadow points towards the Codex · 4 one random prepared spell vanishes for the day · 5 the reader speaks a stranger's name; later a herald answers to it · 6 +2 further Regard.</p>"
+    },
+    "rules": [],
+    "slug": "codex-of-the-coterminous-gate",
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical",
+        "occult"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Kingmaker: Cyclops Thresholders",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 19
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      }
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "_stats": {
+    "coreVersion": "14.361",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

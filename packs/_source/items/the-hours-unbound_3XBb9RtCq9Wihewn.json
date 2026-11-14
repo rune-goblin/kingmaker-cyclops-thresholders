@@ -1,0 +1,105 @@
+{
+  "_id": "3XBb9RtCq9Wihewn",
+  "_key": "!items!3XBb9RtCq9Wihewn",
+  "name": "The Hours Unbound",
+  "type": "spell",
+  "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+  "system": {
+    "area": null,
+    "cost": {
+      "value": ""
+    },
+    "counteraction": false,
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "category": null,
+        "formula": "14d10",
+        "kinds": [
+          "damage"
+        ],
+        "materials": [],
+        "type": "void"
+      }
+    },
+    "defense": {
+      "save": {
+        "basic": true,
+        "statistic": "fortitude"
+      }
+    },
+    "description": {
+      "value": "<p>You show the target the moment of its own ending, and its remaining hours drain away. The target takes 14d10 void damage with a basic Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target takes half damage.</p><p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p><p><strong>Critical Failure</strong> The target takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute, and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p><hr /><p><strong>Echo</strong> Every cast adds 1 Regard to the Codex of the Coterminous Gate.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d10.</p>"
+    },
+    "duration": {
+      "sustained": false,
+      "value": ""
+    },
+    "heightening": {
+      "type": "interval",
+      "interval": 1,
+      "damage": {
+        "0": "2d10"
+      }
+    },
+    "level": {
+      "value": 9
+    },
+    "publication": {
+      "title": "Kingmaker: Cyclops Thresholders",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "requirements": "",
+    "rules": [],
+    "target": {
+      "value": "1 creature"
+    },
+    "time": {
+      "value": "2"
+    },
+    "traits": {
+      "rarity": "rare",
+      "traditions": [
+        "arcane",
+        "occult"
+      ],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "unholy",
+        "void"
+      ]
+    },
+    "slug": "the-hours-unbound",
+    "location": {
+      "value": null
+    },
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.361",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

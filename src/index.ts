@@ -50,7 +50,7 @@ async function runCandlemere(): Promise<void> {
     ui.notifications.warn(game.i18n.localize(`${MODULE_ID}.gmOnly`));
     return;
   }
-  const { creatures, journal, pages, notes, actors, tokens } = await setUpCandlemere();
+  const { creatures, treasure, journal, pages, notes, actors, tokens } = await setUpCandlemere();
   const art = journal
     ? game.i18n.localize(`${MODULE_ID}.artImported`)
     : pages
@@ -60,6 +60,7 @@ async function runCandlemere(): Promise<void> {
     game.i18n.format(`${MODULE_ID}.candlemere`, {
       journal: art,
       creatures: String(creatures),
+      treasure: String(treasure),
       notes: String(notes),
       actors: String(actors),
       tokens: String(tokens),

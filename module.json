@@ -31,6 +31,13 @@
       "system": "pf2e"
     },
     {
+      "name": "items",
+      "label": "Cyclops Thresholders Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
       "name": "macros",
       "label": "Cyclops Thresholders Macros",
       "path": "packs/macros",

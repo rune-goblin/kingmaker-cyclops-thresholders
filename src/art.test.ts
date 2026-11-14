@@ -3,6 +3,7 @@ import { ART_JOURNAL_ID, setUpCandlemere } from './art';
 
 vi.mock('./swaps', () => ({ swapCreatures: async () => 0 }));
 vi.mock('./additions', () => ({ addCreatures: async () => 0 }));
+vi.mock('./treasure', () => ({ addTreasure: async () => 0 }));
 
 const IMAGES = 'modules/kingmaker-cyclops-thresholders/assets/images';
 
